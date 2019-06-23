@@ -3,6 +3,7 @@
 using namespace std;
 
 /*
+detail: https://blog.csdn.net/github_36669230/article/details/58605959
 题目：字符的所有组合
 输入三个字符a、b、c，组合有：a, b, c , ab, ac, bc, abc。
 */

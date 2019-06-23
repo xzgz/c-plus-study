@@ -3,6 +3,7 @@
 using namespace std;
 
 /*
+detail: https://blog.csdn.net/github_36669230/article/details/58605959
 题目描述：
 输入一个字符串，按字典序打印出该字符串中字符的所有排列
 例如输入字符串abc，
