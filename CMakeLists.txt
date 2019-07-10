@@ -34,8 +34,13 @@ foreach(val ${CMAKE_THREAD_LIBS_INIT})
     message(${val})
 endforeach()
 message("\n")
-
 list(APPEND Boost_LINKER_LIBS ${CMAKE_THREAD_LIBS_INIT})
+
+include_directories(${PROJECT_SOURCE_DIR})
+
+add_subdirectory(utils)
+set(C_PLUS_LIBS "")
+list(APPEND C_PLUS_LIBS c_plus_utils)
 
 #message("\n\nboost_static_libs:")
 #foreach(val ${boost_static_libs})
@@ -58,4 +63,5 @@ add_subdirectory(previous-code)
 add_subdirectory(stack)
 add_subdirectory(list)
 add_subdirectory(classic-problem)
+add_subdirectory(tree)
 

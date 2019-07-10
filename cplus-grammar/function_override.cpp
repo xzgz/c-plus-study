@@ -37,7 +37,10 @@ class B : public A {
 //    this->f3(0, 0);  // can be compiled only when there are no f3 in class B
     this->f3(0, 0, 0);
   }
+  static int a;
+  const static int b = 1;
 };
+int B::a;
 
 int main() {
   A *poa;
@@ -49,6 +52,10 @@ int main() {
 //  A oa = A();  // the same as "A oa;"
 //  B ob = B();  // the same as "B ob;"
 
+//  int B::a = 2;  // error: qualified-id in declaration before ‘=’ token
+  cout << ob.a << endl;
+  cout << B::a << endl;
+  cout << B::b << endl;
   poa = new B();
 //  poa = new B;  // the same as "poa = new B();"
   poa->f1();
