@@ -29,41 +29,35 @@ using namespace std;
 */
 class Solution {
  public:
-  vector<int> sortedSquares(vector<int>& A) {
+  vector<int> SortedSquares(vector<int>& A) {
     vector<int> answer(A.size(), 0);
     int l = 0, r = A.size() - 1;
     int left, right;
 
-    while (l <= r)
-    {
-        left = abs(A[l]);
-        right = abs(A[r]);
-        if (left < right)
-        {
-            answer[r - l] = right * right;
-            r -= 1;
-        }
-        else
-        {
-            answer[r - l] = left * left;
-            l += 1;
-        }
+    while(l <= r) {
+      left = abs(A[l]);
+      right = abs(A[r]);
+      if(left < right) {
+        answer[r-l] = right * right;
+        r -= 1;
+      } else {
+        answer[r-l] = left * left;
+        l += 1;
+      }
     }
 
     return answer;
   }
 };
 
-int main()
-{
-    int a[] = {-4, -1, 0, 3, 10};
-    Solution solu;
-    vector<int> vec_arr(a, a+4);
-    vector<int> ret = solu.sortedSquares(vec_arr);
-    for (int i = 0; i < ret.size(); ++i)
-    {
-        cout << ret[i] << " ";
-    }
+int main() {
+  int a[] = {-4, -1, 0, 3, 10};
+  Solution solu;
+  vector<int> vec_arr(a, a+4);
+  vector<int> ret = solu.SortedSquares(vec_arr);
+  for(int i = 0; i < ret.size(); ++i) {
+    cout << ret[i] << " ";
+  }
 
-    return 0;
+  return 0;
 }

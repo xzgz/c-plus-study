@@ -22,31 +22,36 @@ using namespace std;
 来建立数字和其坐标位置之间的映射，我们都知道HashMap是常数级的查找效率，这样，
 我们在遍历数组的时候，用 target 减去遍历到的数字，就是另一个需要的数字了，
 直接在 HashMap 中查找其是否存在即可，注意要判断查找到的数字不是第一个数字，
-比如 target 是4，遍历到了一个2，那么另外一个2不能是之前那个2。
+比如target是4，遍历到了一个2，那么另外一个2不能是之前那个2。
 */
 class Solution {
  public:
-  vector<int> twoSum(vector<int>& nums, int target) {
+  vector<int> TwoSum(vector<int>& nums, int target) {
     unordered_map<int, int> m;
     vector<int> res(2);
-    for (int i = 0; i < nums.size(); ++i) {
-      if (m.count(target - nums[i])) {
-        res[0] = i;
-        res[1] = m[target - nums[i]];
+    for(int i = 0; i < nums.size(); ++i) {
+      if(m.count(target - nums[i])) {
+        res[0] = m[target - nums[i]];
+        res[1] = i;
         return res;
       }
       m[nums[i]] = i;
     }
+
     return {};
   }
 };
 
 int main() {
-  vector<int> nums = { 2, 7, 11, 15 };
-  int target = 9;
+  vector<int> nums = { 2, 3, 2, 15 };
+  int target = 5;
   Solution so;
-  vector<int> indices = so.twoSum(nums, target);
+  vector<int> indices = so.TwoSum(nums, target);
 
-  cout << "results:\n";
-  cout << indices[0] << " " << indices[1] << endl;
+  if(indices.empty()) {
+    cout << "There are no solution!\n";
+  } else {
+    cout << "results:\n";
+    cout << indices[0] << " " << indices[1] << endl;
+  }
 }

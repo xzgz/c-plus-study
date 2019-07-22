@@ -54,7 +54,8 @@ int main()
 {
     int a[] = {300, 4, 200, 9, 3, 2, 8, 7, 6, 5};
     Solution solu;
-    vector<int> vec_arr(a, a + 10);
+    vector<int> vec_arr(a, a+10);
+    cout << *(a+9) << endl;
     int res_vec_len = solu.longestConsecutive(vec_arr);
     cout << "original length: " << vec_arr.size() << endl
          << "processed length: " << res_vec_len << endl;

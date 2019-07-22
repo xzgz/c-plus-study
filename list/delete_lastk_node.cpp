@@ -2,6 +2,8 @@
 
 using namespace std;
 
+// refer to: https://www.cnblogs.com/edisonchou/p/4769164.html
+
 struct SingleLinkNode {
   int val;
   SingleLinkNode *next;
