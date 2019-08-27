@@ -3,7 +3,7 @@
 using namespace std;
 
 bool IsCoordValid(const int px, const int py, const int bx, const int by) {
-  if (0 <= px && px <= bx && 0 <= py && py <= by) return true;
+  if (0 <= px && px < bx && 0 <= py && py < by) return true;
   else return false;
 }
 
