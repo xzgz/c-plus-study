@@ -15,32 +15,57 @@ detail: https://blog.csdn.net/github_36669230/article/details/58605959
 如果组合里包含第一个字符，则从所有剩余n-1个字符里选取m-1个字符；
 如果组合里不包含第一个字符，则下一步在剩余的n-1个字符选取m个字符。
 */
-void CombinationCore(char *str, int number, vector<char>& result) {
-  if(number == 0)
-  {
-    vector<char>::iterator iter = result.begin();
-    for(; iter != result.end(); ++iter)
-      cout << *iter;
-    cout << endl;
+void CombinationCore(const string::iterator it, const string::iterator end,
+                     int number, vector<string> *result) {
+  static string select_chars;
+
+  if (number == 0) {
+    result->push_back(select_chars);
     return;
   }
-  if(*str == '\0')
-    return;
+  if (it == end) return;
   // n-1个字符串中，选取number-1个字符
-  result.push_back(*str);
-  CombinationCore(str+1, number-1, result);
+  select_chars.push_back(*it);
+  CombinationCore(it+1, end, number-1, result);
   // n-1个字符串中，选取number个字符
-  result.pop_back();
-  CombinationCore(str+1, number, result);
+  select_chars.pop_back();
+  CombinationCore(it+1, end, number, result);
 }
-void Combination(char* str)
-{
-  if(str == NULL)
+
+void Combination(string str, vector<string> *result) {
+  if (str.empty()) return;
+  for (int i = 1; i <= str.size(); i++)
+    CombinationCore(str.begin(), str.end(), i, result);
+  sort(result->begin(), result->end());
+  vector<string>::iterator new_end = unique(result->begin(), result->end());
+  result->erase(new_end, result->end());
+}
+
+void CombinationCoreRP(const string::iterator it, const string::iterator end,
+                       int number, vector<string> *result) {
+  static string select_chars;
+
+  if (number == 0) {
+    result->push_back(select_chars);
     return;
-  int length = strlen(str);
-  vector<char> result;
-  for(int i = 1; i <= length; i++)
-    CombinationCore(str, i, result);
+  }
+  if (it == end) return;
+  select_chars.push_back(*it);
+  CombinationCoreRP(it+1, end, number-1, result);
+  select_chars.pop_back();
+  CombinationCoreRP(it+1, end, number, result);
+}
+
+void CombinationRP(string str, vector<string> *result) {
+  if (str.empty()) return;
+
+  for (int i = 1; i <= str.size(); ++i) {
+    CombinationCoreRP(str.begin(), str.end(), i, result);
+  }
+  sort(result->begin(), result->end());
+  vector<string>::iterator new_end;
+  new_end = unique(result->begin(), result->end());
+  result->erase(new_end, result->end());
 }
 
 /*
@@ -50,61 +75,52 @@ void Combination(char* str)
 组合ac表示为101，组合abc表示为111，而000是没有意义的，所以总共的结果就是2^n-1种。
 因此，我们可以从值1开始循环到2^n-1，输出每个值所代表的组合即可。
 */
-void Combination2(char *str) {
-  if(str == NULL)
-    return;
-  int i,j,temp;
-  int length = strlen(str);
-  int n = 1 << length;       // n为2^n-1(111)
-  for(i = 1; i < n; i++) {   // 依次输出值1到2^n-1所代表值的组合
-    for(j = 0; j < length; j++) {  // 判断第j位是否为1
+void Combination2(const string& str, vector<string> *result) {
+  if (str.empty()) return;
+
+  int i, j, temp;
+  int length = str.size();
+  int n = 1 << length;              // n为2^n-1(111)
+  for (i = 1; i < n; i++) {         // 依次输出值1到2^n-1所代表值的组合
+    string res;
+    for (j = 0; j < length; j++) {  // 判断第j位是否为1
       temp = i;
-      if(temp & (1<<j))
-        cout << *(str+j);
+      if (temp & (1 << j)) res.push_back(str[j]);
     }
-    cout << endl;
+    result->push_back(res);
   }
+  sort(result->begin(), result->end());
+  vector<string>::iterator new_end = unique(result->begin(), result->end());
+  result->erase(new_end, result->end());
 }
 
+void Combination2RP(const string& str, vector<string> *result) {
+  if (str.empty()) return;
 
-bool IsContainChar(char *p_begin, char c) {
-  char *p = p_begin;
-  while ('\0' != *p) {
-    if (c == *p) return true;
-    p++;
+  int length = str.size();
+  int n = 1 << length;
+  for (int i = 1; i < n; ++i) {
+    string res;
+    for (int j = 0; j < length; ++j) {
+      if (i & (1 << j)) res.push_back(str[j]);
+    }
+    result->push_back(res);
   }
-  return false;
+  sort(result->begin(), result->end());
+  vector<string>::iterator new_end = unique(result->begin(), result->end());
+  result->erase(new_end, result->end());
 }
-void RemoveDuplicateChar(char *str) {
-  if (*str == '\0') return;
-
-  vector<char> result;
-  char *p = str;
-  while ('\0' != *p) {
-    char c = *p;
-    bool contain_c = IsContainChar(p + 1, c);
-    if (!contain_c) result.push_back(c);
-    p++;
-  }
-  char *pr = str;
-  for (vector<char>::iterator it = result.begin(); it != result.end(); ++it) {
-    *pr = *it;
-    pr++;
-  }
-  *pr = '\0';
-}
-
 
 int main() {
-  char str[] = "aab";
-
-//  RemoveDuplicateChar(str);
-//  cout << str << endl;
-
-  Combination(str);
-  cout << "******************\n";
-  Combination2(str);
+  string str = "baa";
+//  Combination(str);
+//  cout << "******************\n";
+  vector<string> result;
+//  Combination(str, &result);
+  CombinationRP(str, &result);
+//  Combination2(str, &result);
+//  Combination2RP(str, &result);
+  for (string s : result) cout << s << endl;
 
   return 0;
 }
-

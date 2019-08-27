@@ -29,8 +29,8 @@ class Solution {
   vector<int> TwoSum(vector<int>& nums, int target) {
     unordered_map<int, int> m;
     vector<int> res(2);
-    for(int i = 0; i < nums.size(); ++i) {
-      if(m.count(target - nums[i])) {
+    for (int i = 0; i < nums.size(); ++i) {
+      if (m.count(target - nums[i])) {
         res[0] = m[target - nums[i]];
         res[1] = i;
         return res;

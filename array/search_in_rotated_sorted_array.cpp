@@ -35,46 +35,31 @@ using namespace std;
 可以解出first==last。当target位于数组末尾位置时，为了能返回target的位置，
 循环的终止条件应设为first==last+1。
 */
-class Solution
-{
+class Solution {
  public:
-  int search(const vector<int>& nums, int target)
-  {
-      int first = 0, last = nums.size() - 1;
-      while (first != last + 1)
-      {
-          const int mid = first + (last - first) / 2;
-          if (nums[mid] == target)
-              return mid;
-          if (nums[first] <= nums[mid])
-          {
-              if (nums[first] <= target && target < nums[mid])
-                  last = mid;
-              else
-                  first = mid + 1;
-          }
-          else
-          {
-              if (nums[mid] < target && target <= nums[last])
-                  first = mid + 1;
-              else
-                  last = mid;
-          }
+  int search(const vector<int>& nums, int target) {
+    int first = 0, last = nums.size() - 1;
+    while (first != last + 1) {
+      const int mid = first + (last - first) / 2;
+      if (nums[mid] == target) return mid;
+      if (nums[first] <= nums[mid]) {
+        if (nums[first] <= target && target < nums[mid]) last = mid;
+        else first = mid + 1;
+      } else {
+        if (nums[mid] < target && target <= nums[last]) first = mid + 1;
+        else last = mid;
       }
-      return -1;
+    }
+    return -1;
   }
 };
 
+int main() {
+  int a[] = { 6, 0, 1, 2, 5 };
+  Solution solu;
+  vector<int> vec_arr(a, a+5);
+  int index = solu.search(vec_arr, -1);
+  cout << "target index: " << index << endl;
 
-int main()
-{
-    int a[] = {2, 5, 6, 0, 1};
-//    int a[] = {2,5,6,0,0,1,2};
-    Solution solu;
-    vector<int> vec_arr(a, a+5);
-//    vector<int> vec_arr(a, a+7);
-    int index = solu.search(vec_arr, 2);
-    cout << "target index: " << index << endl;
-
-    return 0;
+  return 0;
 }

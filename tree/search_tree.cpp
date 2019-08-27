@@ -47,7 +47,6 @@ void PreOrderLoop(BiTNode *root) {
   std::stack<BiTNode *> s;
   BiTNode *cur, *top;
   cur = root;
-  int depth = 0;
   while (cur != NULL || !s.empty())
   {
     while (cur != NULL)

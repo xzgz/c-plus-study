@@ -27,60 +27,33 @@ using namespace std;
 因为数组的旋转点可能会位于重复的元素中间，这样当”=“条件成立时，first与mid之间并不一定是单调递增的，
 有可能是重复的元素被截断所致，因此只需要first++跳过重复的元素重新从第一步开始即可。但”<“条件成立时，一定是单调递增的。
 */
-class Solution
-{
+class Solution {
  public:
-  bool search(const vector<int>& nums, int target)
-  {
-    int first = 0, last = nums.size() - 1;
-    while (first != last + 1)
-    {
-      const int mid = first + (last - first) / 2;
-      if (nums[mid] == target)
-      {
-        return true;
-//        return mid;
-      }
-      if (nums[first] < nums[mid])
-      {
-        if (nums[first] <= target && target < nums[mid])
-        {
-          last = mid;
-        }
-        else
-        {
-          first = mid + 1;
-        }
-      }
-      else if (nums[first] > nums[mid])
-      {
-        if (nums[mid] < target && target <= nums[last])
-        {
-          first = mid + 1;
-        }
-        else
-        {
-          last = mid;
-        }
-      }
-      else
-      {
-        first++;
-      }
+  int search(const vector<int>& nums, int target) {
+    int first = 0, last = nums.size();
+    while (first != last + 1) {
+      int mid = (first + last) / 2;
+      if (nums[mid] == target) return mid;
+      if (nums[first] < nums[mid]) {
+        if (nums[first] <= target && target < nums[mid]) last = mid;
+        else first = mid + 1;
+      } else if (nums[first] > nums[mid]) {
+        if (nums[mid] < target && target <= nums[last]) first = mid + 1;
+        else last = mid;
+      } else first++;
     }
-    return false;
-//    return -1;
+    return -1;
   }
 };
 
+int main() {
+//  int a[] = { 2, 2, 5, 6, 0, 1, 2 };
+  int a[] = { 6, 0, 1, 2, 5 };
+  Solution solu;
+//  vector<int> vec_arr(a, a+7);
+  vector<int> vec_arr(a, a+5);
+  int index = solu.search(vec_arr, 6);
+  cout << "target index: " << index << endl;
 
-int main()
-{
-    int a[] = {2, 2, 5, 6, 0, 1, 2};
-    Solution solu;
-    vector<int> vec_arr(a, a+7);
-    bool index = solu.search(vec_arr, 6);
-    cout << "target index: " << index << endl;
-
-    return 0;
+  return 0;
 }

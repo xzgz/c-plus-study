@@ -37,10 +37,12 @@ class B : public A {
 //    this->f3(0, 0);  // can be compiled only when there are no f3 in class B
     this->f3(0, 0, 0);
   }
+//  static int a = 5;  // error: ISO C++ forbids in-class initialization of non-const static member ‘B::a’
   static int a;
   const static int b = 1;
 };
-int B::a;
+
+int B::a = 3;
 
 int main() {
   A *poa;
