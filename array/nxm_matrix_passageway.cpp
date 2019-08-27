@@ -7,14 +7,22 @@ bool IsCoordValid(const int px, const int py, const int bx, const int by) {
   else return false;
 }
 
-bool IsTherePassageway(const char *mat, const int n, const int m, const pair<int, int>& start,
+bool IsTherePassageway(const vector<vector<char> >& mat, const int n, const int m, const pair<int, int>& start,
                        const pair<int, int>& end) {
   int end_sur_pt_cnt = 0;
-  if (*(mat + end.first * m + end.second) == '.') {
-    if (IsCoordValid(end.second, end.first-1, m, n) && *(mat + (end.first-1) * m + end.second) == '.') end_sur_pt_cnt +=1;
-    if (IsCoordValid(end.second, end.first+1, m, n) && *(mat + (end.first+1) * m + end.second) == '.') end_sur_pt_cnt +=1;
-    if (IsCoordValid(end.second-1, end.first, m, n) && *(mat + end.first * m + end.second-1) == '.') end_sur_pt_cnt +=1;
-    if (IsCoordValid(end.second+1, end.first, m, n) && *(mat + end.first * m + end.second+1) == '.') end_sur_pt_cnt +=1;
+//  if (*(mat + end.first * m + end.second) == '.') {
+//    if (IsCoordValid(end.second, end.first-1, m, n) && *(mat + (end.first-1) * m + end.second) == '.') end_sur_pt_cnt +=1;
+//    if (IsCoordValid(end.second, end.first+1, m, n) && *(mat + (end.first+1) * m + end.second) == '.') end_sur_pt_cnt +=1;
+//    if (IsCoordValid(end.second-1, end.first, m, n) && *(mat + end.first * m + end.second-1) == '.') end_sur_pt_cnt +=1;
+//    if (IsCoordValid(end.second+1, end.first, m, n) && *(mat + end.first * m + end.second+1) == '.') end_sur_pt_cnt +=1;
+//  } else {
+//    end_sur_pt_cnt = 2;
+//  }
+  if (mat[end.first][end.second] == '.') {
+    if (IsCoordValid(end.second, end.first-1, m, n) && mat[end.first-1][end.second] == '.') end_sur_pt_cnt +=1;
+    if (IsCoordValid(end.second, end.first+1, m, n) && mat[end.first+1][end.second] == '.') end_sur_pt_cnt +=1;
+    if (IsCoordValid(end.second-1, end.first, m, n) && mat[end.first][end.second-1] == '.') end_sur_pt_cnt +=1;
+    if (IsCoordValid(end.second+1, end.first, m, n) && mat[end.first][end.second+1] == '.') end_sur_pt_cnt +=1;
   } else {
     end_sur_pt_cnt = 2;
   }
@@ -33,28 +41,28 @@ bool IsTherePassageway(const char *mat, const int n, const int m, const pair<int
       pair<int, int> point(front.first-1, front.second);
       if (point == end) return true;
       if (IsCoordValid(point.second, point.first, m, n) && !is_used[point.first][point.second]
-          && *(mat + point.first * m + point.second) == '.') {
+          && mat[point.first][point.second] == '.') {
         roads.push(point);
         is_used[point.first][point.second] = true;
       }
       point = make_pair(front.first+1, front.second);
       if (point == end) return true;
       if (IsCoordValid(point.second, point.first, m, n) && !is_used[point.first][point.second]
-          && *(mat + point.first * m + point.second) == '.') {
+          && mat[point.first][point.second] == '.') {
         roads.push(point);
         is_used[point.first][point.second] = true;
       }
       point = make_pair(front.first, front.second-1);
       if (point == end) return true;
       if (IsCoordValid(point.second, point.first, m, n) && !is_used[point.first][point.second]
-          && *(mat + point.first * m + point.second) == '.') {
+          && mat[point.first][point.second] == '.') {
         roads.push(point);
         is_used[point.first][point.second] = true;
       }
       point = make_pair(front.first, front.second+1);
       if (point == end) return true;
       if (IsCoordValid(point.second, point.first, m, n) && !is_used[point.first][point.second]
-          && *(mat + point.first * m + point.second) == '.') {
+          && mat[point.first][point.second] == '.') {
         roads.push(point);
         is_used[point.first][point.second] = true;
       }
@@ -72,12 +80,14 @@ int main() {
   for (int i = 0; i < t; ++i) {
     cin >> n;
     cin >> m;
-    void *mat = calloc(n*m, sizeof(char));
+//    void *mat = calloc(n*m, sizeof(char));
+    vector<vector<char> > mat(n, vector<char>(m, 0));
     for (int j = 0; j < n; ++j) {
       for (int k = 0; k < m; ++k) {
         char c;
         cin >> c;
-        *((char *)mat + j * m + k) = c;
+//        *((char *)mat + j * m + k) = c;
+        mat[j][k] = c;
       }
     }
     int coord;
@@ -90,10 +100,11 @@ int main() {
     cin >> coord;
     end.second = coord - 1;
 
-    bool is_there_passageway = IsTherePassageway((char *)mat, n, m, start, end);
+//    bool is_there_passageway = IsTherePassageway((char *)mat, n, m, start, end);
+    bool is_there_passageway = IsTherePassageway(mat, n, m, start, end);
     if (is_there_passageway) result[i] = "YES";
     else result[i] = "NO";
-    free(mat);
+//    free(mat);
   }
   for (int i = 0; i < t; ++i) {
     cout << result[i] << endl;
