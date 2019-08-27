@@ -31,41 +31,50 @@ int main() {
     if (i % 2) {
       loc = find(line.begin(), line.end(), ' ');
       order = distance(line.begin(), loc);
-      symbol[i/2] = *(loc - 1);
-      line.erase(0, 1+order);
+      symbol[i / 2] = *(loc - 1);
+      line.erase(0, 1 + order);
     } else {
       loc = find(line.begin(), line.end(), ' ');
       order = distance(line.begin(), loc);
-      nums[i/2] = stoi(line.substr(0, order));
-      line.erase(0, 1+order);
+      nums[i / 2] = stoi(line.substr(0, order));
+      line.erase(0, 1 + order);
     }
   }
   nums[n-1] = stoi(line);
   sort(nums.begin(), nums.begin());
 
   vector<int>::iterator ib, ie;
-  for (int i = 0; i < n-1; ++i) {
+  for (;;) {
+    int i = 0;
+    int j;
+    ie = ib;
     if (symbol[i] == '+') {
       ib = nums.begin() + i;
       ie = ib;
-      int j = i+1;
+      j = i + 1;
       for (; j < n-1; ++j) {
         ++ie;
         if (symbol[j] != '+') break;
       }
-      if (symbol[j] == '-') ++ie;
+      if (j == n-1) ie += 2;
+      if (symbol[j] == '-') ie += 1;
       sort(ib, ie);
     }
     if (symbol[i] == '*') {
       ib = nums.begin() + i;
       ie = ib;
-      for (int j = i+1; j < n-1; ++j) {
+      j = i + 1;
+      for (; j < n-1; ++j) {
         ++ie;
         if (symbol[j] != '*') break;
       }
-      ++ie;
+      if (j == n-1) ie += 2;
+      else ie += 1;
       sort(ib, ie);
     }
+    if (ie - ib > 0) i += ie - ib;
+    else i += 1;
+    if (i == n) break;
   }
 
   for (int i = 0; i < n-1; ++i) {
