@@ -37,6 +37,7 @@ bool IsTherePassagewayBFS(const vector<vector<char> >& mat, const int n, const i
   roads.push(start);
   pair<int, int> front;
   pair<int, int> point;
+  int max_depth = -1;
   while (!roads.empty()) {
     int node_count = roads.size();
     for (int i = 0; i < node_count; ++i) {
@@ -46,13 +47,18 @@ bool IsTherePassagewayBFS(const vector<vector<char> >& mat, const int n, const i
 		point = make_pair(front.first + dy[j], front.second + dx[j]);
 		if (IsCoordValid(point.second, point.first, m, n) &&
 			!is_used[point.first][point.second] && mat[point.first][point.second] == '.') {
-		  if (point == end) return true;
+		  if (point == end) {
+		    cout << endl << "max depth: " << max_depth << endl;
+		    return true;
+		  }
 		  roads.push(point);
 		  is_used[point.first][point.second] = true;
+		  max_depth = max(max_depth, int(roads.size()));
 		}
 	  }
     }
   }
+  cout << "max depth: " << max_depth << endl;
 
   return false;
 }
@@ -78,19 +84,26 @@ bool IsTherePassagewayDFS(vector<vector<char> >& mat, const int n, const int m,
   mat[start.first][start.second] = '.';
   pair<int, int> cur = start;
   pair<int, int> top;
-  int j = 0;
+  int dir = 1;
+  int max_depth = -1;
   while (IsRoad(cur.second, cur.first, mat, is_used) || !roads.empty()) {
 	while (IsRoad(cur.second, cur.first, mat, is_used)) {
-	  if (cur == end) return true;
+	  if (cur == end) {
+		cout << endl << "max depth: " << max_depth << endl;
+		return true;
+	  }
 	  roads.push(cur);
 	  is_used[cur.first][cur.second] = true;
-	  cur = make_pair(cur.first+dy[j], cur.second+dx[j]);
+	  cur = make_pair(cur.first+dy[0], cur.second+dx[0]);
+	  dir = 1;
+	  max_depth = max(max_depth, int(roads.size()));
 	}
-	if (j == 0) top = roads.top();
-	++j;
-	cur = make_pair(top.first+dy[j], top.second+dx[j]);
-	if (j == 3) { j = 0; roads.pop(); }
+	if (dir == 1) top = roads.top();
+	cur = make_pair(top.first+dy[dir], top.second+dx[dir]);
+	++dir;
+	if (dir == 4) { dir = 1; roads.pop(); }
   }
+  cout << "max depth: " << max_depth << endl;
 
   return false;
 }
