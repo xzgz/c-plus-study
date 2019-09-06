@@ -3,6 +3,8 @@
 using namespace std;
 
 /*
+题目：refer to: https://www.nowcoder.com/discuss/242989?type=all&order=time&pos=&page=1
+代码：refer to: https://www.nowcoder.com/discuss/241487?type=post&order=time&pos=&page=1
 产品经理小梅喜欢和他的男朋友小白一块玩扑克游戏。每一局，小梅抽取N张扑克牌，
 自左向右依次排列在桌面上；小白也抽取M（8>=N>=M>=1）张扑克牌，自左向右依次
 排列在桌面上。小梅需要进行N个回合，使用手中的扑克牌，组成一个新的扑克牌的
