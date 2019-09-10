@@ -2,6 +2,39 @@
 
 using namespace std;
 
+/*
+ * 现在有一个矩阵，元素由'.'和'X'构成。'.'踩2次就碎了，'X'踩一次就碎了。
+ * 现给定起始(可以是'X')和终止位置，求能否从起始位置到达终止位置，并且终
+ * 止位置恰好被踩碎。
+ * 输入描述：
+ * 第一行，测试组数。对于每一组测试用例，第一行，2个数n,m，表示矩阵的行数
+ * 和列数。接下来n行是矩阵，再接下来2行分别是起点坐标和终点坐标(坐标从1开始)。
+ * 示例输入：
+2
+4 6
+X...XX
+...XX.
+.X..X.
+......
+1 6
+2 2
+9 47
+....X.X.X.X...X..X.....X..X..X..X....X.X...X..X
+XX..X...X.........X...X...X..X.XX......X...X...
+..XX...X.......X.....X.....X.XX..X.....X..XX...
+.X...XX....X...X.......X.X...X......X.X.X......
+X......X..X.XXX....X...X.X.XX..X.......X....X.X
+....XX.X...X.XXX.X..XX.XXX...XXX..XX.X.X.XX..XX
+.........X...X.XXXX...XX.XX....XX..X...X....X..
+.............X....XXXX....X.X...XX.XX.X.X..X...
+.X......X.....X......X......X.X.X..X.......XXX.
+2 34
+7 30
+ * 示例输出：
+YES
+NO
+ */
+
 bool IsCoordValid(const int px, const int py, const int bx, const int by) {
   if (0 <= px && px < bx && 0 <= py && py < by) return true;
   else return false;
@@ -131,8 +164,8 @@ int main() {
     end.first = y2 - 1;
     end.second = x2 - 1;
 
-//	bool is_there_passageway = IsTherePassagewayBFS(mat, n, m, start, end);
-	bool is_there_passageway = IsTherePassagewayDFS(mat, n, m, start, end);
+	bool is_there_passageway = IsTherePassagewayBFS(mat, n, m, start, end);
+//	bool is_there_passageway = IsTherePassagewayDFS(mat, n, m, start, end);
     if (is_there_passageway) result[i] = "YES";
     else result[i] = "NO";
   }

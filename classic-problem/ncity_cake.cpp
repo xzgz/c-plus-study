@@ -23,7 +23,6 @@ using namespace std;
  * 输出说明：
  * 行走路线为1->3->4
  */
-
 struct Meta {
   int t;
   int q;

@@ -16,10 +16,7 @@ void TestFunPtr() {
 }
 
 int main() {
-//  TestFunPtr();
-  int a, b;
-  a = 5;
-  while (a--) cout << a << endl;
+  TestFunPtr();
 
   return 0;
 }
