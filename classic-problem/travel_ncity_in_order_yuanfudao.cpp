@@ -8,7 +8,7 @@ using namespace std;
  * 并且规定了一些特定城市的访问顺序，其他城市的访问顺序不做限制，并且每个
  * 城市的访问次数也不作限制，求能否从起始城市走到目标城市。
  */
-bool dfs(int start, int end, vector<vector<int> >& road, vector<bool> visited,
+bool dfs(int start, int end, vector<vector<int> >& road, vector<bool>& visited,
 		 unordered_map<int, int>& order, int& cur_order) {
   for (int i = 0; i < road.size(); ++i) {
 	if (!visited[i] && road[start][i] && order[i] <= cur_order) {
