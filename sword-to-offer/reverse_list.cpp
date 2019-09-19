@@ -3,29 +3,32 @@
 using namespace std;
 
 struct ListNode {
-  ListNode(int data, ListNode *node = NULL) : data(data), next(node) {}
+  ListNode(int data, ListNode *node = NULL)
+          : data(data), next(node) {}
   int data;
   ListNode *next;
 };
 
-ListNode *ReverseList(ListNode *head) {
-  if (head == NULL || head->next == NULL) return head;
-  ListNode *next = head->next;
-  head->next = NULL;
+ListNode *ReverseList(ListNode *pHead) {
+  if (pHead == NULL || pHead->next == NULL) return pHead;
+  ListNode *next = pHead->next;
+  pHead->next = NULL;
   ListNode *new_head = ReverseList(next);
-  next->next = head;
+  next->next = pHead;
 
   return new_head;
 }
 
-ListNode *ReverseList2(ListNode *head) {
+ListNode *ReverseList2(ListNode *pHead) {
   ListNode *new_list = NULL;
-  while (head != NULL) {
-	ListNode *next = head->next;
-	head->next = new_list;
-	new_list = head;
-	head = next;
+  while (pHead != NULL) {
+	ListNode *next = pHead->next;
+    pHead->next = new_list;
+	new_list = pHead;
+    pHead = next;
   }
+
+  return new_list;
 }
 
 void OutputList(ListNode *head) {

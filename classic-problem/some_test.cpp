@@ -39,28 +39,30 @@ void TestFunPtr() {
 }
 
 int main() {
-  TestFunPtr();
-  vector<int> prices = { 2, 5, 1, 2, 0, 5 };
-  int max_p = maxProfit(prices);
-  cout << max_p << endl;
+  string str;
+  getline(cin, str);
 
-  map<float, int> m;
-  m[2.1] = 3;
-  m[4] = 8;
-  m[3.8] = 10;
-  m.insert(pair<float, int>(1.99, 12));
-//  m[1] = 12;
-  auto it = m.begin();
-  for (; it != m.end(); ++it) {
-    cout << it->first << " " << it->second << endl;
+  vector<int> array;
+  int s, e;
+  for (int i = 0; i < str.size(); ++i) {
+    if ('0' <= str[i] && str[i] <= '9') {
+      s = i;
+      e = i;
+      for (int j = s; j < str.size(); ++j) {
+        if (str[j] < '0' || str[j] > '9') {
+          e = j;
+          break;
+        }
+      }
+      if (s != e) array.push_back(stoi(str.substr(s, e-s)));
+      i = e;
+    }
   }
 
-  cout << "**********\n";
-  int i = 0;
-  int *p;
-  if (p == NULL) cout << "YES\n";
-  else cout << "NO\n";
-  cout << p;
+  string aa = str.substr(1, 0);
+  cout << str;
+//  cout << str.substr(1, 0);
+  stoi(str.substr(1, 0));
 
   return 0;
 }
