@@ -1,4 +1,5 @@
 #include <queue>
+#include <stddef.h>
 
 using namespace std;
 
@@ -30,11 +31,14 @@ string int2str(int _x) {
 
 struct BiTNode {
   int value;
+  BiTNode *parent;
   BiTNode *lchild;
   BiTNode *rchild;
   int pos;
   BiTNode(int _value = 0, int _pos = 0, BiTNode *_lchild = nullptr, BiTNode *_rchild = nullptr) :
           value(_value), lchild(_lchild), rchild(_rchild), pos(_pos) {}
+  BiTNode(int value, BiTNode *parent, BiTNode *lchild, BiTNode *rchild)
+		  : value(value), pos(0), parent(parent), lchild(lchild), rchild(rchild) {}
 };
 
 class binaryTree {

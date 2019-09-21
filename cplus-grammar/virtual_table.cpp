@@ -29,7 +29,6 @@ struct Base {
   int x3;
 };
 
-
 typedef void(*Fun)();
 typedef void(Base::*BaseFun)();
 

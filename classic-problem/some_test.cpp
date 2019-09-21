@@ -1,4 +1,5 @@
 #include <bits/stdc++.h>
+#include "include/utils.h"
 
 using namespace std;
 
@@ -42,27 +43,15 @@ int main() {
   string str;
   getline(cin, str);
 
-  vector<int> array;
-  int s, e;
-  for (int i = 0; i < str.size(); ++i) {
-    if ('0' <= str[i] && str[i] <= '9') {
-      s = i;
-      e = i;
-      for (int j = s; j < str.size(); ++j) {
-        if (str[j] < '0' || str[j] > '9') {
-          e = j;
-          break;
-        }
-      }
-      if (s != e) array.push_back(stoi(str.substr(s, e-s)));
-      i = e;
-    }
-  }
+  vector<int> arr;
+  String2IntArray(arr, str);
+  for (int n : arr) cout << n << " ";
+  cout << endl;
 
-  string aa = str.substr(1, 0);
-  cout << str;
-//  cout << str.substr(1, 0);
-  stoi(str.substr(1, 0));
+  arr.clear();
+  String2IntArray2(arr, str);
+  for (int n : arr) cout << n << " ";
+  cout << endl;
 
   return 0;
 }
