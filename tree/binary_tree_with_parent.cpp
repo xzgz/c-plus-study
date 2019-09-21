@@ -2,6 +2,8 @@
 
 using namespace std;
 
+// refer to: https://blog.csdn.net/hh66__66hh/article/details/82939450
+
 struct BiTNode {
   int value;
   BiTNode *parent;
