@@ -83,7 +83,7 @@ BiTNode *ConstructTree() {
   root->rchild = node2;
   node7->rchild = node9;
   node2->lchild = node1;
-  node1->rchild = node5;
+  node2->rchild = node5;
   node5->lchild = node6;
 
   return root;
