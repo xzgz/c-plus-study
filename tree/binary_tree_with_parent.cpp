@@ -3,6 +3,7 @@
 using namespace std;
 
 // refer to: https://blog.csdn.net/hh66__66hh/article/details/82939450
+// refer to: https://blog.csdn.net/qq_39119348/article/details/100847674
 
 struct BiTNode {
   int value;
