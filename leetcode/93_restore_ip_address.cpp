@@ -3,6 +3,7 @@
 using namespace std;
 
 /*
+refer to: https://www.cnblogs.com/grandyang/p/4305572.html
 给定一个只包含数字的字符串，复原它并返回所有可能的 IP 地址格式。
 
 示例:
@@ -28,6 +29,7 @@ void helper(string s, int n, string out, vector<string> *res) {
 
 vector<string> restoreIpAddresses(string& s) {
   vector<string> res;
+  if (s.size() > 12) return res;
   helper(s, 0, "", &res);
   return res;
 }
