@@ -11,7 +11,7 @@ class A {
   virtual void f1(int a) { cout << "A::virtual_f1(int)\n"; }
   virtual void f1(int a, int b) { cout << "A::virtual_f1(int, int)\n"; }
 //  virtual void f2() = 0;
-  virtual void f2() { cout << "A::virtual_f2(int)\n"; }
+  virtual void f2() { cout << "A::virtual_f2()\n"; }
 
   void f3(int a) { cout << "A::f3(int)\n"; }
   void f3(int a, int b) { cout << "A::f3(int, int)\n"; }
@@ -21,10 +21,10 @@ class A {
 
 class B : public A {
  public:
-  B() {}
+//  B() {}
   ~B() {}
   virtual void f1() { cout << "B::virtual_f1()\n"; }
-  virtual void f1(int a, int b) { cout << "B::virtual_f1(int, int)\n"; }
+  void f1(int a, int b) { cout << "B::virtual_f1(int, int)\n"; }
   void f2() { cout << "B::virtual_f2()\n"; }  // f2 is a virtual function no matter use "virtual" or not
 
   void f3(int, int b, int c) {
@@ -37,27 +37,14 @@ class B : public A {
 //    this->f3(0, 0);  // can be compiled only when there are no f3 in class B
     this->f3(0, 0, 0);
   }
-//  static int a = 5;  // error: ISO C++ forbids in-class initialization of non-const static member ‘B::a’
-  static int a;
-  const static int b = 1;
 };
-
-int B::a = 3;
 
 int main() {
   A *poa;
   B *pob;
   A oa;
   B ob;
-//  A oa();  // error: assignment of function ‘A oa()’
-//  A oa(0);  // can be compiled
-//  A oa = A();  // the same as "A oa;"
-//  B ob = B();  // the same as "B ob;"
 
-//  int B::a = 2;  // error: qualified-id in declaration before ‘=’ token
-  cout << ob.a << endl;
-  cout << B::a << endl;
-  cout << B::b << endl;
   poa = new B();
 //  poa = new B;  // the same as "poa = new B();"
   poa->f1();
@@ -102,4 +89,3 @@ int main() {
   delete poa;
   return 0;
 }
-
