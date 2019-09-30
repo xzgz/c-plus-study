@@ -24,7 +24,6 @@ SingleLinkNode *DeleteLastkNode(SingleLinkNode *head, int k) {
         behind = ahead;
         ahead = ahead->next;
       }
-      behind->val = ahead->val;
       behind->next = nullptr;
       delete ahead;
       ahead = nullptr;

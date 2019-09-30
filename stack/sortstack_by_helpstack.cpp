@@ -12,7 +12,7 @@
 using namespace std;
 
 template <typename T>
-void SortStackByHelpStack(stack<T> &st)
+void SortStackByHelpStack(stack<T>& st)
 {
   stack<T> help;
   while (!st.empty()) {
