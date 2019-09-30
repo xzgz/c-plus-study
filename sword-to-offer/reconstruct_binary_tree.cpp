@@ -52,11 +52,13 @@ TreeNode *ReconstructFromInPost(vector<int>& post, int postr, int postl, int inr
   int right_tree_size = inr - in_index;
   root->right = ReconstructFromInPost(post, postr-1, postr-right_tree_size, inr);
   root->left = ReconstructFromInPost(post, postr-right_tree_size-1, postl, inr-right_tree_size-1);
+
+  return root;
 }
 
 TreeNode *ReconstructFromInPost(vector<int>& vin, vector<int>& post) {
   for (int i = 0; i < vin.size(); ++i) index_of_inorder[vin[i]] = i;
-  ReconstructFromInPost(post, post.size()-1, 0, post.size()-1);
+  return ReconstructFromInPost(post, post.size()-1, 0, post.size()-1);
 }
 
 void SearchPreOrder(TreeNode *root) {

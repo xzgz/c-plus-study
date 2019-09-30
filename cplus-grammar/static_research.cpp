@@ -43,4 +43,10 @@ int main() {
   cout << A::a << endl;
   cout << A::b << endl;
   cout << A::c << endl;
+
+  A oa1, oa2;
+  oa2.a = 19;
+  oa1.a = 9;
+  cout << oa1.a << endl;
+  cout << oa2.a << endl;
 }

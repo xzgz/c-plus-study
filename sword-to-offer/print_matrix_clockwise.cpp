@@ -27,8 +27,9 @@ vector<int> printMatrix(vector<vector<int> > matrix) {
 	  if (end_x > start) {
 		for (int i = end_x-1; i >= start; --i) result.push_back(matrix[end_y][i]);
 
-		if (end_y > start+1) {}
-		for (int i = end_y-1; i >= start+1; --i) result.push_back(matrix[i][start]);
+		if (end_y > start+1) {
+		  for (int i = end_y-1; i >= start+1; --i) result.push_back(matrix[i][start]);
+		}
 	  }
 	}
 

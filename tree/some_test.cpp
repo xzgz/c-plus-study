@@ -53,5 +53,10 @@ int main() {
   for (int n : arr) cout << n << " ";
   cout << endl;
 
+  int *p1 = nullptr;
+  int *p2 = NULL;
+  if (p1 == p2) cout << "p1 == p2\n";
+  else cout << "p1 != p2\n";
+
   return 0;
 }
