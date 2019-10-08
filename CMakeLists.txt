@@ -66,7 +66,7 @@ list(APPEND PROJECT_LINK_LIBS c_plus_utils)
 #add_subdirectory(boost-ptr)
 #add_subdirectory(boost-thread)
 
-#add_subdirectory(cplus-grammar)
+add_subdirectory(cplus-grammar)
 #add_subdirectory(array)
 #add_subdirectory(previous-code)
 #add_subdirectory(stack)

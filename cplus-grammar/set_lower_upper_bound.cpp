@@ -3,8 +3,12 @@
 
 using namespace std;
 
-int main ()
-{
+class A {
+ public:
+  int a = 10;
+};
+
+int main () {
   std::set<int> myset;
   std::set<int>::iterator itlow, itup;
 
@@ -24,6 +28,23 @@ int main ()
     std::cout << ' ' << *it;
   }
   std::cout << '\n';
+
+//  A a;
+//  int aa = (&a)->a;
+//  int *pa = &a.a;
+//  cout << a.a << endl;
+//  cout << aa << endl;
+//  cout << *pa << endl;
+//  *pa = 20;
+//  cout << a.a << endl;
+//  cout << aa << endl;
+//  cout << *pa << endl;
+
+  A *pa = new A[3];
+  A **ppa = &pa;
+  cout << (*ppa)[0].a << endl;
+  cout << (*ppa)[1].a << endl;
+  cout << (*ppa)[2].a << endl;
 
   return 0;
 }
