@@ -1,8 +1,7 @@
 #include <stdio.h>
-#include <iostream>
+#include <sys/time.h>
 
-int main()
-{
+int main() {
   char ch1;
   char ch2;
 
@@ -11,5 +10,3 @@ int main()
   printf("%d  %d", ch1, ch2);
   return 0;
 }
-
-
