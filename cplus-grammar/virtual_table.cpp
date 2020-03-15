@@ -35,20 +35,27 @@ typedef void(Base::*BaseFun)();
 int main()
 {
   Base b;
+  Base c;
   Fun f = (Fun)*((long*)*(long*)(&b) + 0);
   Fun g = (Fun)*((long*)*(long*)(&b) + 1);
   Fun h = (Fun)*((long*)*(long*)(&b) + 2);
-  BaseFun a = &Base::a;
+  BaseFun base_a = &Base::a;
+  f();
+  g();
+  h();
+  (b.*(base_a))();
+  (c.*base_a)();
+
   cout << "b bytes: " << sizeof(b) << endl;
   cout << "&b bytes: " << sizeof(&b) << endl;
   cout << "long bytes: " << sizeof(long) << endl;
   cout << "Base bytes: " << sizeof(Base) << endl;
-  cout << "a bytes: " << sizeof(a) << endl;
+  cout << "Base::a bytes: " << sizeof(base_a) << endl;
   cout << "BaseFun bytes: " << sizeof(BaseFun) << endl;
   cout << "Fun bytes: " << sizeof(Fun) << endl;
   cout << "int bytes: " << sizeof(int) << endl;
-  char buf [32] = {0};
-  sprintf(buf , "%u", a);
+  char buf[32] = { 0 };
+  sprintf(buf, "%u", base_a);
   int addr_a = atoi(buf);
 //  char *addr_a = buf;
 
@@ -83,7 +90,6 @@ int main()
   cout << "the 2th 8 bytes in virtual table address in long pointer format: " << (void *)*((long *)*(long *)&b + 1) << endl;
   cout << "the 3th 8 bytes in virtual table address in long pointer format: " << (long *)*((long *)*(long *)&b + 2) << endl;
 
-  Base c;
   cout << "c's address: " << (long)&c << endl;
   cout << "virtual table address: " << *(long *)&c << endl;
   cout << "the 1th 8 bytes in virtual table address: " << *((long *)*(long *)&c + 0) << endl;
@@ -95,12 +101,4 @@ int main()
   cout << "the 1th 8 bytes in b: " << *((long *)&c + 0) << endl;
   cout << "the 2th 8 bytes in b: " << *((long *)&c + 1) << endl;
   cout << "the 3th 8 bytes in b: " << *((long *)&c + 2) << endl;
-
-  f();
-  g();
-  h();
-  (b.*a)();
-  (c.*a)();
 }
-
-

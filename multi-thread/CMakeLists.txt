@@ -5,7 +5,6 @@ get_filename_component(directory_name ${CMAKE_CURRENT_SOURCE_DIR} NAME_WE)
 # build each source file independently
 foreach(source ${src})
     get_filename_component(filename ${source} NAME_WE)
-    #    set(target_name "${DIR_NAME}_${name}")
     set(executable_name ${directory_name}_${filename})
     add_executable(${executable_name} ${source})
     target_link_libraries(${executable_name} ${PROJECT_LINK_LIBS} ${Boost_LINKER_LIBS})
