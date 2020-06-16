@@ -6,21 +6,17 @@ struct Base {
  public:
   virtual void f() {
     cout << "Base::f";
-    cout << "Base::f";
     cout << endl;
   }
   void a() {
-    cout << "Base::a";
     cout << "Base::a";
     cout << endl;
   }
   virtual void g() {
     cout << "Base::g";
-    cout << "Base::g";
     cout << endl;
   }
   virtual void h() {
-    cout << "Base::h";
     cout << "Base::h";
     cout << endl;
   }
@@ -45,6 +41,7 @@ int main()
   h();
   (b.*(base_a))();
   (c.*base_a)();
+//  (c.base_a)();  // error: 'struct Base' has no member named 'base_a'
 
   cout << "b bytes: " << sizeof(b) << endl;
   cout << "&b bytes: " << sizeof(&b) << endl;

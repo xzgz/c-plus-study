@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 2.8)
 
-project(c-plus-study C CXX)
+project(c-plus-study CXX)
 
 include(CheckCXXCompilerFlag)
 CHECK_CXX_COMPILER_FLAG("-std=c++11" COMPILER_SUPPORTS_CXX11)
@@ -78,3 +78,4 @@ add_subdirectory(multi-thread)
 #add_subdirectory(sse-study)
 #add_subdirectory(sword-to-offer)
 #add_subdirectory(leetcode)
+add_subdirectory(smart-pointer)
