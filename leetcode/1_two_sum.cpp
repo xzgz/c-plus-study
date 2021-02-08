@@ -1,4 +1,5 @@
 //#include <bits/stdc++.h>
+#include <unordered_map>
 #include <vector>
 #include <iostream>
 
@@ -13,13 +14,13 @@ using namespace std;
 示例 1：
 输入：nums = [2,7,11,15], target = 9
 输出：[0,1]
-解释：因为 nums[0] + nums[1] == 9 ，返回 [0, 1] 。
-示例 2：
+解释：因为 nums[0] + nums[1] == 9 ，返回 [0, 1]。
 
+示例 2：
 输入：nums = [3,2,4], target = 6
 输出：[1,2]
-示例 3：
 
+示例 3：
 输入：nums = [3,3], target = 6
 输出：[0,1]
 
@@ -29,25 +30,33 @@ using namespace std;
 -109 <= target <= 109
 只会存在一个有效答案
 
+来源：力扣（LeetCode）
+链接：https://leetcode-cn.com/problems/two-sum
+著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  */
-bool Find(int target, const vector<vector<int> >& array) {
-    int rows = array.size();
-    int cols = rows ? array[0].size() : 0;
-    int r = 0, c = cols - 1;
-    while (r <= rows - 1 && c >= 0) {
-        if (target == array[r][c]) return true;
-        else if (target > array[r][c]) ++r;
-        else --c;
+vector<int> twoSum(vector<int>& nums, int target) {
+    unordered_map<int, int> val_idx_map;
+    vector<int> result(2);
+    for (int i = 0; i < nums.size(); ++i) {
+        if (val_idx_map.count(target - nums[i]) == 0) {
+            val_idx_map[nums[i]] = i;
+        } else {
+            result[0] = i;
+            result[1] = val_idx_map[target - nums[i]];
+        }
     }
-
-    return false;
+    return result;
 }
 
 int main() {
-    vector<vector<int> > array = { { 1, 2, 8, 9 }, { 2, 4, 9, 12 }, { 4, 7, 10, 13 }, { 6, 8, 11, 15 } };
-    int target = 7;
-    bool flag = Find(target, array);
-    cout << flag << endl;
+//    vector<int> nums = { 2, 7, 11, 15 };
+//    int target = 9;
+//    vector<int> nums = { 3, 2, 4 };
+    vector<int> nums = { 3, 3 };
+    int target = 6;
+
+    vector<int> result = twoSum(nums, target);
+    for (int val : result) cout << val << '\t';
 
     return 0;
 }
