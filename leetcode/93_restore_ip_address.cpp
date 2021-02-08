@@ -14,6 +14,7 @@ refer to: https://www.cnblogs.com/grandyang/p/4305572.html
 来源：力扣（LeetCode）
 链接：https://leetcode-cn.com/problems/restore-ip-addresses
  */
+
 void helper(string s, int n, string out, vector<string> *res) {
   if (n == 4) {
     if (s.empty()) res->push_back(out);

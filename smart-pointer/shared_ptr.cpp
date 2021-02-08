@@ -95,12 +95,13 @@ int main() {
         string c;
     };
     shared_ptr<TestSharePtr> test_ptr;
-    TestSharePtr *share_ptr = new TestSharePtr();
-    test_ptr.reset(share_ptr);
+//    TestSharePtr *share_ptr = new TestSharePtr();
+//    test_ptr.reset(share_ptr);
 //    shared_ptr<TestSharePtr> test_ptr = make_shared<TestSharePtr>();
 //    shared_ptr<string> test_ptr = make_shared<string>();
 //    TestSharePtr *test_ptr;
     cout << "test_ptr: " << test_ptr << endl;
+    cout << "0: " << 0 << endl;
     cout << "NULL: " << NULL << endl;
     if (test_ptr == 0) {
         cout << "test_ptr == 0" << endl;
@@ -110,5 +111,8 @@ int main() {
     }
     if (test_ptr == nullptr) {
         cout << "test_ptr == nullptr" << endl;
+    }
+    if (0 == nullptr) {
+        cout << "0 == nullptr" << endl;
     }
 }
