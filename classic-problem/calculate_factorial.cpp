@@ -1,4 +1,4 @@
-#include "print_vector.h"
+#include "common_function.h"
 #include <iostream>
 #include <vector>
 #include <chrono>
@@ -7,33 +7,10 @@
 using namespace std;
 using namespace chrono;
 
-vector<int> GenerateRandom1DIntArray(unsigned int seed, int min, int max, int length) {
-    vector<int> array(length);
-    static default_random_engine e(seed);
-    static uniform_int_distribution<int> u(min, max);
-//    default_random_engine e(seed);
-//    uniform_int_distribution<int> u(min, max);
-    for (int i = 0; i < length; ++i) {
-        array[i] = u(e);
-    }
-    return array;
-}
 
-vector<int> GenerateRandom1DIntArray(int min, int max, int length) {
-    vector<int> array(length);
-    std::random_device rd;
-//    static default_random_engine e(rd());
-//    static uniform_int_distribution<int> u(min, max);
-    default_random_engine e(rd());
-    uniform_int_distribution<int> u(min, max);
-    for (int i = 0; i < length; ++i) {
-        array[i] = u(e);
-    }
-    return array;
-}
 
 /*
- * è®¡ç®—ä¸€ä¸ªéžè´Ÿæ•´æ•°Nçš„é˜¶ä¹˜ã€‚
+ * ¼ÆËãÒ»¸ö·Ç¸ºÕûÊýNµÄ½×³Ë¡£
  */
 unsigned long long int Factorial(int N) {
     if (N < 0) return 0;
@@ -46,7 +23,7 @@ unsigned long long int Factorial(int N) {
 }
 
 /*
- * è®¡ç®— 0! + 1! + 2! + 3! + ... + N!ã€‚
+ * ¼ÆËã 0! + 1! + 2! + 3! + ... + N!¡£
  */
 unsigned long long int AccumulateFactorial1(int N) {
     if (N < 0) return 0;
@@ -72,30 +49,56 @@ unsigned long long int AccumulateFactorial2(int N) {
 
 int main() {
     int N = 21;
-    unsigned long long result = 0;
-    time_point<high_resolution_clock> start = high_resolution_clock::now();
-
-    result = AccumulateFactorial2(N);
-
-    time_point<high_resolution_clock> end = high_resolution_clock::now();
-    long int duration = duration_cast<microseconds>(end - start).count();
-    double ms = double(duration) / 1000;
-    cout << "result=" << result << endl
-         << "used " << ms << " ms" << endl;
-
-    vector<int> array;
     std::random_device rd;
     unsigned int seed = rd();
-//    array = GenerateRandom1DIntArray(seed, 1, 21, 20);
-    array = GenerateRandom1DIntArray(1, 21, 20);
-    Print1DVector<int>(array);
-//    array = GenerateRandom1DIntArray(seed, 1, 21, 20);
-    array = GenerateRandom1DIntArray(1, 21, 20);
-    Print1DVector<int>(array);
-//    vector<int> array(20);
-//    default_random_engine e;
-//    uniform_int_distribution<int> u(1, 21);
-//    for (int i = 0; i < 20; ++i) {
-//        array[i] = u(e);
+    vector<int> arr = GenerateRandom1DIntegerArray<int>(seed, 0, 21, 20);
+    unsigned long long result = 0;
+
+    for (int val : arr) {
+        result = Factorial(val);
+        cout << "N: " << val << " N!: " << result << endl;
+    }
+    time_point<high_resolution_clock> start;
+    time_point<high_resolution_clock> end;
+    long int duration;
+    double ms;
+    int length = 100000;
+    arr = GenerateRandom1DIntegerArray<int>(seed, 0, 21, length);
+    vector<unsigned long long> res1(length);
+    vector<unsigned long long> res2(length);
+
+    start = high_resolution_clock::now();
+    for (int i = 0; i < arr.size(); ++i) {
+        result = AccumulateFactorial1(arr[i]);
+        res1[i] = result;
+    }
+    end = high_resolution_clock::now();
+    duration = duration_cast<microseconds>(end - start).count();
+    ms = double(duration) / 1000;
+    cout << "AccumulateFactorial1 used " << ms << " ms" << endl;
+
+    start = high_resolution_clock::now();
+    for (int i = 0; i < arr.size(); ++i) {
+        result = AccumulateFactorial2(arr[i]);
+        res2[i] = result;
+    }
+    end = high_resolution_clock::now();
+    duration = duration_cast<microseconds>(end - start).count();
+    ms = double(duration) / 1000;
+    cout << "AccumulateFactorial1 used " << ms << " ms" << endl;
+
+    if (res1 == res2) {
+        cout << "res1 == res2";
+    }
+
+//    for (int i = 0; i < res1.size(); ++i) {
+//        cout << "res1[" << i << "]=" << res1[i] << "\tres2[" << i << "]=" << res2[i] << endl;
 //    }
+
+//    unsigned int seed = time(0);
+
+//    array = GenerateRandom1DRealArray<type>(seed, -30, 21, 20);
+//    Print1DVector<type>(array);
+//    array = GenerateRandom1DRealArray<type>(seed, -90, 21, 20);
+//    Print1DVector<type>(array);
 }
