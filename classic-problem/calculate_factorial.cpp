@@ -7,8 +7,6 @@
 using namespace std;
 using namespace chrono;
 
-
-
 /*
  * 计算一个非负整数N的阶乘。
  */
@@ -56,7 +54,7 @@ int main() {
 
     for (int val : arr) {
         result = Factorial(val);
-        cout << "N: " << val << " N!: " << result << endl;
+        cout << "N: " << val << "\tN!: " << result << endl;
     }
     time_point<high_resolution_clock> start;
     time_point<high_resolution_clock> end;
@@ -68,9 +66,12 @@ int main() {
     vector<unsigned long long> res2(length);
 
     start = high_resolution_clock::now();
-    for (int i = 0; i < arr.size(); ++i) {
-        result = AccumulateFactorial1(arr[i]);
-        res1[i] = result;
+    {
+        TimerClock tc(true);
+        for (int i = 0; i < arr.size(); ++i) {
+            result = AccumulateFactorial1(arr[i]);
+            res1[i] = result;
+        }
     }
     end = high_resolution_clock::now();
     duration = duration_cast<microseconds>(end - start).count();
@@ -90,15 +91,5 @@ int main() {
     if (res1 == res2) {
         cout << "res1 == res2";
     }
-
-//    for (int i = 0; i < res1.size(); ++i) {
-//        cout << "res1[" << i << "]=" << res1[i] << "\tres2[" << i << "]=" << res2[i] << endl;
-//    }
-
-//    unsigned int seed = time(0);
-
-//    array = GenerateRandom1DRealArray<type>(seed, -30, 21, 20);
-//    Print1DVector<type>(array);
-//    array = GenerateRandom1DRealArray<type>(seed, -90, 21, 20);
-//    Print1DVector<type>(array);
+    PrintNowTime();
 }

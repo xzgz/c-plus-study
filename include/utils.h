@@ -1,11 +1,11 @@
 #ifndef C_PLUS_STUDY_INCLUDE_UTILS_H
 #define C_PLUS_STUDY_INCLUDE_UTILS_H
 
-#include <bits/stdc++.h>
+//#include <bits/stdc++.h>
+#include <vector>
+#include <string>
 
-using namespace std;
-
-void String2IntArray(vector<int>& array, string& str);
-void String2IntArray2(vector<int>& array, string str);
+void String2IntArray(std::vector<int>& array, std::string& str);
+void String2IntArray2(std::vector<int>& array, std::string str);
 
 #endif

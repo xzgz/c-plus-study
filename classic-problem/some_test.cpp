@@ -1,5 +1,8 @@
-#include <bits/stdc++.h>
+//#include <bits/stdc++.h>
 #include "include/utils.h"
+#include "common_function.h"
+#include <iostream>
+#include <vector>
 
 using namespace std;
 
@@ -40,17 +43,47 @@ void TestFunPtr() {
 }
 
 int main() {
-    string str;
-    getline(cin, str);
+//    string str;
+//    getline(cin, str);
+//
+//    vector<int> arr;
+//    String2IntArray(arr, str);
+//    for (int n : arr) cout << n << " ";
+//    cout << endl;
+//
+//    arr.clear();
+//    String2IntArray2(arr, str);
+//    for (int n : arr) cout << n << " ";
+//    cout << endl;
 
+    cout << "RAND_MAX: " << RAND_MAX << endl;
+    unsigned int seed = time(nullptr);
+
+    int length = 10000000;
+    int number_kind = 27;
+    int base_number = 22;
+    vector<int> count_array(number_kind + 1);
     vector<int> arr;
-    String2IntArray(arr, str);
-    for (int n : arr) cout << n << " ";
-    cout << endl;
+//    arr = GenerateRandom1DIntegerArrayUseRandSideClose(base_number, base_number + number_kind, length);
+//    arr = GenerateRandom1DIntegerArrayUseRandSideOpen(base_number, base_number + number_kind, length);
+//    arr = GenerateRandom1DIntegerArrayUseRandLeftClose(base_number, base_number + number_kind, length);
+//    arr = GenerateRandom1DIntegerArrayUseRandRightClose(base_number, base_number + number_kind, length);
+    arr = GenerateRandom1DIntegerArray<int>(base_number, base_number + number_kind, length);
 
-    arr.clear();
-    String2IntArray2(arr, str);
-    for (int n : arr) cout << n << " ";
+    for (int val : count_array) {
+        cout << val << '\t';
+    }
+    cout << endl;
+    cout << "length/number_kind: " << length / number_kind << endl;
+    cout << "length/(number_kind + 1): " << length / (number_kind + 1) << endl;
+    cout << "length/(number_kind - 1): " << length / (number_kind - 1) << endl;
+
+    for (int val : arr) {
+        count_array[val - base_number]++;
+    }
+    for (int val : count_array) {
+        cout << val << '\t';
+    }
     cout << endl;
 
     return 0;
