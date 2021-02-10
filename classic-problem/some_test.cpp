@@ -3,14 +3,9 @@
 #include "common_function.h"
 #include <iostream>
 #include <vector>
+#include <iomanip>
 
 using namespace std;
-
-typedef void (*Ptf)();
-
-void print() {
-    cout << "print\n";
-}
 
 int maxProfit(vector<int>& prices) {
     if(prices.empty()) return 0;
@@ -35,6 +30,12 @@ int maxProfit(vector<int>& prices) {
     return res;
 }
 
+typedef void (*Ptf)();
+
+void print() {
+    cout << "print\n";
+}
+
 void TestFunPtr() {
     Ptf fun1 = &print;
     Ptf fun2 = print;
@@ -42,22 +43,32 @@ void TestFunPtr() {
     fun2();
 }
 
-int main() {
-//    string str;
-//    getline(cin, str);
-//
-//    vector<int> arr;
-//    String2IntArray(arr, str);
-//    for (int n : arr) cout << n << " ";
-//    cout << endl;
-//
-//    arr.clear();
-//    String2IntArray2(arr, str);
-//    for (int n : arr) cout << n << " ";
-//    cout << endl;
+void TestInputStringToArray() {
+    string str;
+    getline(cin, str);
 
+    vector<int> arr;
+    String2IntArray(arr, str);
+    for (int n : arr) cout << n << " ";
+    cout << endl;
+
+    arr.clear();
+    String2IntArray2(arr, str);
+    for (int n : arr) cout << n << " ";
+    cout << endl;
+}
+
+void TestGenerateRandomNumber() {
     cout << "RAND_MAX: " << RAND_MAX << endl;
     unsigned int seed = time(nullptr);
+
+    vector<int> test_array;
+    test_array = GenerateRandom1DIntegerArrayUseRandSideClose(3, 15, 20);
+    Print1DVector(test_array);
+    SleepCrossPlatform(2000);
+//    SleepCrossPlatformUseSTL(2000);
+    test_array = GenerateRandom1DIntegerArrayUseRandSideClose(3, 15, 20);
+    Print1DVector(test_array);
 
     int length = 10000000;
     int number_kind = 27;
@@ -65,10 +76,10 @@ int main() {
     vector<int> count_array(number_kind + 1);
     vector<int> arr;
 //    arr = GenerateRandom1DIntegerArrayUseRandSideClose(base_number, base_number + number_kind, length);
-//    arr = GenerateRandom1DIntegerArrayUseRandSideOpen(base_number, base_number + number_kind, length);
+    arr = GenerateRandom1DIntegerArrayUseRandSideOpen(base_number, base_number + number_kind, length);
 //    arr = GenerateRandom1DIntegerArrayUseRandLeftClose(base_number, base_number + number_kind, length);
 //    arr = GenerateRandom1DIntegerArrayUseRandRightClose(base_number, base_number + number_kind, length);
-    arr = GenerateRandom1DIntegerArray<int>(base_number, base_number + number_kind, length);
+//    arr = GenerateRandom1DIntegerArray<int>(base_number, base_number + number_kind, length);
 
     for (int val : count_array) {
         cout << val << '\t';
@@ -85,6 +96,30 @@ int main() {
         cout << val << '\t';
     }
     cout << endl;
+}
+
+void TestSetprecision() {
+    float a, b, c;
+    int g, h;
+    a = 3.1;
+    b = 2.9;
+    c = 5.02;
+    g = -3.9;
+    h = 6;
+    cout << a << '\t' << fixed << setprecision(8) << b << '\t' << c
+         << '\t' << g << '\t' << h << endl;
+    cout << 0 % 3 << endl;
+    cout << 2 % 3 << endl;
+    cout << 5 % 3 << endl;
+    cout << 333333337 * 3 % 1000000007 << endl;
+}
+
+int main() {
+    TimerClock tc(true);
+//    TestFunPtr();
+//    TestInputStringToArray();
+//    TestGenerateRandomNumber();
+    TestSetprecision();
 
     return 0;
 }

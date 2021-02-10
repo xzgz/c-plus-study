@@ -20,21 +20,19 @@ void Print1DVector(const vector<dtype>& array) {
     cout << endl;
 }
 
-
 void PrintNowTime() {
     time_t now = time(0);
     tm *ltm = localtime(&now);
 
     cout << "second from year 1970: " << now << endl;
-
-    cout << "year: " << 1900 + ltm->tm_year << endl;
-    cout << "month: "<< 1 + ltm->tm_mon<< endl;
-    cout << "day: "<<  ltm->tm_mday << endl;
-    cout << "hour: "<< ltm->tm_hour << endl;
-    cout << "minute: " << ltm->tm_min << endl;
-    cout << "second: " << ltm->tm_sec << endl;
+    cout << "year.month.day hour:minute:second --> "
+         << 1900 + ltm->tm_year << "."
+         << 1 + ltm->tm_mon << "."
+         << ltm->tm_mday << " "
+         << ltm->tm_hour << ":"
+         << ltm->tm_min << ":"
+         << ltm->tm_sec << endl;
 }
-
 
 TimerClock::TimerClock(bool use_destruct_print_time) {
     use_destruct_print_time_ = use_destruct_print_time;
@@ -427,9 +425,9 @@ void SleepCrossPlatform(unsigned int millisecond) {
 #endif // _WIN32
 }
 
-void SleepCrossPlatformUseSTL(unsigned int millisecond) {
-    this_thread::sleep_for(chrono::milliseconds(millisecond));
-}
+//void SleepCrossPlatformUseSTL(unsigned int millisecond) {
+//    this_thread::sleep_for(chrono::milliseconds(millisecond));
+//}
 
 
 template void Print1DVector(const vector<int>& array);
