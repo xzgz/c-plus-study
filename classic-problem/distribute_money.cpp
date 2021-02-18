@@ -1,6 +1,7 @@
 #include "common_function.h"
 #include <iostream>
 #include <vector>
+#include <random>
 #include <algorithm>
 
 using namespace std;
@@ -26,8 +27,8 @@ vector<int> DistributeMoney(int people_count, int turns, int init_money) {
         for (int j = 0; j < people_count; ++j) {
             do {
 //                give_to = GenerateRandom1DIntegerArray<int>(0, people_count - 1, 1)[0];
-//                give_to = rand() % people_count;
-                give_to = u(e);
+                give_to = rand() % people_count;
+//                give_to = u(e);
 //                cout << give_to << endl;
             } while (give_to == j);
             give_to_arr[j] = give_to;
