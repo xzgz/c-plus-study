@@ -150,8 +150,7 @@ Node *ConstructBinaryTree() {
     n4->right = n9;
     n6->left = n10;
     n6->right = n11;
-//    n5->left = new Node(12);
-//    n5->right = new Node(13);
+
     return n0;
 }
 
