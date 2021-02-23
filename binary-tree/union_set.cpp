@@ -27,10 +27,10 @@ struct User {
     string b;
     string c;
     User() {};
-    User(string a, string b, string c) {
-        a = a;
-        b = b;
-        c = c;
+    User(const string& s0, const string& s1, const string& s2) {
+        a = s0;
+        b = s1;
+        c = s2;
     }
     friend bool operator!=(const User& a, const User& b) {
         return a.a != b.a || a.b != b.b || a.c != b.c;
@@ -154,7 +154,7 @@ void TestMergeUsers() {
     User u2 = User("a2", "b2", "c2");
     User u3 = User("a1", "b3", "c3");
     User u4 = User("a4", "b1", "c4");
-    User u5 = User("a5", "b5", "c5");
+    User u5 = User("a2", "b5", "c1");
     users[0] = u1;
     users[1] = u2;
     users[2] = u3;
