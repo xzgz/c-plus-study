@@ -71,7 +71,7 @@ void BFS(Node *node) {
     while (!q.empty()) {
         Node *cur = q.front();
         q.pop();
-        cout << cur->value << endl;
+        cout << char(cur->value) << endl;
         for (Node *next : cur->nexts) {
             if (s.count(next) == 0) {
                 q.push(next);
@@ -87,7 +87,7 @@ void DFS(Node *node) {
     unordered_set<Node*> set;
     stack.push(node);
     set.insert(node);
-    cout << node->value << endl;
+    cout << char(node->value) << endl;
     while (!stack.empty()) {
         Node *cur = stack.top();
         stack.pop();
@@ -96,7 +96,7 @@ void DFS(Node *node) {
                 stack.push(cur);
                 stack.push(next);
                 set.insert(next);
-                cout << next->value << endl;
+                cout << char(next->value) << endl;
                 break;
             }
         }
@@ -129,14 +129,49 @@ vector<Node*> TopologySort(Graph *graph) {
     return result;
 }
 
-
-
+Graph *GenerateExampleGraph() {
+    vector<vector<int> > matrix = {
+            {7, 'A', 'B'},
+            {7, 'B', 'A'},
+            {5, 'A', 'D'},
+            {5, 'D', 'A'},
+            {8, 'B', 'C'},
+            {8, 'C', 'B'},
+            {7, 'B', 'E'},
+            {7, 'E', 'B'},
+            {5, 'C', 'E'},
+            {5, 'E', 'C'},
+            {9, 'B', 'D'},
+            {9, 'D', 'B'},
+            {15, 'D', 'E'},
+            {15, 'E', 'D'},
+            {6, 'D', 'F'},
+            {6, 'F', 'D'},
+            {8, 'F', 'E'},
+            {8, 'E', 'F'},
+            {11, 'F', 'G'},
+            {11, 'G', 'F'},
+            {9, 'E', 'G'},
+            {9, 'G', 'E'},
+    };
+    return GenerateGraph(matrix);
+}
 
 int main() {
     unordered_map<Node*, int> in_map;
     Node *n = new Node(6);
     in_map[n] = 10;
+    in_map[n]--;
     cout << in_map[n] << endl;
 
-    vector<int> arr;
+    Graph *graph = GenerateExampleGraph();
+    cout << "BFS:" << endl;
+    BFS(graph->nodes.begin()->second);
+    cout << "DFS:" << endl;
+    DFS(graph->nodes.begin()->second);
+    vector<Node*> tr = TopologySort(graph);
+    cout << "TopologySort:" << endl;
+    for (Node *node : tr) {
+        cout << char(node->value) << endl;
+    }
 }

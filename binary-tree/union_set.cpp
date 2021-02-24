@@ -3,7 +3,6 @@
 #include <stack>
 #include <unordered_map>
 #include <unordered_set>
-#include <string>
 
 using namespace std;
 
@@ -44,7 +43,7 @@ namespace std {
     template <>
     class hash<User> {
     public:
-        size_t operator()(const User& u) const {
+        const size_t operator()(const User& u) const {
             size_t h = hash<string>()(u.a + u.b + u.c);
             return h;
         }
@@ -59,13 +58,9 @@ namespace std {
     };
 }
 
+
 template <typename T>
 class UnionSet {
-public:
-    unordered_map<T, Node<T> > nodes;
-    unordered_map<Node<T>, Node<T> > parents;
-    unordered_map<Node<T>, int> map_size;
-
 public:
     UnionSet(vector<T> values) {
         for (T val : values) {
@@ -103,15 +98,8 @@ public:
         if (a_head != b_head) {
             int a_set_size = map_size[a_head];
             int b_set_size = map_size[b_head];
-            Node<T> big = Node<T>(T());
-            Node<T> small = Node<T>(T());
-            if (a_set_size > b_set_size) {
-                big = a_head;
-                small = b_head;
-            } else {
-                big = b_head;
-                small = a_head;
-            }
+            Node<T> big = a_set_size > b_set_size ? a_head : b_head;
+            Node<T> small = big == a_head ? b_head : a_head;
             parents[small] = big;
             map_size[big] = a_set_size + b_set_size;
             map_size.erase(small);
@@ -120,6 +108,11 @@ public:
     int GetSetSize() {
         return map_size.size();
     }
+
+private:
+    unordered_map<T, Node<T> > nodes;
+    unordered_map<Node<T>, Node<T> > parents;
+    unordered_map<Node<T>, int> map_size;
 };
 
 int MergeUsers(vector<User> users) {
@@ -154,7 +147,7 @@ void TestMergeUsers() {
     User u2 = User("a2", "b2", "c2");
     User u3 = User("a1", "b3", "c3");
     User u4 = User("a4", "b1", "c4");
-    User u5 = User("a2", "b5", "c1");
+    User u5 = User("a2", "b5", "c5");
     users[0] = u1;
     users[1] = u2;
     users[2] = u3;
