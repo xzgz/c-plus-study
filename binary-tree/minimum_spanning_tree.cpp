@@ -15,8 +15,8 @@ struct Node {
     int out;
     vector<Node*> nexts;
     vector<Edge*> edges;
-    Node() {}
-    Node(int v) {
+    Node() = default;
+    explicit Node(int v) {
         value = v;
         in = 0;
         out = 0;
@@ -37,42 +37,33 @@ struct Node {
 
 struct Edge {
     int weight;
-    Node& from;
-    Node& to;
-    Edge(const Edge& e) : from(e.from), to(e.to) {
-        weight = e.weight;
-    }
-    Edge(int w, Node& f, Node& t) : from(f), to(t) {
+    Node *from;
+    Node *to;
+    Edge(int w, Node *f, Node *t) {
         weight = w;
+        from = f;
+        to = t;
     }
-//    Node *from;
-//    Node *to;
-//    Edge(int w, Node *f, Node *t) {
-//        weight = w;
-//        from = f;
-//        to = t;
-//    }
     friend bool operator==(const Edge& a, const Edge& b) {
         return a.weight == b.weight && a.from == b.from && a.to == b.to;
     }
     friend bool operator<(const Edge& a, const Edge& b) {
+        bool is_a_smaller_than_b;
         if (a.weight == b.weight) {
-            return a.from.value > b.from.value;
+            if (a.from->value == b.from->value) {
+                is_a_smaller_than_b = a.to->value > b.to->value;
+            } else {
+                is_a_smaller_than_b = a.from->value > b.from->value;
+            }
         } else {
-            return a.weight < b.weight;
+            is_a_smaller_than_b = a.weight < b.weight;
         }
-    }
-    Edge& operator=(Edge&& e) noexcept {
-        weight = e.weight;
-        from = e.from;
-        to = e.to;
-        return *this;
+        return is_a_smaller_than_b;
     }
 };
 
 struct Graph {
     unordered_map<int, Node*> nodes;
-//    unordered_set<Edge> edges;  //error: no match for call to (const std::hash<Edge>) (const Edge&)
     unordered_set<Edge*> edges;
 };
 
@@ -91,8 +82,8 @@ namespace std {
     public:
         size_t operator()(const Edge& edge) const {
             size_t h1 = hash<int>()(edge.weight);
-            size_t h2 = hash<int>()(edge.from.value);
-            size_t h3 = hash<int>()(edge.to.value);
+            size_t h2 = hash<int>()(edge.from->value);
+            size_t h3 = hash<int>()(edge.to->value);
             return h1 ^ (h2 << 1) ^ (h3 << 1);
         }
     };
@@ -153,20 +144,21 @@ auto CmpEdge = [](const Edge& a, const Edge& b) {
     return a.weight > b.weight;
 };
 
-unordered_set<Edge> KruskalMst(Graph *graph) {
+set<Edge> KruskalMst(Graph *graph) {
     UnionFind union_find = UnionFind();
     union_find.MakeSet(graph->nodes);
     priority_queue<Edge, vector<Edge>, decltype(CmpEdge)> pq(CmpEdge);
     for (Edge *edge : graph->edges) {
         pq.push(*edge);
     }
-    unordered_set<Edge> result;
+//    unordered_set<Edge> result;
+    set<Edge> result;
 
     while (!pq.empty()) {
-        const Edge& top = pq.top(); pq.pop();
-        if (!union_find.IsSameSet(&top.from, &top.to)) {
+        Edge top = pq.top(); pq.pop();
+        if (!union_find.IsSameSet(top.from, top.to)) {
             result.insert(top);
-            union_find.Union(&top.from, &top.to);
+            union_find.Union(top.from, top.to);
         }
     }
     return result;
@@ -174,7 +166,7 @@ unordered_set<Edge> KruskalMst(Graph *graph) {
 
 set<Edge> PrimMst(Graph *graph) {
     priority_queue<Edge, vector<Edge>, decltype(CmpEdge)> pq(CmpEdge);
-    unordered_set<const Node*> node_set;
+    unordered_set<Node*> node_set;
     unordered_set<Edge> edge_set;
     set<Edge> result;
     for (auto iter = graph->nodes.begin(); iter != graph->nodes.end(); ++iter) {
@@ -188,11 +180,9 @@ set<Edge> PrimMst(Graph *graph) {
                 }
             }
             while (!pq.empty()) {
-                int size = pq.size();
-                const Edge& edge_ref = pq.top();
-                Edge edge = edge_ref;
+                Edge edge = pq.top();
                 pq.pop();
-                const Node *to_node = &edge.to;
+                Node *to_node = edge.to;
                 if (node_set.count(to_node) == 0) {
                     node_set.insert(to_node);
                     result.insert(edge);
@@ -205,7 +195,7 @@ set<Edge> PrimMst(Graph *graph) {
                 }
             }
         }
-        break;
+//        break;
     }
     return result;
 }
@@ -224,13 +214,10 @@ Graph *GenerateGraph(vector<vector<int> > matrix) {
         }
         Node *from_node = graph->nodes[from];
         Node *to_node = graph->nodes[to];
-        Edge *edge = new Edge(weight, *from_node, *to_node);
+        Edge *edge = new Edge(weight, from_node, to_node);
         from_node->nexts.push_back(to_node);
         from_node->out++;
         to_node->in++;
-        if (from_node->value == 'A') {
-            cout << edge->weight << endl;
-        }
         from_node->edges.push_back(edge);
         graph->edges.insert(edge);
     }
@@ -265,18 +252,18 @@ Graph *GenerateExampleGraph() {
     return GenerateGraph(matrix);
 }
 
-
 int main() {
     Graph *graph = GenerateExampleGraph();
-//    unordered_set<Edge> unordered_mst = KruskalMst(graph);
-//    cout << "KruskalMst:" << endl;
-//    for (auto e : unordered_mst) {
-//        cout << "from " << char(e.from.value) << " to " << char(e.to.value) << " w: " << e.weight << endl;
-//    }
-    set<Edge> ordered_mst = PrimMst(graph);
+    set<Edge> mst_k = KruskalMst(graph);
+    cout << "KruskalMst:" << endl;
+    for (auto e : mst_k) {
+        cout << "from " << char(e.from->value) << " to " << char(e.to->value) << " w: " << e.weight << endl;
+    }
+
+    set<Edge> mst_p = PrimMst(graph);
     cout << "PrimMst:" << endl;
-    for (auto e : ordered_mst) {
-        cout << "from " << char(e.from.value) << " to " << char(e.to.value) << " w: " << e.weight << endl;
+    for (auto e : mst_p) {
+        cout << "from " << char(e.from->value) << " to " << char(e.to->value) << " w: " << e.weight << endl;
     }
 
     return 0;
