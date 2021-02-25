@@ -75,6 +75,118 @@ unordered_map<Node*, int> Dijkstra1(Node *head) {
     return dist_map;
 }
 
+
+struct NodeRecord {
+    Node *node;
+    int dist;
+    NodeRecord(Node *n, int d) {
+        node = n;
+        dist = d;
+    }
+};
+
+class NodeHeap {
+public:
+    NodeHeap(int max_size) {
+        nodes = new Node*[max_size];
+        size = 0;
+    }
+    ~NodeHeap() {
+        delete [] nodes;
+    }
+
+    bool IsEmpty() {
+        return size == 0;
+    }
+    void Heapify(int index, int size) {
+        int left = (index << 1) + 1;
+        while (left < size) {
+            int smallest = left + 1 < size && dist_map[nodes[left + 1]] < dist_map[nodes[left]] ? left + 1 : left;
+            smallest = dist_map[nodes[smallest]] < dist_map[nodes[index]] ? smallest : index;
+            if (smallest == index) break;
+            swap(smallest, index);
+            index = smallest;
+            left = (index << 1) + 1;
+        }
+    }
+    void InsertHeapify(Node *node, int index) {
+        int parent_index = (index - 1) / 2;
+        while (dist_map[nodes[index]] < dist_map[nodes[parent_index]]) {
+            swap(index, parent_index);
+            index = parent_index;
+            parent_index = (index - 1) / 2;
+        }
+    }
+    void AddOrUpdateOrIgnore(Node *node, int dist) {
+        if (in_heap(node)) {
+            dist_map[node] = min(dist_map[node], dist);
+            if (dist < dist_map[node]) {
+                dist_map[node] = dist;
+                InsertHeapify(node, heap_index_map[node]);
+            }
+        }
+        if (!is_entered(node)) {
+            nodes[size] = node;
+            heap_index_map[node] = size;
+            dist_map[node] = dist;
+            InsertHeapify(node, size++);
+        }
+    }
+    NodeRecord *Pop() {
+        NodeRecord *node_record = new NodeRecord(nodes[0], dist_map[nodes[0]]);
+        swap(0, size - 1);
+        heap_index_map[nodes[size - 1]] = -1;
+        dist_map.erase(nodes[size - 1]);
+        nodes[size - 1] = nullptr;
+        Heapify(0, --size);
+        return node_record;
+    }
+
+private:
+    bool is_entered(Node *node) {
+        return heap_index_map.count(node) != 0;
+    }
+    bool in_heap(Node *node) {
+        return is_entered(node) && heap_index_map[node] != -1;
+    }
+    void swap_node(Node*& a, Node*& b) {
+        Node *temp = a;
+        a = b;
+        b = temp;
+    }
+    void swap_int(int& a, int& b) {
+        int temp = a;
+        a = b;
+        b = temp;
+    }
+    void swap(int index1, int index2) {
+        swap_int(heap_index_map[nodes[index1]], heap_index_map[nodes[index2]]);
+        swap_node(nodes[index1], nodes[index2]);
+    }
+
+    Node **nodes;
+    unordered_map<Node*, int> heap_index_map;
+    unordered_map<Node*, int> dist_map;
+    int size;
+};
+
+unordered_map<Node*, int> Dijkstra2(Node *head, int max_heap_size) {
+    NodeHeap *node_heap = new NodeHeap(max_heap_size);
+    node_heap->AddOrUpdateOrIgnore(head, 0);
+    unordered_map<Node*, int> result;
+    while (!node_heap->IsEmpty()) {
+        NodeRecord *node_record = node_heap->Pop();
+        Node *cur = node_record->node;
+        int dist = node_record->dist;
+        for (Edge *edge : cur->edges) {
+            node_heap->AddOrUpdateOrIgnore(edge->to, dist + edge->weight);
+        }
+        result[cur] = dist;
+    }
+    return result;
+}
+
+
 Graph *GenerateGraph(vector<vector<int> > matrix) {
     Graph *graph = new Graph();
     for (int i = 0; i < matrix.size(); ++i) {
@@ -161,7 +273,15 @@ int main() {
     Graph *graph = GenerateExampleGraph();
     auto iter = graph->nodes.begin();
     Node *head = iter->second;
+
     unordered_map<Node*, int> dist_map = Dijkstra1(head);
+    cout << "Dijkstra1:" << endl;
+    for (auto dist_pair : dist_map) {
+        cout << char(head->value) << "-->" << char(dist_pair.first->value) << ": " << dist_pair.second << endl;
+    }
+
+    dist_map = Dijkstra2(head, 10);
+    cout << "\nDijkstra2:" << endl;
     for (auto dist_pair : dist_map) {
         cout << char(head->value) << "-->" << char(dist_pair.first->value) << ": " << dist_pair.second << endl;
     }
