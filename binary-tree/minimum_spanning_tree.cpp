@@ -45,7 +45,7 @@ struct Edge {
         to = t;
     }
     friend bool operator==(const Edge& a, const Edge& b) {
-        return a.weight == b.weight;
+        return a.from == b.from && a.to == b.to;
     }
     friend bool operator<(const Edge& a, const Edge& b) {
         return a.weight < b.weight;
@@ -157,8 +157,8 @@ set<Edge> PrimMst(Graph *graph) {
     unordered_set<Node> ns;
     unordered_set<Edge> es;
     set<Edge> result;
-    for (auto pair : graph->nodes) {
-        Node *node = pair.second;
+    for (auto iter = graph->nodes.begin(); iter != graph->nodes.end(); ++iter) {
+        Node *node = iter->second;
         if (ns.count(*node) == 0) {
             ns.insert(*node);
             for (Edge *edge : node->edges) {
@@ -168,15 +168,15 @@ set<Edge> PrimMst(Graph *graph) {
                 }
             }
             while (!pq.empty()) {
-                const Edge& edge = pq.top(); pq.pop();
+                Edge edge = pq.top(); pq.pop();
                 Node to_node = edge.to;
                 if (ns.count(to_node) == 0) {
                     ns.insert(to_node);
                     result.insert(edge);
-                    for (auto edge : to_node.edges) {
-                        if (es.count(*edge) == 0) {
-                            es.insert(*edge);
-                            pq.push(*edge);
+                    for (auto e : to_node.edges) {
+                        if (es.count(*e) == 0) {
+                            es.insert(*e);
+                            pq.push(*e);
                         }
                     }
                 }
@@ -242,11 +242,11 @@ Graph *GenerateExampleGraph() {
 
 int main() {
     Graph *graph = GenerateExampleGraph();
-    unordered_set<Edge> unordered_mst = KruskalMst(graph);
-    cout << "KruskalMst:" << endl;
-    for (auto e : unordered_mst) {
-        cout << "from " << char(e.from.value) << " to " << char(e.to.value) << " w: " << e.weight << endl;
-    }
+//    unordered_set<Edge> unordered_mst = KruskalMst(graph);
+//    cout << "KruskalMst:" << endl;
+//    for (auto e : unordered_mst) {
+//        cout << "from " << char(e.from.value) << " to " << char(e.to.value) << " w: " << e.weight << endl;
+//    }
     set<Edge> ordered_mst = PrimMst(graph);
     cout << "PrimMst:" << endl;
     for (auto e : ordered_mst) {
