@@ -37,18 +37,36 @@ struct Node {
 
 struct Edge {
     int weight;
-    Node from = Node(0);
-    Node to = Node(0);
-    Edge(int w, Node f, Node t) {
-        weight = w;
-        from = f;
-        to = t;
+    Node& from;
+    Node& to;
+    Edge(const Edge& e) : from(e.from), to(e.to) {
+        weight = e.weight;
     }
+    Edge(int w, Node& f, Node& t) : from(f), to(t) {
+        weight = w;
+    }
+//    Node *from;
+//    Node *to;
+//    Edge(int w, Node *f, Node *t) {
+//        weight = w;
+//        from = f;
+//        to = t;
+//    }
     friend bool operator==(const Edge& a, const Edge& b) {
-        return a.from == b.from && a.to == b.to;
+        return a.weight == b.weight && a.from == b.from && a.to == b.to;
     }
     friend bool operator<(const Edge& a, const Edge& b) {
-        return a.weight < b.weight;
+        if (a.weight == b.weight) {
+            return a.from.value > b.from.value;
+        } else {
+            return a.weight < b.weight;
+        }
+    }
+    Edge& operator=(Edge&& e) noexcept {
+        weight = e.weight;
+        from = e.from;
+        to = e.to;
+        return *this;
     }
 };
 
@@ -71,9 +89,11 @@ namespace std {
     template <>
     class hash<Edge> {
     public:
-        size_t operator()(const Edge& node) const {
-            size_t h = hash<int>()(node.weight);
-            return h;
+        size_t operator()(const Edge& edge) const {
+            size_t h1 = hash<int>()(edge.weight);
+            size_t h2 = hash<int>()(edge.from.value);
+            size_t h3 = hash<int>()(edge.to.value);
+            return h1 ^ (h2 << 1) ^ (h3 << 1);
         }
     };
 }
@@ -154,28 +174,31 @@ unordered_set<Edge> KruskalMst(Graph *graph) {
 
 set<Edge> PrimMst(Graph *graph) {
     priority_queue<Edge, vector<Edge>, decltype(CmpEdge)> pq(CmpEdge);
-    unordered_set<Node> ns;
-    unordered_set<Edge> es;
+    unordered_set<const Node*> node_set;
+    unordered_set<Edge> edge_set;
     set<Edge> result;
     for (auto iter = graph->nodes.begin(); iter != graph->nodes.end(); ++iter) {
         Node *node = iter->second;
-        if (ns.count(*node) == 0) {
-            ns.insert(*node);
+        if (node_set.count(node) == 0) {
+            node_set.insert(node);
             for (Edge *edge : node->edges) {
-                if (es.count(*edge) == 0) {
-                    es.insert(*edge);
+                if (edge_set.count(*edge) == 0) {
+                    edge_set.insert(*edge);
                     pq.push(*edge);
                 }
             }
             while (!pq.empty()) {
-                Edge edge = pq.top(); pq.pop();
-                Node to_node = edge.to;
-                if (ns.count(to_node) == 0) {
-                    ns.insert(to_node);
+                int size = pq.size();
+                const Edge& edge_ref = pq.top();
+                Edge edge = edge_ref;
+                pq.pop();
+                const Node *to_node = &edge.to;
+                if (node_set.count(to_node) == 0) {
+                    node_set.insert(to_node);
                     result.insert(edge);
-                    for (auto e : to_node.edges) {
-                        if (es.count(*e) == 0) {
-                            es.insert(*e);
+                    for (auto e : to_node->edges) {
+                        if (edge_set.count(*e) == 0) {
+                            edge_set.insert(*e);
                             pq.push(*e);
                         }
                     }
@@ -205,6 +228,9 @@ Graph *GenerateGraph(vector<vector<int> > matrix) {
         from_node->nexts.push_back(to_node);
         from_node->out++;
         to_node->in++;
+        if (from_node->value == 'A') {
+            cout << edge->weight << endl;
+        }
         from_node->edges.push_back(edge);
         graph->edges.insert(edge);
     }
