@@ -224,25 +224,8 @@ void DestroyGraph(Graph *graph) {
     graph = nullptr;
 }
 
-Graph *GenerateExampleNoCircleGraph() {
-    vector<vector<int> > matrix = {
-            {7, 'A', 'B'},
-            {5, 'D', 'A'},
-            {8, 'C', 'B'},
-            {7, 'B', 'E'},
-            {5, 'C', 'E'},
-            {9, 'D', 'B'},
-            {15, 'D', 'E'},
-            {6, 'F', 'D'},
-            {8, 'F', 'E'},
-            {11, 'F', 'G'},
-            {9, 'G', 'E'},
-    };
-    return GenerateGraph(matrix);
-}
-
 Graph *GenerateExampleGraph() {
-    vector<vector<int> > matrix = {
+    vector<vector<int> > matrix1 = {
             {7, 'A', 'B'},
             {7, 'B', 'A'},
             {5, 'A', 'D'},
@@ -266,12 +249,29 @@ Graph *GenerateExampleGraph() {
             {9, 'E', 'G'},
             {9, 'G', 'E'},
     };
-    return GenerateGraph(matrix);
+    vector<vector<int> > matrix2 = {
+            { 50,   'A', 'B' },
+            { 100,  'A', 'E' },
+            { 3,    'A', 'C' },
+            { 10,   'B', 'D' },
+            { 10,   'D', 'B' },
+            { 10,   'B', 'F' },
+            { 7,    'C', 'D' },
+            { 70,   'C', 'F' },
+            { 50,   'A', 'B' },
+            { 20,   'D', 'E' },
+            { 5,    'E', 'F' },
+
+    };
+//    return GenerateGraph(matrix1);
+    return GenerateGraph(matrix2);
 }
 
 int main() {
     Graph *graph = GenerateExampleGraph();
     auto iter = graph->nodes.begin();
+    iter++;
+    iter++;
     Node *head = iter->second;
 
     unordered_map<Node*, int> dist_map = Dijkstra1(head);
