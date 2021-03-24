@@ -7,13 +7,14 @@
       3)一直执行上述操作，直到st为空结束，这时再把help中的元素一一压回st就行了，算法结束。
 */
 
-#include <bits/stdc++.h>
+#include "common_function.h"
+#include <stack>
+#include <iostream>
 
 using namespace std;
 
 template <typename T>
-void SortStackByHelpStack(stack<T>& st)
-{
+void SortStackByHelpStack(stack<T>& st) {
   stack<T> help;
   while (!st.empty()) {
     T cur = st.top();
@@ -24,8 +25,7 @@ void SortStackByHelpStack(stack<T>& st)
   for (; !help.empty(); st.push(help.top()), help.pop());
 }
 
-int main()
-{
+int main() {
   stack<int> st({ 1, 2, -1, 7, 9, 0 });
 
   SortStackByHelpStack(st);
@@ -34,4 +34,3 @@ int main()
 
   return 0;
 }
-

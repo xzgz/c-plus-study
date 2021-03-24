@@ -1,4 +1,5 @@
-#include <bits/stdc++.h>
+#include "common_function.h"
+#include <iostream>
 
 using namespace std;
 

@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated />
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug-MinGW" CONFIG_NAME="Debug" TOOLCHAIN_NAME="MinGW" />
+      <configuration PROFILE_NAME="Release-VisualStudio" CONFIG_NAME="Release" TOOLCHAIN_NAME="VisualStudio" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="14550bca-6a67-465d-8ddb-016c31d8d888" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/array/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/array/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/array/eight_queen.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/array/eight_queen.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/array/find_subset_from_str.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/array/find_subset_from_str.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/array/get_all_substr.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/array/get_all_substr.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/array/get_str_all_permutation.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/array/get_str_all_permutation.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/array/ice_cream_count.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/array/ice_cream_count.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/array/insert_a_b.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/array/insert_a_b.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/array/integer_power.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/array/integer_power.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/array/intersection_of_twoarrays.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/array/intersection_of_twoarrays.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/array/intersection_of_twoarrays_2th.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/array/intersection_of_twoarrays_2th.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/array/judge_string_array_form_circle.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/array/judge_string_array_form_circle.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/array/longest_consecutive_sequence.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/array/longest_consecutive_sequence.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/array/median_of_two_sorted_arrays.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/array/median_of_two_sorted_arrays.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/array/mid_lt_lr_sum_circle.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/array/mid_lt_lr_sum_circle.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/array/min_sum_consecutive_k.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/array/min_sum_consecutive_k.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/array/replace_a_with_b.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/array/replace_a_with_b.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/array/rm_dup_from_sorted_array.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/array/rm_dup_from_sorted_array.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/array/rm_dup_from_sorted_arrayII.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/array/rm_dup_from_sorted_arrayII.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/array/search_in_rotated_sorted_array.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/array/search_in_rotated_sorted_array.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/array/search_in_rotated_sorted_array2.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/array/search_in_rotated_sorted_array2.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/array/square_sorted_array.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/array/square_sorted_array.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/array/two_sum.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/array/two_sum.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/binary-tree/dijkstra.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/binary-tree/dijkstra.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boost-ptr/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/boost-ptr/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boost-ptr/boost_shared_ptr1.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/boost-ptr/boost_shared_ptr1.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boost-ptr/boost_shared_ptr2.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/boost-ptr/boost_shared_ptr2.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boost-ptr/boost_shared_ptr3.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/boost-ptr/boost_shared_ptr3.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boost-thread/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/boost-thread/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boost-thread/boost_internal_locking.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/boost-thread/boost_internal_locking.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classic-problem/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/classic-problem/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classic-problem/arithmetic_dict_order.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/classic-problem/arithmetic_dict_order.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classic-problem/dice_pinduoduo.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/classic-problem/dice_pinduoduo.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classic-problem/island_count.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/classic-problem/island_count.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classic-problem/kmp.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/classic-problem/knapsack_problem.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/classic-problem/knapsack_problem.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classic-problem/ncity_cake.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/classic-problem/ncity_cake.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classic-problem/nxm_matrix_passageway_tencent.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/classic-problem/nxm_matrix_passageway_tencent.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classic-problem/p1.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/classic-problem/partition_equal_subset_sum.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/classic-problem/partition_equal_subset_sum.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classic-problem/quick_sort.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/classic-problem/rearrange_card_pinduoduo.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/classic-problem/rearrange_card_pinduoduo.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classic-problem/travel_minimum_time_xiecheng.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/classic-problem/travel_minimum_time_xiecheng.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classic-problem/travel_ncity_in_order_yuanfudao.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/classic-problem/travel_ncity_in_order_yuanfudao.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cplus-grammar/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cplus-grammar/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cplus-grammar/cbuff1.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cplus-grammar/cbuff1.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cplus-grammar/cbuff2.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cplus-grammar/cbuff2.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cplus-grammar/cplus_copy_constructor.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cplus-grammar/cplus_copy_constructor.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cplus-grammar/data_type_size.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cplus-grammar/data_type_size.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cplus-grammar/function_override.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cplus-grammar/function_override.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cplus-grammar/munkres.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cplus-grammar/munkres.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cplus-grammar/overload_parenthesis1.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cplus-grammar/overload_parenthesis1.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cplus-grammar/overload_parenthesis2.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cplus-grammar/overload_parenthesis2.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cplus-grammar/set_lower_upper_bound.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cplus-grammar/set_lower_upper_bound.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cplus-grammar/smart_ptr.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cplus-grammar/smart_ptr.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cplus-grammar/some_test.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cplus-grammar/some_test.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cplus-grammar/static_research.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cplus-grammar/static_research.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cplus-grammar/virtual_function.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cplus-grammar/virtual_function.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cplus-grammar/virtual_inheritance.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cplus-grammar/virtual_inheritance.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cplus-grammar/virtual_table.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cplus-grammar/virtual_table.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cplus-grammar/weak_ptr.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cplus-grammar/weak_ptr.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cplus-grammar2/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cplus-grammar2/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cplus-grammar2/auxiliary1.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cplus-grammar2/auxiliary1.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cplus-grammar2/main_file.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cplus-grammar2/main_file.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/tree.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/tree.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/utils.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/utils.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iostream/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/iostream/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iostream/iostream.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/iostream/iostream.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/1_two_sum.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/1_two_sum.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/4_find_median_sorted_arrays.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/4_find_median_sorted_arrays.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/75_sort_color.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/75_sort_color.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/75_sort_colors.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/75_sort_colors.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/93_restore_ip_address.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/93_restore_ip_address.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/list/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/list/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/list/delete_lastk_node.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/list/delete_lastk_node.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/list/deletenode_o1time.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/list/deletenode_o1time.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/multi-thread/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/multi-thread/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/multi-thread/multi_thread_print_in_order.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/multi-thread/multi_thread_print_in_order.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/multi-thread/std_async.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/multi-thread/std_async.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/multi-thread/test_pthread.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/multi-thread/test_pthread.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/multi-thread/test_std_thread.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/multi-thread/test_std_thread.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smart-pointer/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/smart-pointer/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smart-pointer/shared_ptr.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/smart-pointer/shared_ptr.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sse-study/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/sse-study/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sse-study/compute_pi.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/sse-study/compute_pi.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sse-study/measure_cpu.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/sse-study/measure_cpu.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sse-study/sse_integer_add.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/sse-study/sse_integer_add.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sse-study/string_match.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/sse-study/string_match.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sse-study/test.S" beforeDir="false" afterPath="$PROJECT_DIR$/sse-study/test.S" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stack/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/stack/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stack/sortstack_by_helpstack.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/stack/sortstack_by_helpstack.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sword-to-offer/2darray_find_target.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/sword-to-offer/2darray_find_target.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sword-to-offer/4_reconstruct_binary_tree.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/sword-to-offer/4_reconstruct_binary_tree.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sword-to-offer/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/sword-to-offer/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sword-to-offer/duplicate_number.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/sword-to-offer/duplicate_number.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sword-to-offer/print_matrix_clockwise.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/sword-to-offer/print_matrix_clockwise.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sword-to-offer/reconstruct_binary_tree.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/sword-to-offer/reconstruct_binary_tree.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sword-to-offer/reverse_list.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/sword-to-offer/reverse_list.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tree/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tree/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tree/binary_tree_depth.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/tree/binary_tree_depth.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tree/binary_tree_with_parent.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/tree/binary_tree_with_parent.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tree/delete_binary_search_tree_yuanfudao.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/tree/delete_binary_search_tree_yuanfudao.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tree/longest_path.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/tree/longest_path.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tree/search_tree.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/tree/search_tree.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/utils/CMakeLists.txt" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1n8VMyGzMxsu6gKZtDQw25Gtor8" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="CMakeSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\code\c-plus-study\binary-tree" />
+      <recent name="D:\code\c-plus-study\sort" />
+    </key>
+  </component>
+  <component name="RunManager" selected="CMake Application.classic-problem_arithmetic_dict_order">
+    <configuration name="c_plus_utils" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="c_plus_utils" CONFIG_NAME="Debug-MinGW">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="classic-problem_arithmetic_dict_order" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="classic-problem_arithmetic_dict_order" CONFIG_NAME="Debug-MinGW" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="classic-problem_arithmetic_dict_order">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="classic-problem_binary_search" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="classic-problem_binary_search" CONFIG_NAME="Debug-MinGW" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="classic-problem_binary_search">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="classic-problem_calculate_factorial" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="classic-problem_calculate_factorial" CONFIG_NAME="Debug-MinGW" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="classic-problem_calculate_factorial">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="classic-problem_coin_tencent" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="classic-problem_coin_tencent" CONFIG_NAME="Debug-MinGW" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="classic-problem_coin_tencent">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="classic-problem_dice_pinduoduo" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="classic-problem_dice_pinduoduo" CONFIG_NAME="Debug-MinGW" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="classic-problem_dice_pinduoduo">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="classic-problem_distribute_money" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="classic-problem_distribute_money" CONFIG_NAME="Debug-MinGW" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="classic-problem_distribute_money">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="classic-problem_element_kind_count" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="classic-problem_element_kind_count" CONFIG_NAME="Debug-MinGW" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="classic-problem_element_kind_count">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="classic-problem_hanoi_tower" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="classic-problem_hanoi_tower" CONFIG_NAME="Debug-MinGW" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="classic-problem_hanoi_tower">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="classic-problem_island_count" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="classic-problem_island_count" CONFIG_NAME="Debug-MinGW" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="classic-problem_island_count">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="classic-problem_knapsack_problem" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="classic-problem_knapsack_problem" CONFIG_NAME="Debug-MinGW" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="classic-problem_knapsack_problem">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="classic-problem_ncity_cake" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="classic-problem_ncity_cake" CONFIG_NAME="Debug-MinGW" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="classic-problem_ncity_cake">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="classic-problem_nxm_matrix_passageway_tencent" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="classic-problem_nxm_matrix_passageway_tencent" CONFIG_NAME="Debug-MinGW" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="classic-problem_nxm_matrix_passageway_tencent">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="classic-problem_partition_equal_subset_sum" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="classic-problem_partition_equal_subset_sum" CONFIG_NAME="Debug-MinGW" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="classic-problem_partition_equal_subset_sum">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="classic-problem_rearrange_card_pinduoduo" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="classic-problem_rearrange_card_pinduoduo" CONFIG_NAME="Debug-MinGW" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="classic-problem_rearrange_card_pinduoduo">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="classic-problem_reverse_linked_list" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="classic-problem_reverse_linked_list" CONFIG_NAME="Debug-MinGW" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="classic-problem_reverse_linked_list">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="classic-problem_some_test" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="classic-problem_some_test" CONFIG_NAME="Debug-MinGW" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="classic-problem_some_test">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="classic-problem_travel_minimum_time_xiecheng" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="classic-problem_travel_minimum_time_xiecheng" CONFIG_NAME="Debug-MinGW" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="classic-problem_travel_minimum_time_xiecheng">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="classic-problem_travel_ncity_in_order_yuanfudao" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="classic-problem_travel_ncity_in_order_yuanfudao" CONFIG_NAME="Debug-MinGW" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="classic-problem_travel_ncity_in_order_yuanfudao">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="classic-problem_water" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="classic-problem_water" CONFIG_NAME="Debug-MinGW" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="classic-problem_water">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="classic-problem_xor_method" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="classic-problem_xor_method" CONFIG_NAME="Debug-MinGW" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="classic-problem_xor_method">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="stack_reverse_stack_use_recurse" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="stack_reverse_stack_use_recurse" CONFIG_NAME="Debug-MinGW" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="stack_reverse_stack_use_recurse">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="stack_sortstack_by_helpstack" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="stack_sortstack_by_helpstack" CONFIG_NAME="Debug-MinGW" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="stack_sortstack_by_helpstack">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="string_convert_to_letter_string" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="string_convert_to_letter_string" CONFIG_NAME="Debug-MinGW" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="string_convert_to_letter_string">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="string_kmp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="string_kmp" CONFIG_NAME="Debug-MinGW" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="string_kmp">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="string_min_distance_of_two_string" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="string_min_distance_of_two_string" CONFIG_NAME="Debug-MinGW" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="string_min_distance_of_two_string">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="string_print_all_permutations" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="string_print_all_permutations" CONFIG_NAME="Debug-MinGW" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="string_print_all_permutations">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="CMake Application.classic-problem_arithmetic_dict_order" />
+      <item itemvalue="CMake Application.classic-problem_binary_search" />
+      <item itemvalue="CMake Application.classic-problem_calculate_factorial" />
+      <item itemvalue="CMake Application.classic-problem_coin_tencent" />
+      <item itemvalue="CMake Application.classic-problem_dice_pinduoduo" />
+      <item itemvalue="CMake Application.classic-problem_distribute_money" />
+      <item itemvalue="CMake Application.classic-problem_element_kind_count" />
+      <item itemvalue="CMake Application.classic-problem_hanoi_tower" />
+      <item itemvalue="CMake Application.classic-problem_island_count" />
+      <item itemvalue="CMake Application.classic-problem_knapsack_problem" />
+      <item itemvalue="CMake Application.classic-problem_ncity_cake" />
+      <item itemvalue="CMake Application.classic-problem_nxm_matrix_passageway_tencent" />
+      <item itemvalue="CMake Application.classic-problem_partition_equal_subset_sum" />
+      <item itemvalue="CMake Application.classic-problem_rearrange_card_pinduoduo" />
+      <item itemvalue="CMake Application.classic-problem_reverse_linked_list" />
+      <item itemvalue="CMake Application.classic-problem_some_test" />
+      <item itemvalue="CMake Application.classic-problem_travel_minimum_time_xiecheng" />
+      <item itemvalue="CMake Application.classic-problem_travel_ncity_in_order_yuanfudao" />
+      <item itemvalue="CMake Application.classic-problem_water" />
+      <item itemvalue="CMake Application.classic-problem_xor_method" />
+      <item itemvalue="CMake Application.stack_reverse_stack_use_recurse" />
+      <item itemvalue="CMake Application.stack_sortstack_by_helpstack" />
+      <item itemvalue="CMake Application.string_convert_to_letter_string" />
+      <item itemvalue="CMake Application.string_kmp" />
+      <item itemvalue="CMake Application.string_min_distance_of_two_string" />
+      <item itemvalue="CMake Application.string_print_all_permutations" />
+      <item itemvalue="CMake Application.c_plus_utils" />
+    </list>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="14550bca-6a67-465d-8ddb-016c31d8d888" name="Default Changelist" comment="" />
+      <created>1610771660308</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1610771660308</updated>
+      <workItem from="1610771661812" duration="5662000" />
+      <workItem from="1610796070883" duration="10743000" />
+      <workItem from="1610896932304" duration="880000" />
+      <workItem from="1611389393042" duration="4154000" />
+      <workItem from="1611417880896" duration="32000" />
+      <workItem from="1612593278482" duration="8000" />
+      <workItem from="1612651287609" duration="4947000" />
+      <workItem from="1612714316539" duration="1491000" />
+      <workItem from="1612744306358" duration="2653000" />
+      <workItem from="1612793166867" duration="9684000" />
+      <workItem from="1612878928426" duration="6895000" />
+      <workItem from="1612964070420" duration="10219000" />
+      <workItem from="1613114747623" duration="14575000" />
+      <workItem from="1613191312540" duration="66000" />
+      <workItem from="1613191393781" duration="142000" />
+      <workItem from="1613191547301" duration="305000" />
+      <workItem from="1613192194228" duration="782000" />
+      <workItem from="1613193196897" duration="45000" />
+      <workItem from="1613193612419" duration="59000" />
+      <workItem from="1613193680178" duration="103000" />
+      <workItem from="1613193912320" duration="12923000" />
+      <workItem from="1613273369742" duration="17688000" />
+      <workItem from="1613360609440" duration="26123000" />
+      <workItem from="1613430971287" duration="5042000" />
+      <workItem from="1613482927541" duration="4419000" />
+      <workItem from="1613611034923" duration="227000" />
+      <workItem from="1614091518387" duration="1106000" />
+      <workItem from="1614179291655" duration="7509000" />
+      <workItem from="1614258293531" duration="9520000" />
+      <workItem from="1614345709752" duration="23000" />
+      <workItem from="1614420920545" duration="2313000" />
+      <workItem from="1616597797819" duration="119000" />
+    </task>
+    <task id="LOCAL-00001" summary="20210210">
+      <created>1612918865855</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1612918865855</updated>
+    </task>
+    <task id="LOCAL-00002" summary="20210218">
+      <created>1613611137097</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1613611137097</updated>
+    </task>
+    <task id="LOCAL-00003" summary="20210223">
+      <created>1614092575507</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1614092575507</updated>
+    </task>
+    <task id="LOCAL-00004" summary="20210225">
+      <created>1614215558768</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1614215558768</updated>
+    </task>
+    <task id="LOCAL-00005" summary="20210225">
+      <created>1614268612474</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1614268612474</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="20210210" />
+    <MESSAGE value="20210218" />
+    <MESSAGE value="20210223" />
+    <MESSAGE value="20210225" />
+    <option name="LAST_COMMIT_MESSAGE" value="20210225" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="872" y="363" key="#Deployment" timestamp="1612654476754">
+      <screen x="0" y="0" width="2560" height="1410" />
+    </state>
+    <state x="872" y="363" key="#Deployment/0.0.2560.1410@0.0.2560.1410" timestamp="1612654476754" />
+    <state x="734" y="360" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1613375232933">
+      <screen x="0" y="0" width="2560" height="1410" />
+    </state>
+    <state x="734" y="360" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1410@0.0.2560.1410" timestamp="1613375232933" />
+    <state x="1242" y="697" width="1178" height="596" key="#xdebugger.evaluate" timestamp="1614186151954">
+      <screen x="0" y="0" width="2560" height="1410" />
+    </state>
+    <state x="1242" y="697" width="1178" height="596" key="#xdebugger.evaluate/0.0.2560.1410@0.0.2560.1410" timestamp="1614186151954" />
+    <state x="826" y="297" key="CommitChangelistDialog2" timestamp="1614268611027">
+      <screen x="0" y="0" width="2560" height="1410" />
+    </state>
+    <state x="826" y="297" key="CommitChangelistDialog2/0.0.2560.1410@0.0.2560.1410" timestamp="1614268611027" />
+    <state width="480" height="466" key="DebuggerActiveHint" timestamp="1614267664336">
+      <screen x="0" y="0" width="2560" height="1410" />
+    </state>
+    <state width="480" height="466" key="DebuggerActiveHint/0.0.2560.1410@0.0.2560.1410" timestamp="1614267664336" />
+    <state x="121" y="236" width="2376" height="1226" key="DiffContextDialog" timestamp="1612970766675">
+      <screen x="0" y="0" width="2560" height="1410" />
+    </state>
+    <state x="121" y="236" width="2376" height="1226" key="DiffContextDialog/0.0.2560.1410@0.0.2560.1410" timestamp="1612970766675" />
+    <state x="535" y="538" width="440" height="442" key="FileChooserDialogImpl" timestamp="1616597906115">
+      <screen x="0" y="0" width="2560" height="1410" />
+    </state>
+    <state x="535" y="538" width="440" height="442" key="FileChooserDialogImpl/0.0.2560.1410@0.0.2560.1410" timestamp="1616597906115" />
+    <state width="2517" height="496" key="GridCell.Tab.0.bottom" timestamp="1614268703905">
+      <screen x="0" y="0" width="2560" height="1410" />
+    </state>
+    <state width="2517" height="496" key="GridCell.Tab.0.bottom/0.0.2560.1410@0.0.2560.1410" timestamp="1614268703905" />
+    <state width="2517" height="496" key="GridCell.Tab.0.center" timestamp="1614268703905">
+      <screen x="0" y="0" width="2560" height="1410" />
+    </state>
+    <state width="2517" height="496" key="GridCell.Tab.0.center/0.0.2560.1410@0.0.2560.1410" timestamp="1614268703905" />
+    <state width="2517" height="496" key="GridCell.Tab.0.left" timestamp="1614268703905">
+      <screen x="0" y="0" width="2560" height="1410" />
+    </state>
+    <state width="2517" height="496" key="GridCell.Tab.0.left/0.0.2560.1410@0.0.2560.1410" timestamp="1614268703905" />
+    <state width="2517" height="496" key="GridCell.Tab.0.right" timestamp="1614268703905">
+      <screen x="0" y="0" width="2560" height="1410" />
+    </state>
+    <state width="2517" height="496" key="GridCell.Tab.0.right/0.0.2560.1410@0.0.2560.1410" timestamp="1614268703905" />
+    <state width="2517" height="496" key="GridCell.Tab.1.bottom" timestamp="1614268703905">
+      <screen x="0" y="0" width="2560" height="1410" />
+    </state>
+    <state width="2517" height="496" key="GridCell.Tab.1.bottom/0.0.2560.1410@0.0.2560.1410" timestamp="1614268703905" />
+    <state width="2517" height="496" key="GridCell.Tab.1.center" timestamp="1614268703905">
+      <screen x="0" y="0" width="2560" height="1410" />
+    </state>
+    <state width="2517" height="496" key="GridCell.Tab.1.center/0.0.2560.1410@0.0.2560.1410" timestamp="1614268703905" />
+    <state width="2517" height="496" key="GridCell.Tab.1.left" timestamp="1614268703905">
+      <screen x="0" y="0" width="2560" height="1410" />
+    </state>
+    <state width="2517" height="496" key="GridCell.Tab.1.left/0.0.2560.1410@0.0.2560.1410" timestamp="1614268703905" />
+    <state width="2517" height="496" key="GridCell.Tab.1.right" timestamp="1614268703905">
+      <screen x="0" y="0" width="2560" height="1410" />
+    </state>
+    <state width="2517" height="496" key="GridCell.Tab.1.right/0.0.2560.1410@0.0.2560.1410" timestamp="1614268703905" />
+    <state x="781" y="347" key="SettingsEditor" timestamp="1616597916999">
+      <screen x="0" y="0" width="2560" height="1410" />
+    </state>
+    <state x="781" y="347" key="SettingsEditor/0.0.2560.1410@0.0.2560.1410" timestamp="1616597916999" />
+    <state x="872" y="438" key="Vcs.Push.Dialog.v2" timestamp="1614268661527">
+      <screen x="0" y="0" width="2560" height="1410" />
+    </state>
+    <state x="872" y="438" key="Vcs.Push.Dialog.v2/0.0.2560.1410@0.0.2560.1410" timestamp="1614268661527" />
+    <state x="960" y="529" key="com.intellij.ide.util.TipDialog" timestamp="1616597797833">
+      <screen x="0" y="0" width="2560" height="1410" />
+    </state>
+    <state x="960" y="529" key="com.intellij.ide.util.TipDialog/0.0.2560.1410@0.0.2560.1410" timestamp="1616597797833" />
+    <state x="1001" y="496" key="git4idea.merge.GitPullDialog" timestamp="1614258319239">
+      <screen x="0" y="0" width="2560" height="1410" />
+    </state>
+    <state x="1001" y="496" key="git4idea.merge.GitPullDialog/0.0.2560.1410@0.0.2560.1410" timestamp="1614258319239" />
+    <state x="1033" y="610" key="publish.login" timestamp="1612654488328">
+      <screen x="0" y="0" width="2560" height="1410" />
+    </state>
+    <state x="1033" y="610" key="publish.login/0.0.2560.1410@0.0.2560.1410" timestamp="1612654488328" />
+    <state x="943" y="317" width="672" height="678" key="search.everywhere.popup" timestamp="1613363979720">
+      <screen x="0" y="0" width="2560" height="1410" />
+    </state>
+    <state x="943" y="317" width="672" height="678" key="search.everywhere.popup/0.0.2560.1410@0.0.2560.1410" timestamp="1613363979720" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/cplus-grammar2/main_file.cpp</url>
+          <line>31</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
