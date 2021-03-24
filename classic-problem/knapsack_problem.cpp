@@ -1,4 +1,7 @@
-#include <bits/stdc++.h>
+#include <vector>
+#include <cassert>
+#include <iostream>
+#include <numeric>
 
 using namespace std;
 
@@ -95,6 +98,29 @@ class Solution4 {
   }
 };
 
+int Knapsack1(vector<int>& w, vector<int>& v, int index, int already_w, int bag) {
+    if (already_w > bag) return -1;
+    if (index == w.size()) return 0;
+    int p1 = Knapsack1(w, v, index + 1, already_w, bag);
+    int p2next = Knapsack1(w, v, index + 1, already_w + w[index], bag);
+    int p2 = -1;
+    if (p2next != -1) {
+        p2 = p2next + v[index];
+    }
+    return max(p1, p2);
+}
+
+int Knapsack2(vector<int>& w, vector<int>& v, int index, int rest) {
+    if (rest <= 0) return 0;
+    if (index == w.size()) return 0;
+    int p1 = Knapsack2(w, v, index + 1, rest);
+    int p2 = numeric_limits<int>::min();
+    if (rest >= w[index]) {
+        p2 = v[index] + Knapsack2(w, v, index + 1, rest - w[index]);
+    }
+    return max(p1, p2);
+}
+
 int main() {
   vector<int> w = { 2, 3, 4, 5 };
   vector<int> v = { 3, 4, 5, 6 };
@@ -105,5 +131,11 @@ int main() {
 //  Solution4 so;
 
   int max_value = so.knapsack01(w, v, c);
-  cout << "max value: " << max_value << endl;
+  cout << "Solution1 max value: " << max_value << endl;
+
+  max_value = Knapsack1(w, v, 0, 0, c);
+  cout << "Knapsack1 max value: " << max_value << endl;
+
+  max_value = Knapsack2(w, v, 0, c);
+  cout << "Knapsack2 max value: " << max_value << endl;
 }
