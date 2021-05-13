@@ -44,20 +44,22 @@ struct Edge {
         from = f;
         to = t;
     }
-    friend bool operator==(const Edge& a, const Edge& b) {
+    friend bool operator == (const Edge& a, const Edge& b) {
         return a.weight == b.weight && a.from == b.from && a.to == b.to;
     }
-    friend bool operator<(const Edge& a, const Edge& b) {
+    // when it is true, the element will be in the front
+    friend bool operator < (const Edge& a, const Edge& b) {
         bool is_a_smaller_than_b;
         if (a.weight == b.weight) {
             if (a.from->value == b.from->value) {
                 is_a_smaller_than_b = a.to->value > b.to->value;
             } else {
-                is_a_smaller_than_b = a.from->value > b.from->value;
+                is_a_smaller_than_b = a.from->value < b.from->value;
             }
         } else {
             is_a_smaller_than_b = a.weight < b.weight;
         }
+
         return is_a_smaller_than_b;
     }
 };

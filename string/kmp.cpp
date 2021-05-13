@@ -1,46 +1,64 @@
-#include <bits/stdc++.h>
+#include "common_function.h"
+#include <iostream>
+#include <vector>
 
 using namespace std;
 
-static vector<int> GetNext(const string& t) {
-  vector<int> next(t.size(), 0);
-  int t_len = t.size();
-  next[0] = -1;
-  int j = 0, k = -1;
+vector<int> GetNext(const string& t) {
+    int t_len = t.size();
+    if (t_len == 1) return { -1 };
 
-  while (j < t_len) {
-    if (k == -1 || t[j] == t[k]) {
-      ++j;
-      ++k;
-      // t[j]==t[k] means t(0)t(1)...t(k)==t(j-k)t(j-k+1)...t(j)
-      if (t[j] == t[k]) next[j] = next[k];
-      else next[j] = k;
-    } else k = next[k];
-  }
+    // next[0] == -1, next[1] == 0
+    // for i>=2, next[i] == k (k>=1) means t(0)t(1)...t(k-1) == t(i-k)t(i-k+1)...t(i-1)
+    vector<int> next(t_len, 0);
+    next[0] = -1;
+    next[1] = 0;
+    int i = 2;
+    int cn = 0;
+    while (i < t_len) {
+        if (t[i - 1] == t[cn]) {
+            next[i++] = ++cn;
+        } else if (cn > 0) {
+            cn = next[cn];
+        } else {
+            next[i++] = 0;
+        }
+    }
 
-  return next;
+    return next;
 }
 
 int KMP(const string& s, const string& t) {
-  int i = 0, j = 0;
-  int s_len = s.size();
-  int t_len = t.size();
-  vector<int> next = GetNext(t);
+    if (s.empty() || t.empty() || s.length() < t.length()) return -1;
+    int x = 0;
+    int y = 0;
+    int s_len = s.size();
+    int t_len = t.size();
+    vector<int> next = GetNext(t);
+    Print1DVector<int>(next);
 
-  while (i < s_len && j < t_len) {
-    if (j == -1 || s[i] == t[j]) ++i, ++j;
-    else j = next[j];
-  }
+    while (x < s_len && y < t_len) {
+        if (s[x] == t[y]) {
+            ++x;
+            ++y;
+        } else if (next[y] == -1) {
+            ++x;
+        } else {
+            y = next[y];
+        }
+    }
 
-  if (j == t_len) return i - j;
-  else return -1;
+    return y == t_len ? x - y : -1;
 }
 
 int main() {
-  string s = "abcdabcabcda";
-  string t = "abcabcd";
-  int loc = KMP(s, t);
-  cout << loc;
+    string s = "abcdabcabcda";
+    string t;
+    t = "abcabcd";
+//    t = "abcdft";
+//    t = "abcabcabcd";
+    int loc = KMP(s, t);
+    cout << loc << endl;
 
-  return 0;
+    return 0;
 }

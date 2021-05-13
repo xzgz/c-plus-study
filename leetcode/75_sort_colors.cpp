@@ -1,4 +1,5 @@
-#include <bits/stdc++.h>
+#include <vector>
+#include <iostream>
 
 using namespace std;
 
@@ -64,8 +65,8 @@ void sortColors(vector<int>& nums) {
 }
 
 int main() {
-//  vector<int> nums = { 2, 0, 2, 1, 1, 0 };
-  vector<int> nums = { 2, 0, 1 };
+  vector<int> nums = { 2, 0, 2, 1, 1, 0 };
+//  vector<int> nums = { 2, 0, 1 };
   sortColors(nums);
   for (int n : nums) cout << n << " ";
 

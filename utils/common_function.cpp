@@ -16,8 +16,10 @@ using namespace chrono;
 
 template<typename dtype>
 void Print1DVector(const vector<dtype>& array) {
-    for (dtype val : array) cout << val << '\t';
-    cout << endl;
+    if (array.empty()) return;
+    cout << "{ " << endl;
+    for (dtype val : array) cout << val << ",\t";
+    cout << endl << " }" << endl;
 }
 
 void PrintNowTime() {

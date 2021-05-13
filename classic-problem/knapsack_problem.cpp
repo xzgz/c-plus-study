@@ -1,3 +1,4 @@
+#include "common_function.h"
 #include <vector>
 #include <cassert>
 #include <iostream>
@@ -26,7 +27,7 @@ class Solution1 {
     if (memo[index][c] != -1) return memo[index][c];
 
     int res = bestValue(w, v, index-1, c);
-    if (c >= w[index]) res = max(res, v[index]+bestValue(w, v, index-1, c-w[index]));
+    if (c >= w[index]) res = max(res, v[index] + bestValue(w, v, index - 1, c - w[index]));
     memo[index][c] = res;
 
     return res;
@@ -38,8 +39,8 @@ class Solution1 {
     int n = w.size();
     if (n == 0 || c == 0) return 0;
 
-    memo = vector<vector<int> >(n, vector<int>(c+1, -1));
-    return bestValue(w, v, n-1, c);
+    memo = vector<vector<int> >(n, vector<int>(c + 1, -1));
+    return bestValue(w, v, n - 1, c);
   }
 };
 
@@ -55,10 +56,10 @@ class Solution2 {
     for (int i = 1; i < n; ++i)
       for (int j = 0; j <= c; ++j) {
       memo[i][j] = memo[i-1][j];
-      if (j >= w[i]) memo[i][j] = max(memo[i][j], v[i]+memo[i-1][j-w[i]]);
+      if (j >= w[i]) memo[i][j] = max(memo[i][j], v[i] + memo[i - 1][j - w[i]]);
     }
 
-    return memo[n-1][c];
+    return memo[n - 1][c];
   }
 };
 
@@ -121,21 +122,75 @@ int Knapsack2(vector<int>& w, vector<int>& v, int index, int rest) {
     return max(p1, p2);
 }
 
-int main() {
-  vector<int> w = { 2, 3, 4, 5 };
-  vector<int> v = { 3, 4, 5, 6 };
-  int c = 8;
-  Solution1 so;
-//  Solution2 so;
-//  Solution3 so;
-//  Solution4 so;
+int Knapsack2Dp(vector<int>& w, vector<int>& v, int bag) {
+    int n = w.size();
+    vector<vector<int> > dp(n + 1, vector<int>(bag + 1, 0));
+    for (int index = n - 1; index >= 0; --index) {
+        for (int rest = 0; rest <= bag; ++rest) {
+            dp[index][rest] = dp[index + 1][rest];
+            int p2 = numeric_limits<int>::min();
+            if (rest >= w[index]) {
+                p2 = v[index] + dp[index + 1][rest - w[index]];
+            }
+            dp[index][rest] = max(dp[index][rest], p2);
+        }
+    }
+    return dp[0][bag];
+}
 
-  int max_value = so.knapsack01(w, v, c);
+int Knapsack2DpV2(vector<int>& w, vector<int>& v, int bag) {
+    int n = w.size();
+    vector<vector<int> > dp(2, vector<int>(bag + 1, 0));
+    for (int index = n - 1; index >= 0; --index) {
+        for (int rest = 0; rest <= bag; ++rest) {
+            dp[index % 2][rest] = dp[(index + 1) % 2][rest];
+            int p2 = numeric_limits<int>::min();
+            if (rest >= w[index]) {
+                p2 = v[index] + dp[(index + 1) % 2][rest - w[index]];
+            }
+            dp[index % 2][rest] = max(dp[index % 2][rest], p2);
+        }
+    }
+    return dp[0][bag];
+}
+
+int main() {
+  vector<int> w = GenerateRandom1DIntegerArray<int>(1, 30, 20);
+  vector<int> v = GenerateRandom1DIntegerArray<int>(1, 10, 20);
+  cout << "w:" << endl;
+  Print1DVector(w);
+  cout << "v:" << endl;
+  Print1DVector(v);
+
+  int c = 126;
+  Solution1 so1;
+  Solution2 so2;
+  Solution3 so3;
+  Solution4 so4;
+
+  int max_value = so1.knapsack01(w, v, c);
   cout << "Solution1 max value: " << max_value << endl;
+
+  max_value = so2.knapsack01(w, v, c);
+  cout << "Solution2 max value: " << max_value << endl;
+
+  max_value = so3.knapsack01(w, v, c);
+  cout << "Solution3 max value: " << max_value << endl;
+
+  max_value = so4.knapsack01(w, v, c);
+  cout << "Solution4 max value: " << max_value << endl;
 
   max_value = Knapsack1(w, v, 0, 0, c);
   cout << "Knapsack1 max value: " << max_value << endl;
 
   max_value = Knapsack2(w, v, 0, c);
   cout << "Knapsack2 max value: " << max_value << endl;
+
+  max_value = Knapsack2Dp(w, v, c);
+  cout << "Knapsack2Dp max value: " << max_value << endl;
+
+  max_value = Knapsack2DpV2(w, v, c);
+  cout << "Knapsack2DpV2 max value: " << max_value << endl;
+
+  return 0;
 }

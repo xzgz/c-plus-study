@@ -1,8 +1,9 @@
 #include "common_function.h"
 #include <iostream>
 #include <vector>
-#include <cmath>
-#include<limits>
+#include <limits>
+#include <queue>
+#include <unordered_map>
 
 using namespace std;
 
@@ -97,11 +98,11 @@ void TestWater() {
     vector<int> res2(cycle);
     vector<int> res3(cycle);
     vector<int> res4(cycle);
+    vector<int> array = GenerateRandom1DIntegerArray<int>(1, 500, length);
 
     {
         TimerClock tc(true);
         for (int i = 0; i < cycle; ++i) {
-            vector<int> array = GenerateRandom1DIntegerArray<int>(1, 500, length);
             int water4 = Water4(array);
             res4[i] = water4;
         }
@@ -109,23 +110,20 @@ void TestWater() {
     {
         TimerClock tc(true);
         for (int i = 0; i < cycle; ++i) {
-            vector<int> array = GenerateRandom1DIntegerArray<int>(1, 500, length);
             int water2 = Water2(array);
             res2[i] = water2;
         }
     }
-//    {
-//        TimerClock tc(true);
-//        for (int i = 0; i < cycle; ++i) {
-//            vector<int> array = GenerateRandom1DIntegerArray<int>(1, 500, length);
-//            int water1 = Water1(array);
-//            res1[i] = water1;
-//        }
-//    }
     {
         TimerClock tc(true);
         for (int i = 0; i < cycle; ++i) {
-            vector<int> array = GenerateRandom1DIntegerArray<int>(1, 500, length);
+            int water1 = Water1(array);
+            res1[i] = water1;
+        }
+    }
+    {
+        TimerClock tc(true);
+        for (int i = 0; i < cycle; ++i) {
             int water3 = Water3(array);
             res3[i] = water3;
 
@@ -133,7 +131,7 @@ void TestWater() {
     }
 
     for (int i = 0; i < cycle; ++i) {
-        vector<int> array = GenerateRandom1DIntegerArray<int>(1, 500, length);
+        array = GenerateRandom1DIntegerArray<int>(1, 500, length);
         int water1 = Water1(array);
         int water2 = Water2(array);
         int water3 = Water3(array);
