@@ -2,6 +2,7 @@
 #include <iostream>
 #include <vector>
 #include <unordered_set>
+#include <unordered_map>
 
 using namespace std;
 
@@ -75,17 +76,101 @@ int FirstMissingPositive(vector<int>& nums) {
     return n + 1;
 }
 
+class UnionFind {
+private:
+    vector<int> parent_;
+    vector<double> weight_;
+
+public:
+    UnionFind(int n) : parent_(vector<int>(n)), weight_(vector<double>(n)) {
+        for (int i = 0; i < n; ++i) {
+            parent_[i] = i;
+            weight_[i] = 1.0;
+        }
+    }
+
+    void Union(int x, int y, double value) {
+        int root_x = find(x);
+        int root_y = find(y);
+        if (root_x == root_y) return;
+
+        parent_[root_x] = root_y;
+        weight_[root_x] = weight_[y] * value / weight_[x];
+    }
+
+    int find(int x) {
+        if (x != parent_[x]) {
+            int origin = parent_[x];
+            parent_[x] = find(parent_[x]);
+            weight_[x] *= weight_[origin];
+        }
+        return parent_[x];
+    }
+
+    double IsConnected(int x, int y) {
+        int root_x = find(x);
+        int root_y = find(y);
+        if (root_x == root_y) return weight_[x] / weight_[y];
+        else return -1.0;
+    }
+};
+
+class CalcEquationSolution {
+public:
+    vector<double> calcEquation(vector<vector<string> >& equations, vector<double>& values, vector<vector<string> >& queries) {
+        int eq_size = equations.size();
+        UnionFind uf = UnionFind(2 * eq_size);
+        unordered_map<string, int> hash_map;
+        int id = 0;
+        for (int i = 0; i < eq_size; ++i) {
+            vector<string> eq = equations[i];
+            string var1 = eq[0];
+            string var2 = eq[1];
+            if (hash_map.find(var1) == hash_map.end()) {
+                hash_map[var1] = id++;
+            }
+            if (hash_map.find(var2) == hash_map.end()) {
+                hash_map[var2] = id++;
+            }
+            uf.Union(hash_map[var1], hash_map[var2], values[i]);
+        }
+
+        int query_size = queries.size();
+        vector<double> res(query_size);
+        for (int i = 0; i < query_size; ++i) {
+            string var1 = queries[i][0];
+            string var2 = queries[i][1];
+            if (hash_map.find(var1) == hash_map.end() || hash_map.find(var2) == hash_map.end()) {
+                res[i] = -1.0;
+                continue;
+            }
+            int id1 = hash_map[var1];
+            int id2 = hash_map[var2];
+            res[i] = uf.IsConnected(id1, id2);
+        }
+
+        return res;
+    }
+};
+
 int main() {
     string s = "()())()";
     Solution so;
-    vector<string> res = so.removeInvalidParentheses(s);
-    for (string v : res) cout << v << endl;
+    vector<string> res1 = so.removeInvalidParentheses(s);
+    for (string v : res1) cout << v << endl;
 
     vector<int> nums = { 3, 4, -1, 1 };
     Print1DVector(nums);
     int fmp = FirstMissingPositive(nums);
     Print1DVector(nums);
     cout << "fmp: " << fmp << endl;
+
+    vector<vector<string> > equations = { { "a", "b" }, { "b"," c" } };
+    vector<double> values = { 2.0, 3.0 };
+    vector<vector<string> > queries = { { "a", "c" }, { "b", "a" }, { "a", "e" }, { "a", "a" }, { "x", "x" } };
+    CalcEquationSolution cso;
+    vector<double> res2 = cso.calcEquation(equations, values, queries);
+    Print1DVector(res2);
 
     return 0;
 }
