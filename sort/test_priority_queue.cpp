@@ -64,6 +64,7 @@ struct Node {
         }
     }
 };
+
 struct Cmp {
     bool operator()(Node a, Node b) {
         if(a.x == b.x) {
@@ -73,29 +74,11 @@ struct Cmp {
         }
     }
 };
-static bool CmpFun1(Node a, Node b) {
-    if(a.x == b.x) {
-        return a.y > b.y;
-    } else {
-        return a.x > b.x;
-    }
-}
-// when it is true, the element will move down
-auto CmpFun2 = [](Node a, Node b) {
-    if(a.x == b.x) {
-        return a.y > b.y;
-    } else {
-        return a.x > b.x;
-    }
-};
-
 void TestCustomPrioritizeQueue1() {
     cout << "TestCustomPrioritizeQueue1():" << endl;
     unsigned int seed = time(nullptr);
     srand(seed);
-//    priority_queue<Node, vector<Node>, Cmp> p;
-//    priority_queue<Node, vector<Node>, decltype(CmpFun2)> p(CmpFun2);
-    priority_queue<Node, vector<Node>, decltype(&CmpFun1)> p(CmpFun1);
+    priority_queue<Node, vector<Node>, Cmp> p;
     for (int i = 0; i < 10; ++i) {
         p.push(Node(rand(), rand()));
     }
@@ -105,8 +88,53 @@ void TestCustomPrioritizeQueue1() {
     }
 }
 
+// when it is true, the element will move down
+auto CmpFun2 = [](Node a, Node b) {
+    if(a.x == b.x) {
+        return a.y > b.y;
+    } else {
+        return a.x > b.x;
+    }
+};
 void TestCustomPrioritizeQueue2() {
     cout << "TestCustomPrioritizeQueue2():" << endl;
+    unsigned int seed = time(nullptr);
+    srand(seed);
+//    priority_queue<Node, vector<Node>, decltype(&CmpFun2)> p(CmpFun2);  // error
+    priority_queue<Node, vector<Node>, decltype(CmpFun2)> p(CmpFun2);
+    for (int i = 0; i < 10; ++i) {
+        p.push(Node(rand(), rand()));
+    }
+    while (!p.empty()) {
+        cout << p.top().x << "\t" << p.top().y << endl;
+        p.pop();
+    }
+}
+
+static bool CmpFun1(Node a, Node b) {
+    if(a.x == b.x) {
+        return a.y > b.y;
+    } else {
+        return a.x > b.x;
+    }
+}
+void TestCustomPrioritizeQueue3() {
+    cout << "TestCustomPrioritizeQueue3():" << endl;
+    unsigned int seed = time(nullptr);
+    srand(seed);
+    priority_queue<Node, vector<Node>, decltype(&CmpFun1)> p(CmpFun1);
+//    priority_queue<Node, vector<Node>, decltype(CmpFun1)> p(CmpFun1);  // error
+    for (int i = 0; i < 10; ++i) {
+        p.push(Node(rand(), rand()));
+    }
+    while (!p.empty()) {
+        cout << p.top().x << "\t" << p.top().y << endl;
+        p.pop();
+    }
+}
+
+void TestCustomPrioritizeQueue4() {
+    cout << "TestCustomPrioritizeQueue4():" << endl;
     unsigned int seed = time(nullptr);
     srand(seed);
     priority_queue<Node> p;
@@ -125,6 +153,8 @@ int main() {
     TestBigPrioritizeQueue();
     TestCustomPrioritizeQueue1();
     TestCustomPrioritizeQueue2();
+    TestCustomPrioritizeQueue3();
+    TestCustomPrioritizeQueue4();
 
     return 0;
 }

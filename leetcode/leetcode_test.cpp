@@ -3,6 +3,8 @@
 #include <vector>
 #include <unordered_set>
 #include <unordered_map>
+#include <algorithm>
+#include <queue>
 
 using namespace std;
 
@@ -153,7 +155,66 @@ public:
     }
 };
 
-int main() {
+class MinMeetingRoomsSolution1 {
+public:
+    int minMeetingRooms(vector<vector<int> > intervals) {
+        if (intervals.empty()) return 0;
+
+        int n = intervals.size();
+        vector<int> start(n);
+        vector<int> end(n);
+        for (int i = 0; i < n; ++i) {
+            start[i] = intervals[i][0];
+            end[i] = intervals[i][1];
+        }
+        sort(start.begin(), start.end());
+        sort(end.begin(), end.end());
+
+        int st_ptr = 0, end_ptr = 0;
+        int used_rooms = 0;
+        while (st_ptr < n) {
+            if (start[st_ptr] >= end[end_ptr]) {
+                --used_rooms;
+                ++end_ptr;
+            }
+            ++used_rooms;
+            ++st_ptr;
+        }
+
+        return used_rooms;
+    }
+};
+
+auto CmpFun = [](int a, int b) {
+    return a > b;
+};
+
+class MinMeetingRoomsSolution2 {
+public:
+    int minMeetingRooms(vector<vector<int> > intervals) {
+        if (intervals.empty()) return 0;
+
+//        priority_queue<int, vector<int>, greater<int>() > pq;  // error
+        priority_queue<int, vector<int>, greater<int> > pq;
+//        priority_queue<int, vector<int>, decltype(CmpFun)> pq(CmpFun);
+//        sort(intervals.begin(), intervals.end());
+        sort(intervals.begin(), intervals.end(), [](const vector<int>& u, const vector<int>& v) {
+            return u[0] < v[0];
+        });
+
+        pq.push(intervals[0][1]);
+        for (int i = 1; i < intervals.size(); ++i) {
+            if (intervals[i][0] >= pq.top()) {
+                pq.pop();
+            }
+            pq.push(intervals[i][1]);
+        }
+
+        return pq.size();
+    }
+};
+
+void test1() {
     string s = "()())()";
     Solution so;
     vector<string> res1 = so.removeInvalidParentheses(s);
@@ -165,12 +226,48 @@ int main() {
     Print1DVector(nums);
     cout << "fmp: " << fmp << endl;
 
-    vector<vector<string> > equations = { { "a", "b" }, { "b"," c" } };
+    vector<vector<string> > equations = { { "a", "b" }, { "b", "c" } };
     vector<double> values = { 2.0, 3.0 };
     vector<vector<string> > queries = { { "a", "c" }, { "b", "a" }, { "a", "e" }, { "a", "a" }, { "x", "x" } };
     CalcEquationSolution cso;
     vector<double> res2 = cso.calcEquation(equations, values, queries);
     Print1DVector(res2);
+
+    unordered_map<string, int> um;
+    um["a"] = 1;
+    um["b"] = 2;
+    um["a"] = 3;
+    cout << um["a"] << endl;
+    if (um.find("a") != um.end()) {
+        cout << "um.find(\"a\") != um.end()" << endl;
+    }
+    cout << "um.count(\"a\") = " << um.count("a") << endl;
+
+    if (um.find("a1") == um.end()) {
+        cout << "um.find(\"a1\") == um.end()" << endl;
+    }
+    cout << "um[\"a1\"] = " << um["a1"] << endl;
+    if (um.find("a1") != um.end()) {
+        cout << "um.find(\"a1\") != um.end()" << endl;
+    }
+    um["a1"] = 8;
+    cout << "um[\"a1\"] = " << um["a1"] << endl;
+}
+
+void test2() {
+    vector<vector<int> > intervals = { { 0, 30 }, { 5, 10 }, { 15, 20 } };
+    MinMeetingRoomsSolution1 mso1;
+    MinMeetingRoomsSolution2 mso2;
+    int used_rooms;
+    used_rooms = mso1.minMeetingRooms(intervals);
+    cout << "used_rooms: " << used_rooms << endl;
+    used_rooms = mso2.minMeetingRooms(intervals);
+    cout << "used_rooms: " << used_rooms << endl;
+}
+
+int main() {
+//    test1();
+    test2();
 
     return 0;
 }
