@@ -5,6 +5,7 @@
 #include <unordered_map>
 #include <algorithm>
 #include <queue>
+#include <numeric>
 
 using namespace std;
 
@@ -214,6 +215,58 @@ public:
     }
 };
 
+class FindUnsortedSubarraySolution {
+public:
+    int findUnsortedSubarray(vector<int>& nums) {
+        if (nums.empty()) return 0;
+        int lmin = numeric_limits<int>::max();
+        int rmax = numeric_limits<int>::min();
+        bool flag = false;
+        int n = nums.size();
+
+        for (int i = 1; i < n; ++i) {
+            if (nums[i] < nums[i - 1]) flag = true;
+            if (flag) lmin = std::min(lmin, nums[i]);
+        }
+
+        flag = false;
+        for (int i = n - 2; i >= 0; --i) {
+            if (nums[i] > nums[i + 1]) flag = true;
+            if (flag) rmax = std::max(rmax, nums[i]);
+        }
+
+        int l, r;
+        for (l = 0; l < n; ++l) {
+            if (nums[l] > lmin) break;
+        }
+        for (r = n - 1; r >= 0; --r) {
+            if (nums[r] < rmax) break;
+        }
+
+        return r >= l ? r - l + 1 : 0;
+    }
+};
+
+class LeastIntervalSolution {
+public:
+    int leastInterval(vector<char>& tasks, int n) {
+        if (tasks.empty()) return 0;
+        int freq[26] = { 0 };
+        for (char& ch : tasks) {
+            freq[ch - 'A']++;
+        }
+
+        int max_exec = *std::max_element(freq, freq + 26, [](const int& u, const int& v) {
+            return u < v;
+        });
+        int max_count = std::accumulate(freq, freq + 26, 0, [=](int acc, const int& u) {
+            return acc + (u == max_exec);
+        });
+
+        return std::max((max_exec - 1) * (n + 1) + max_count, int(tasks.size()));
+    }
+};
+
 void test1() {
     string s = "()())()";
     Solution so;
@@ -263,6 +316,17 @@ void test2() {
     cout << "used_rooms: " << used_rooms << endl;
     used_rooms = mso2.minMeetingRooms(intervals);
     cout << "used_rooms: " << used_rooms << endl;
+
+    vector<int> nums = { 2,6,4,8,10,9,15 };
+    FindUnsortedSubarraySolution fuso;
+    int len = fuso.findUnsortedSubarray(nums);
+    cout << "len: " << len << endl;
+
+    vector<char> tasks = { 'A', 'A', 'A', 'B', 'B', 'B' };
+    int n = 2;
+    LeastIntervalSolution liso;
+    int least_time = liso.leastInterval(tasks, n);
+    cout << "least_time: " << least_time << endl;
 }
 
 int main() {
