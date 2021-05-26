@@ -67,7 +67,9 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="14550bca-6a67-465d-8ddb-016c31d8d888" name="Default Changelist" comment="" />
+    <list default="true" id="14550bca-6a67-465d-8ddb-016c31d8d888" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/multi-thread/multi_thread_bind_cpu.cpp" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -533,7 +535,7 @@
       <workItem from="1620918347087" duration="3780000" />
       <workItem from="1621078363069" duration="7043000" />
       <workItem from="1621210834417" duration="230000" />
-      <workItem from="1622041204456" duration="1293000" />
+      <workItem from="1622041204456" duration="1561000" />
     </task>
     <task id="LOCAL-00001" summary="20210210">
       <created>1612918865855</created>
@@ -612,7 +614,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622042482932</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="20210526">
+      <created>1622042704899</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1622042704899</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -652,10 +661,10 @@
       <screen x="0" y="0" width="2560" height="1410" />
     </state>
     <state x="1242" y="697" width="1178" height="596" key="#xdebugger.evaluate/0.0.2560.1410@0.0.2560.1410" timestamp="1620922913543" />
-    <state x="826" y="297" key="CommitChangelistDialog2" timestamp="1622042481130">
+    <state x="826" y="297" key="CommitChangelistDialog2" timestamp="1622042703528">
       <screen x="0" y="0" width="2560" height="1410" />
     </state>
-    <state x="826" y="297" key="CommitChangelistDialog2/0.0.2560.1410@0.0.2560.1410" timestamp="1622042481130" />
+    <state x="826" y="297" key="CommitChangelistDialog2/0.0.2560.1410@0.0.2560.1410" timestamp="1622042703528" />
     <state width="480" height="466" key="DebuggerActiveHint" timestamp="1614267664336">
       <screen x="0" y="0" width="2560" height="1410" />
     </state>
@@ -700,10 +709,10 @@
       <screen x="0" y="0" width="2560" height="1410" />
     </state>
     <state x="781" y="347" key="SettingsEditor/0.0.2560.1410@0.0.2560.1410" timestamp="1620922485766" />
-    <state x="872" y="438" key="Vcs.Push.Dialog.v2" timestamp="1622042672572">
+    <state x="872" y="438" key="Vcs.Push.Dialog.v2" timestamp="1622042712236">
       <screen x="0" y="0" width="2560" height="1410" />
     </state>
-    <state x="872" y="438" key="Vcs.Push.Dialog.v2/0.0.2560.1410@0.0.2560.1410" timestamp="1622042672572" />
+    <state x="872" y="438" key="Vcs.Push.Dialog.v2/0.0.2560.1410@0.0.2560.1410" timestamp="1622042712236" />
     <state x="960" y="529" key="com.intellij.ide.util.TipDialog" timestamp="1622041206044">
       <screen x="0" y="0" width="2560" height="1410" />
     </state>
