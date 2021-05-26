@@ -5,7 +5,6 @@
 #include <unordered_map>
 #include <algorithm>
 #include <queue>
-#include <numeric>
 
 using namespace std;
 
@@ -186,18 +185,12 @@ public:
     }
 };
 
-auto CmpFun = [](int a, int b) {
-    return a > b;
-};
-
 class MinMeetingRoomsSolution2 {
 public:
     int minMeetingRooms(vector<vector<int> > intervals) {
         if (intervals.empty()) return 0;
 
-//        priority_queue<int, vector<int>, greater<int>() > pq;  // error
         priority_queue<int, vector<int>, greater<int> > pq;
-//        priority_queue<int, vector<int>, decltype(CmpFun)> pq(CmpFun);
 //        sort(intervals.begin(), intervals.end());
         sort(intervals.begin(), intervals.end(), [](const vector<int>& u, const vector<int>& v) {
             return u[0] < v[0];
@@ -215,55 +208,29 @@ public:
     }
 };
 
-class FindUnsortedSubarraySolution {
+class WordBreakSolution {
 public:
-    int findUnsortedSubarray(vector<int>& nums) {
-        if (nums.empty()) return 0;
-        int lmin = numeric_limits<int>::max();
-        int rmax = numeric_limits<int>::min();
-        bool flag = false;
-        int n = nums.size();
-
-        for (int i = 1; i < n; ++i) {
-            if (nums[i] < nums[i - 1]) flag = true;
-            if (flag) lmin = std::min(lmin, nums[i]);
+    bool wordBreak(string s, vector<string>& wordDict) {
+        auto wordDictSet = unordered_set<string>();
+        int max_word_len = 0;
+//        unsigned int max_word_len = 0;
+        for (auto word: wordDict) {
+            wordDictSet.insert(word);
+            max_word_len = std::max(int(max_word_len), int(word.size()));
         }
 
-        flag = false;
-        for (int i = n - 2; i >= 0; --i) {
-            if (nums[i] > nums[i + 1]) flag = true;
-            if (flag) rmax = std::max(rmax, nums[i]);
+        auto dp = vector<bool>(s.size() + 1);
+        dp[0] = true;
+        for (int i = 1; i <= s.size(); ++i) {
+            for (int j = i - 1; j >= 0 && j >= i - max_word_len; --j) {
+                if (dp[j] && wordDictSet.find(s.substr(j, i - j)) != wordDictSet.end()) {
+                    dp[i] = true;
+                    break;
+                }
+            }
         }
 
-        int l, r;
-        for (l = 0; l < n; ++l) {
-            if (nums[l] > lmin) break;
-        }
-        for (r = n - 1; r >= 0; --r) {
-            if (nums[r] < rmax) break;
-        }
-
-        return r >= l ? r - l + 1 : 0;
-    }
-};
-
-class LeastIntervalSolution {
-public:
-    int leastInterval(vector<char>& tasks, int n) {
-        if (tasks.empty()) return 0;
-        int freq[26] = { 0 };
-        for (char& ch : tasks) {
-            freq[ch - 'A']++;
-        }
-
-        int max_exec = *std::max_element(freq, freq + 26, [](const int& u, const int& v) {
-            return u < v;
-        });
-        int max_count = std::accumulate(freq, freq + 26, 0, [=](int acc, const int& u) {
-            return acc + (u == max_exec);
-        });
-
-        return std::max((max_exec - 1) * (n + 1) + max_count, int(tasks.size()));
+        return dp[s.size()];
     }
 };
 
@@ -317,16 +284,23 @@ void test2() {
     used_rooms = mso2.minMeetingRooms(intervals);
     cout << "used_rooms: " << used_rooms << endl;
 
-    vector<int> nums = { 2,6,4,8,10,9,15 };
-    FindUnsortedSubarraySolution fuso;
-    int len = fuso.findUnsortedSubarray(nums);
-    cout << "len: " << len << endl;
+    WordBreakSolution wbso;
+    string s = "bb";
+//    string s = "leetcode";
+    vector<string> word_dict = { "a", "b", "bbb", "bbbb" };
+//    vector<string> word_dict = { "leet", "code" };
+    bool s_can_break;
+    s_can_break = wbso.wordBreak(s, word_dict);
+    cout << "s_can_break: " << s_can_break << endl;
 
-    vector<char> tasks = { 'A', 'A', 'A', 'B', 'B', 'B' };
-    int n = 2;
-    LeastIntervalSolution liso;
-    int least_time = liso.leastInterval(tasks, n);
-    cout << "least_time: " << least_time << endl;
+    unordered_map<char, string> ismap;
+    ismap['1'] = "asd";
+    char k = '1';
+    unordered_map<char, string>& map2 = ismap;
+    // error, no viable overloaded operator[] for type 'const unordered_map<char, std::string>'
+//    const unordered_map<char, string>& map2 = ismap;
+    const string& str = map2[k];
+    cout << str << endl;
 }
 
 int main() {
