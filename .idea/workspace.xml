@@ -67,10 +67,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="14550bca-6a67-465d-8ddb-016c31d8d888" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leetcode/leetcode_test.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/leetcode_test.cpp" afterDir="false" />
-    </list>
+    <list default="true" id="14550bca-6a67-465d-8ddb-016c31d8d888" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -536,7 +533,7 @@
       <workItem from="1620918347087" duration="3780000" />
       <workItem from="1621078363069" duration="7043000" />
       <workItem from="1621210834417" duration="230000" />
-      <workItem from="1622041204456" duration="1002000" />
+      <workItem from="1622041204456" duration="1293000" />
     </task>
     <task id="LOCAL-00001" summary="20210210">
       <created>1612918865855</created>
@@ -608,7 +605,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621210919854</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="20210526">
+      <created>1622042482932</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1622042482932</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -636,7 +640,8 @@
     <MESSAGE value="20210513" />
     <MESSAGE value="20210515" />
     <MESSAGE value="20210517" />
-    <option name="LAST_COMMIT_MESSAGE" value="20210517" />
+    <MESSAGE value="20210526" />
+    <option name="LAST_COMMIT_MESSAGE" value="20210526" />
   </component>
   <component name="WindowStateProjectService">
     <state x="872" y="363" key="#Deployment" timestamp="1616688028541">
@@ -647,10 +652,10 @@
       <screen x="0" y="0" width="2560" height="1410" />
     </state>
     <state x="1242" y="697" width="1178" height="596" key="#xdebugger.evaluate/0.0.2560.1410@0.0.2560.1410" timestamp="1620922913543" />
-    <state x="826" y="297" key="CommitChangelistDialog2" timestamp="1621210918195">
+    <state x="826" y="297" key="CommitChangelistDialog2" timestamp="1622042481130">
       <screen x="0" y="0" width="2560" height="1410" />
     </state>
-    <state x="826" y="297" key="CommitChangelistDialog2/0.0.2560.1410@0.0.2560.1410" timestamp="1621210918195" />
+    <state x="826" y="297" key="CommitChangelistDialog2/0.0.2560.1410@0.0.2560.1410" timestamp="1622042481130" />
     <state width="480" height="466" key="DebuggerActiveHint" timestamp="1614267664336">
       <screen x="0" y="0" width="2560" height="1410" />
     </state>
@@ -695,18 +700,18 @@
       <screen x="0" y="0" width="2560" height="1410" />
     </state>
     <state x="781" y="347" key="SettingsEditor/0.0.2560.1410@0.0.2560.1410" timestamp="1620922485766" />
-    <state x="872" y="438" key="Vcs.Push.Dialog.v2" timestamp="1621211018350">
+    <state x="872" y="438" key="Vcs.Push.Dialog.v2" timestamp="1622042672572">
       <screen x="0" y="0" width="2560" height="1410" />
     </state>
-    <state x="872" y="438" key="Vcs.Push.Dialog.v2/0.0.2560.1410@0.0.2560.1410" timestamp="1621211018350" />
+    <state x="872" y="438" key="Vcs.Push.Dialog.v2/0.0.2560.1410@0.0.2560.1410" timestamp="1622042672572" />
     <state x="960" y="529" key="com.intellij.ide.util.TipDialog" timestamp="1622041206044">
       <screen x="0" y="0" width="2560" height="1410" />
     </state>
     <state x="960" y="529" key="com.intellij.ide.util.TipDialog/0.0.2560.1410@0.0.2560.1410" timestamp="1622041206044" />
-    <state x="1001" y="496" key="git4idea.merge.GitPullDialog" timestamp="1614258319239">
+    <state x="1001" y="496" key="git4idea.merge.GitPullDialog" timestamp="1622042666045">
       <screen x="0" y="0" width="2560" height="1410" />
     </state>
-    <state x="1001" y="496" key="git4idea.merge.GitPullDialog/0.0.2560.1410@0.0.2560.1410" timestamp="1614258319239" />
+    <state x="1001" y="496" key="git4idea.merge.GitPullDialog/0.0.2560.1410@0.0.2560.1410" timestamp="1622042666045" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
