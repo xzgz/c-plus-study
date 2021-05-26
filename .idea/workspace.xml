@@ -2,62 +2,67 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
-      <config projectName="c-plus-study" targetName="classic-problem_binary_search" />
-      <config projectName="c-plus-study" targetName="sort_test_priority_queue" />
-      <config projectName="c-plus-study" targetName="iostream_iostream" />
-      <config projectName="c-plus-study" targetName="binary-tree_graph" />
-      <config projectName="c-plus-study" targetName="sort_quick_sort" />
-      <config projectName="c-plus-study" targetName="classic-problem_ncity_cake" />
-      <config projectName="c-plus-study" targetName="string_min_distance_of_two_string" />
-      <config projectName="c-plus-study" targetName="string_convert_to_letter_string" />
-      <config projectName="c-plus-study" targetName="binary-tree_minimum_spanning_tree" />
-      <config projectName="c-plus-study" targetName="binary-tree_serialize_and_reconstruct" />
-      <config projectName="c-plus-study" targetName="classic-problem_travel_ncity_in_order_yuanfudao" />
-      <config projectName="c-plus-study" targetName="classic-problem_arithmetic_dict_order" />
-      <config projectName="c-plus-study" targetName="classic-problem_island_count" />
-      <config projectName="c-plus-study" targetName="binary-tree_union_set" />
-      <config projectName="c-plus-study" targetName="string_kmp" />
-      <config projectName="c-plus-study" targetName="binary-tree_travel_tree" />
-      <config projectName="c-plus-study" targetName="leetcode_1_two_sum" />
-      <config projectName="c-plus-study" targetName="classic-problem_travel_minimum_time_xiecheng" />
-      <config projectName="c-plus-study" targetName="leetcode_93_restore_ip_address" />
-      <config projectName="c-plus-study" targetName="sort_find_kth_smallest" />
-      <config projectName="c-plus-study" targetName="classic-problem_element_kind_count" />
-      <config projectName="c-plus-study" targetName="classic-problem_dice_pinduoduo" />
-      <config projectName="c-plus-study" targetName="classic-problem_nxm_matrix_passageway_tencent" />
-      <config projectName="c-plus-study" targetName="classic-problem_coins_way" />
-      <config projectName="c-plus-study" targetName="classic-problem_n_queen" />
-      <config projectName="c-plus-study" targetName="c_plus_utils" />
-      <config projectName="c-plus-study" targetName="classic-problem_distribute_money" />
-      <config projectName="c-plus-study" targetName="classic-problem_calculate_factorial" />
-      <config projectName="c-plus-study" targetName="classic-problem_some_test" />
-      <config projectName="c-plus-study" targetName="string_leetcode_3_length_of_longest_substring" />
-      <config projectName="c-plus-study" targetName="binary-tree_paper_fold" />
-      <config projectName="c-plus-study" targetName="stack_reverse_stack_use_recurse" />
-      <config projectName="c-plus-study" targetName="string_leetcode_5_longest_palindrome" />
-      <config projectName="c-plus-study" targetName="classic-problem_water" />
-      <config projectName="c-plus-study" targetName="classic-problem_leetcode_440_find_kth_number" />
-      <config projectName="c-plus-study" targetName="binary-tree_dijkstra" />
-      <config projectName="c-plus-study" targetName="classic-problem_reverse_linked_list" />
-      <config projectName="c-plus-study" targetName="classic-problem_rearrange_card_pinduoduo" />
-      <config projectName="c-plus-study" targetName="binary-tree_successor_node" />
-      <config projectName="c-plus-study" targetName="leetcode_leetcode_test" />
-      <config projectName="c-plus-study" targetName="binary-tree_tree_max_width" />
       <config projectName="c-plus-study" targetName="leetcode_75_sort_colors" />
-      <config projectName="c-plus-study" targetName="binary-tree_recursion_method" />
-      <config projectName="c-plus-study" targetName="leetcode_305_num_islands2" />
-      <config projectName="c-plus-study" targetName="classic-problem_robot_walk" />
-      <config projectName="c-plus-study" targetName="classic-problem_partition_equal_subset_sum" />
-      <config projectName="c-plus-study" targetName="string_print_all_permutations" />
-      <config projectName="c-plus-study" targetName="classic-problem_cards_in_line" />
-      <config projectName="c-plus-study" targetName="leetcode_4_find_median_sorted_arrays" />
-      <config projectName="c-plus-study" targetName="stack_sortstack_by_helpstack" />
-      <config projectName="c-plus-study" targetName="classic-problem_xor_method" />
-      <config projectName="c-plus-study" targetName="iostream_leetcode_71_simplify_path" />
-      <config projectName="c-plus-study" targetName="classic-problem_knapsack_problem" />
-      <config projectName="c-plus-study" targetName="classic-problem_coin_tencent" />
-      <config projectName="c-plus-study" targetName="sort_select_sort" />
+      <config projectName="c-plus-study" targetName="binary-tree_tree_max_width" />
       <config projectName="c-plus-study" targetName="classic-problem_hanoi_tower" />
+      <config projectName="c-plus-study" targetName="binary-tree_paper_fold" />
+      <config projectName="c-plus-study" targetName="binary-tree_travel_tree" />
+      <config projectName="c-plus-study" targetName="classic-problem_rearrange_card_pinduoduo" />
+      <config projectName="c-plus-study" targetName="classic-problem_dice_pinduoduo" />
+      <config projectName="c-plus-study" targetName="classic-problem_reverse_linked_list" />
+      <config projectName="c-plus-study" targetName="multi-thread_test_std_thread" />
+      <config projectName="c-plus-study" targetName="classic-problem_water" />
+      <config projectName="c-plus-study" targetName="string_leetcode_3_length_of_longest_substring" />
+      <config projectName="c-plus-study" targetName="sort_test_priority_queue" />
+      <config projectName="c-plus-study" targetName="binary-tree_union_set" />
+      <config projectName="c-plus-study" targetName="binary-tree_successor_node" />
+      <config projectName="c-plus-study" targetName="stack_reverse_stack_use_recurse" />
+      <config projectName="c-plus-study" targetName="classic-problem_island_count" />
+      <config projectName="c-plus-study" targetName="classic-problem_coins_way" />
+      <config projectName="c-plus-study" targetName="classic-problem_travel_minimum_time_xiecheng" />
+      <config projectName="c-plus-study" targetName="leetcode_1_two_sum" />
+      <config projectName="c-plus-study" targetName="leetcode_93_restore_ip_address" />
+      <config projectName="c-plus-study" targetName="binary-tree_dijkstra" />
+      <config projectName="c-plus-study" targetName="classic-problem_calculate_factorial" />
+      <config projectName="c-plus-study" targetName="classic-problem_robot_walk" />
+      <config projectName="c-plus-study" targetName="binary-tree_recursion_method" />
+      <config projectName="c-plus-study" targetName="classic-problem_distribute_money" />
+      <config projectName="c-plus-study" targetName="classic-problem_travel_ncity_in_order_yuanfudao" />
+      <config projectName="c-plus-study" targetName="leetcode_305_num_islands2" />
+      <config projectName="c-plus-study" targetName="leetcode_4_find_median_sorted_arrays" />
+      <config projectName="c-plus-study" targetName="classic-problem_binary_search" />
+      <config projectName="c-plus-study" targetName="stack_sortstack_by_helpstack" />
+      <config projectName="c-plus-study" targetName="string_min_distance_of_two_string" />
+      <config projectName="c-plus-study" targetName="string_print_all_permutations" />
+      <config projectName="c-plus-study" targetName="string_convert_to_letter_string" />
+      <config projectName="c-plus-study" targetName="leetcode_leetcode_test" />
+      <config projectName="c-plus-study" targetName="classic-problem_knapsack_problem" />
+      <config projectName="c-plus-study" targetName="sort_quick_sort" />
+      <config projectName="c-plus-study" targetName="iostream_leetcode_71_simplify_path" />
+      <config projectName="c-plus-study" targetName="string_kmp" />
+      <config projectName="c-plus-study" targetName="multi-thread_multi_thread_print_in_order" />
+      <config projectName="c-plus-study" targetName="classic-problem_leetcode_440_find_kth_number" />
+      <config projectName="c-plus-study" targetName="binary-tree_serialize_and_reconstruct" />
+      <config projectName="c-plus-study" targetName="multi-thread_test_pthread" />
+      <config projectName="c-plus-study" targetName="classic-problem_nxm_matrix_passageway_tencent" />
+      <config projectName="c-plus-study" targetName="sort_find_kth_smallest" />
+      <config projectName="c-plus-study" targetName="multi-thread_std_async" />
+      <config projectName="c-plus-study" targetName="classic-problem_partition_equal_subset_sum" />
+      <config projectName="c-plus-study" targetName="sort_select_sort" />
+      <config projectName="c-plus-study" targetName="string_leetcode_5_longest_palindrome" />
+      <config projectName="c-plus-study" targetName="classic-problem_xor_method" />
+      <config projectName="c-plus-study" targetName="classic-problem_some_test" />
+      <config projectName="c-plus-study" targetName="binary-tree_minimum_spanning_tree" />
+      <config projectName="c-plus-study" targetName="classic-problem_n_queen" />
+      <config projectName="c-plus-study" targetName="classic-problem_cards_in_line" />
+      <config projectName="c-plus-study" targetName="iostream_iostream" />
+      <config projectName="c-plus-study" targetName="classic-problem_coin_tencent" />
+      <config projectName="c-plus-study" targetName="classic-problem_arithmetic_dict_order" />
+      <config projectName="c-plus-study" targetName="classic-problem_ncity_cake" />
+      <config projectName="c-plus-study" targetName="classic-problem_element_kind_count" />
+      <config projectName="c-plus-study" targetName="binary-tree_graph" />
+      <config projectName="c-plus-study" targetName="multi-thread_multi_thread_bind_cpu" />
+      <config projectName="c-plus-study" targetName="c_plus_utils" />
     </generated>
   </component>
   <component name="CMakeSettings">
@@ -68,7 +73,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="14550bca-6a67-465d-8ddb-016c31d8d888" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/multi-thread/multi_thread_print_in_order.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/multi-thread/multi_thread_print_in_order.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,7 +137,7 @@
       <recent name="D:\code\c-plus-study\sort" />
     </key>
   </component>
-  <component name="RunManager" selected="CMake Application.leetcode_leetcode_test">
+  <component name="RunManager" selected="CMake Application.multi-thread_multi_thread_print_in_order">
     <configuration name="binary-tree_dijkstra" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="binary-tree_dijkstra" CONFIG_NAME="Debug-MinGW" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="binary-tree_dijkstra">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -352,6 +358,31 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration name="multi-thread_multi_thread_bind_cpu" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="multi-thread_multi_thread_bind_cpu" CONFIG_NAME="Debug-MinGW" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="multi-thread_multi_thread_bind_cpu">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="multi-thread_multi_thread_print_in_order" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="multi-thread_multi_thread_print_in_order" CONFIG_NAME="Debug-MinGW" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="multi-thread_multi_thread_print_in_order">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="multi-thread_std_async" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="multi-thread_std_async" CONFIG_NAME="Debug-MinGW" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="multi-thread_std_async">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="multi-thread_test_pthread" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="multi-thread_test_pthread" CONFIG_NAME="Debug-MinGW" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="multi-thread_test_pthread">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="multi-thread_test_std_thread" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="multi-thread_test_std_thread" CONFIG_NAME="Debug-MinGW" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="multi-thread_test_std_thread">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="sort_find_kth_smallest" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="sort_find_kth_smallest" CONFIG_NAME="Debug-MinGW" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="sort_find_kth_smallest">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -457,6 +488,11 @@
       <item itemvalue="CMake Application.leetcode_75_sort_colors" />
       <item itemvalue="CMake Application.leetcode_93_restore_ip_address" />
       <item itemvalue="CMake Application.leetcode_leetcode_test" />
+      <item itemvalue="CMake Application.multi-thread_multi_thread_bind_cpu" />
+      <item itemvalue="CMake Application.multi-thread_multi_thread_print_in_order" />
+      <item itemvalue="CMake Application.multi-thread_std_async" />
+      <item itemvalue="CMake Application.multi-thread_test_pthread" />
+      <item itemvalue="CMake Application.multi-thread_test_std_thread" />
       <item itemvalue="CMake Application.sort_find_kth_smallest" />
       <item itemvalue="CMake Application.sort_quick_sort" />
       <item itemvalue="CMake Application.sort_select_sort" />
@@ -535,7 +571,7 @@
       <workItem from="1620918347087" duration="3780000" />
       <workItem from="1621078363069" duration="7043000" />
       <workItem from="1621210834417" duration="230000" />
-      <workItem from="1622041204456" duration="1607000" />
+      <workItem from="1622041204456" duration="2145000" />
     </task>
     <task id="LOCAL-00001" summary="20210210">
       <created>1612918865855</created>
@@ -628,7 +664,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622042772890</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="20210526">
+      <created>1622042833998</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1622042833998</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -668,10 +711,10 @@
       <screen x="0" y="0" width="2560" height="1410" />
     </state>
     <state x="1242" y="697" width="1178" height="596" key="#xdebugger.evaluate/0.0.2560.1410@0.0.2560.1410" timestamp="1620922913543" />
-    <state x="826" y="297" key="CommitChangelistDialog2" timestamp="1622042771343">
+    <state x="826" y="297" key="CommitChangelistDialog2" timestamp="1622042832215">
       <screen x="0" y="0" width="2560" height="1410" />
     </state>
-    <state x="826" y="297" key="CommitChangelistDialog2/0.0.2560.1410@0.0.2560.1410" timestamp="1622042771343" />
+    <state x="826" y="297" key="CommitChangelistDialog2/0.0.2560.1410@0.0.2560.1410" timestamp="1622042832215" />
     <state width="480" height="466" key="DebuggerActiveHint" timestamp="1614267664336">
       <screen x="0" y="0" width="2560" height="1410" />
     </state>
@@ -680,22 +723,22 @@
       <screen x="0" y="0" width="2560" height="1410" />
     </state>
     <state x="535" y="538" width="440" height="442" key="FileChooserDialogImpl/0.0.2560.1410@0.0.2560.1410" timestamp="1616597906115" />
-    <state width="2517" height="520" key="GridCell.Tab.0.bottom" timestamp="1622042216134">
+    <state width="2517" height="520" key="GridCell.Tab.0.bottom" timestamp="1622043354131">
       <screen x="0" y="0" width="2560" height="1410" />
     </state>
-    <state width="2517" height="520" key="GridCell.Tab.0.bottom/0.0.2560.1410@0.0.2560.1410" timestamp="1622042216134" />
-    <state width="2517" height="520" key="GridCell.Tab.0.center" timestamp="1622042216134">
+    <state width="2517" height="520" key="GridCell.Tab.0.bottom/0.0.2560.1410@0.0.2560.1410" timestamp="1622043354131" />
+    <state width="2517" height="520" key="GridCell.Tab.0.center" timestamp="1622043354131">
       <screen x="0" y="0" width="2560" height="1410" />
     </state>
-    <state width="2517" height="520" key="GridCell.Tab.0.center/0.0.2560.1410@0.0.2560.1410" timestamp="1622042216134" />
-    <state width="2517" height="520" key="GridCell.Tab.0.left" timestamp="1622042216134">
+    <state width="2517" height="520" key="GridCell.Tab.0.center/0.0.2560.1410@0.0.2560.1410" timestamp="1622043354131" />
+    <state width="2517" height="520" key="GridCell.Tab.0.left" timestamp="1622043354131">
       <screen x="0" y="0" width="2560" height="1410" />
     </state>
-    <state width="2517" height="520" key="GridCell.Tab.0.left/0.0.2560.1410@0.0.2560.1410" timestamp="1622042216134" />
-    <state width="2517" height="520" key="GridCell.Tab.0.right" timestamp="1622042216134">
+    <state width="2517" height="520" key="GridCell.Tab.0.left/0.0.2560.1410@0.0.2560.1410" timestamp="1622043354131" />
+    <state width="2517" height="520" key="GridCell.Tab.0.right" timestamp="1622043354131">
       <screen x="0" y="0" width="2560" height="1410" />
     </state>
-    <state width="2517" height="520" key="GridCell.Tab.0.right/0.0.2560.1410@0.0.2560.1410" timestamp="1622042216134" />
+    <state width="2517" height="520" key="GridCell.Tab.0.right/0.0.2560.1410@0.0.2560.1410" timestamp="1622043354131" />
     <state width="2517" height="499" key="GridCell.Tab.1.bottom" timestamp="1621181257705">
       <screen x="0" y="0" width="2560" height="1410" />
     </state>

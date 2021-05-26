@@ -1,4 +1,10 @@
-#include <bits/stdc++.h>
+#include <iostream>
+#include <vector>
+#include <thread>
+#include <condition_variable>
+#include <mutex>
+#include <algorithm>
+#include <functional>
 
 using namespace std;
 
