@@ -2,36 +2,78 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
-      <config projectName="c-plus-study" targetName="leetcode_75_sort_colors" />
-      <config projectName="c-plus-study" targetName="binary-tree_tree_max_width" />
-      <config projectName="c-plus-study" targetName="classic-problem_hanoi_tower" />
-      <config projectName="c-plus-study" targetName="binary-tree_paper_fold" />
+      <config projectName="c-plus-study" targetName="iostream_iostream" />
+      <config projectName="c-plus-study" targetName="classic-problem_coin_tencent" />
+      <config projectName="c-plus-study" targetName="multi-thread_std_async" />
+      <config projectName="c-plus-study" targetName="classic-problem_binary_search" />
+      <config projectName="c-plus-study" targetName="multi-thread_multi_thread_print_in_order" />
+      <config projectName="c-plus-study" targetName="string_min_distance_of_two_string" />
+      <config projectName="c-plus-study" targetName="string_convert_to_letter_string" />
+      <config projectName="c-plus-study" targetName="c_plus_utils" />
+      <config projectName="c-plus-study" targetName="binary-tree_minimum_spanning_tree" />
+      <config projectName="c-plus-study" targetName="leetcode_1_two_sum" />
+      <config projectName="c-plus-study" targetName="classic-problem_travel_ncity_in_order_yuanfudao" />
+      <config projectName="c-plus-study" targetName="classic-problem_arithmetic_dict_order" />
+      <config projectName="c-plus-study" targetName="sort_select_sort" />
+      <config projectName="c-plus-study" targetName="classic-problem_ncity_cake" />
+      <config projectName="c-plus-study" targetName="binary-tree_union_set" />
+      <config projectName="c-plus-study" targetName="leetcode_leetcode_test" />
       <config projectName="c-plus-study" targetName="binary-tree_travel_tree" />
-      <config projectName="c-plus-study" targetName="classic-problem_rearrange_card_pinduoduo" />
+      <config projectName="c-plus-study" targetName="string_kmp" />
+      <config projectName="c-plus-study" targetName="classic-problem_travel_minimum_time_xiecheng" />
+      <config projectName="c-plus-study" targetName="leetcode_93_restore_ip_address" />
+      <config projectName="c-plus-study" targetName="multi-thread_test_std_thread" />
+      <config projectName="c-plus-study" targetName="sort_find_kth_smallest" />
+      <config projectName="c-plus-study" targetName="classic-problem_element_kind_count" />
       <config projectName="c-plus-study" targetName="classic-problem_dice_pinduoduo" />
+<<<<<<< HEAD
       <config projectName="c-plus-study" targetName="classic-problem_reverse_linked_list" />
       <config projectName="c-plus-study" targetName="multi-thread_test_std_thread" />
       <config projectName="c-plus-study" targetName="classic-problem_water" />
       <config projectName="c-plus-study" targetName="string_leetcode_3_length_of_longest_substring" />
+=======
+      <config projectName="c-plus-study" targetName="classic-problem_nxm_matrix_passageway_tencent" />
+      <config projectName="c-plus-study" targetName="classic-problem_coins_way" />
+      <config projectName="c-plus-study" targetName="classic-problem_some_test" />
+      <config projectName="c-plus-study" targetName="classic-problem_n_queen" />
+      <config projectName="c-plus-study" targetName="binary-tree_graph" />
+>>>>>>> 20210527
       <config projectName="c-plus-study" targetName="sort_test_priority_queue" />
-      <config projectName="c-plus-study" targetName="binary-tree_union_set" />
-      <config projectName="c-plus-study" targetName="binary-tree_successor_node" />
+      <config projectName="c-plus-study" targetName="classic-problem_distribute_money" />
+      <config projectName="c-plus-study" targetName="leetcode_75_sort_color" />
+      <config projectName="c-plus-study" targetName="string_leetcode_3_length_of_longest_substring" />
+      <config projectName="c-plus-study" targetName="binary-tree_paper_fold" />
       <config projectName="c-plus-study" targetName="stack_reverse_stack_use_recurse" />
+<<<<<<< HEAD
       <config projectName="c-plus-study" targetName="classic-problem_island_count" />
       <config projectName="c-plus-study" targetName="classic-problem_coins_way" />
       <config projectName="c-plus-study" targetName="classic-problem_travel_minimum_time_xiecheng" />
       <config projectName="c-plus-study" targetName="leetcode_1_two_sum" />
       <config projectName="c-plus-study" targetName="leetcode_93_restore_ip_address" />
+=======
+      <config projectName="c-plus-study" targetName="classic-problem_xor_method" />
+      <config projectName="c-plus-study" targetName="classic-problem_water" />
+      <config projectName="c-plus-study" targetName="classic-problem_leetcode_440_find_kth_number" />
+>>>>>>> 20210527
       <config projectName="c-plus-study" targetName="binary-tree_dijkstra" />
+      <config projectName="c-plus-study" targetName="classic-problem_island_count" />
+      <config projectName="c-plus-study" targetName="binary-tree_successor_node" />
       <config projectName="c-plus-study" targetName="classic-problem_calculate_factorial" />
-      <config projectName="c-plus-study" targetName="classic-problem_robot_walk" />
+      <config projectName="c-plus-study" targetName="binary-tree_tree_max_width" />
+      <config projectName="c-plus-study" targetName="leetcode_75_sort_colors" />
+      <config projectName="c-plus-study" targetName="multi-thread_multi_thread_bind_cpu" />
       <config projectName="c-plus-study" targetName="binary-tree_recursion_method" />
-      <config projectName="c-plus-study" targetName="classic-problem_distribute_money" />
-      <config projectName="c-plus-study" targetName="classic-problem_travel_ncity_in_order_yuanfudao" />
       <config projectName="c-plus-study" targetName="leetcode_305_num_islands2" />
+      <config projectName="c-plus-study" targetName="classic-problem_robot_walk" />
+      <config projectName="c-plus-study" targetName="string_leetcode_5_longest_palindrome" />
+      <config projectName="c-plus-study" targetName="classic-problem_partition_equal_subset_sum" />
+      <config projectName="c-plus-study" targetName="binary-tree_serialize_and_reconstruct" />
+      <config projectName="c-plus-study" targetName="sort_quick_sort" />
+      <config projectName="c-plus-study" targetName="string_print_all_permutations" />
+      <config projectName="c-plus-study" targetName="classic-problem_cards_in_line" />
       <config projectName="c-plus-study" targetName="leetcode_4_find_median_sorted_arrays" />
-      <config projectName="c-plus-study" targetName="classic-problem_binary_search" />
       <config projectName="c-plus-study" targetName="stack_sortstack_by_helpstack" />
+<<<<<<< HEAD
       <config projectName="c-plus-study" targetName="string_min_distance_of_two_string" />
       <config projectName="c-plus-study" targetName="string_print_all_permutations" />
       <config projectName="c-plus-study" targetName="string_convert_to_letter_string" />
@@ -63,18 +105,40 @@
       <config projectName="c-plus-study" targetName="binary-tree_graph" />
       <config projectName="c-plus-study" targetName="multi-thread_multi_thread_bind_cpu" />
       <config projectName="c-plus-study" targetName="c_plus_utils" />
+=======
+      <config projectName="c-plus-study" targetName="classic-problem_reverse_linked_list" />
+      <config projectName="c-plus-study" targetName="iostream_leetcode_71_simplify_path" />
+      <config projectName="c-plus-study" targetName="classic-problem_knapsack_problem" />
+      <config projectName="c-plus-study" targetName="classic-problem_hanoi_tower" />
+      <config projectName="c-plus-study" targetName="multi-thread_test_pthread" />
+      <config projectName="c-plus-study" targetName="classic-problem_rearrange_card_pinduoduo" />
+>>>>>>> 20210527
     </generated>
   </component>
   <component name="CMakeSettings">
     <configurations>
-      <configuration PROFILE_NAME="Debug-MinGW" CONFIG_NAME="Debug" TOOLCHAIN_NAME="MinGW" />
-      <configuration PROFILE_NAME="Release-VisualStudio" CONFIG_NAME="Release" TOOLCHAIN_NAME="VisualStudio" />
+      <configuration PROFILE_NAME="Debug-sv217" CONFIG_NAME="Debug" TOOLCHAIN_NAME="sv217" />
+      <configuration PROFILE_NAME="Release-sv217" CONFIG_NAME="Release" TOOLCHAIN_NAME="sv217" />
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="14550bca-6a67-465d-8ddb-016c31d8d888" name="Default Changelist" comment="">
+    <list default="true" id="c6e571b6-9215-489b-94cf-a4354ac504cf" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/other.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/multi-thread/multi_thread_bind_cpu.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/XW.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/multi-thread/multi_thread_print_in_order.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/multi-thread/multi_thread_print_in_order.cpp" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/leetcode_test.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/leetcode_test.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/multi-thread/test_pthread.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/multi-thread/test_pthread.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/multi-thread/test_std_thread.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/multi-thread/test_std_thread.cpp" afterDir="false" />
+>>>>>>> 20210527
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,6 +148,7 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
+<<<<<<< HEAD
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
     <option name="GROUP_DATA_SOURCES" value="true" />
@@ -99,11 +164,13 @@
     <select />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Release-VisualStudio" />
+=======
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug-sv217" />
+>>>>>>> 20210527
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1n8VMyGzMxsu6gKZtDQw25Gtor8" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="1skVPnovmwE3EpWlOhbTrVAC7LG" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -111,13 +178,9 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
-    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
-    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
-    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
-    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/string" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -126,6 +189,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="CMakeSettings" />
   </component>
+<<<<<<< HEAD
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\code\c-plus-study\leetcode" />
@@ -139,225 +203,230 @@
   </component>
   <component name="RunManager" selected="CMake Application.multi-thread_multi_thread_print_in_order">
     <configuration name="binary-tree_dijkstra" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="binary-tree_dijkstra" CONFIG_NAME="Debug-MinGW" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="binary-tree_dijkstra">
+=======
+  <component name="RunManager" selected="CMake Application.leetcode_leetcode_test">
+    <configuration name="binary-tree_dijkstra" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="binary-tree_dijkstra" CONFIG_NAME="Debug-sv217" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="binary-tree_dijkstra">
+>>>>>>> 20210527
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="binary-tree_graph" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="binary-tree_graph" CONFIG_NAME="Debug-MinGW" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="binary-tree_graph">
+    <configuration name="binary-tree_graph" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="binary-tree_graph" CONFIG_NAME="Debug-sv217" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="binary-tree_graph">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="binary-tree_minimum_spanning_tree" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="binary-tree_minimum_spanning_tree" CONFIG_NAME="Debug-MinGW" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="binary-tree_minimum_spanning_tree">
+    <configuration name="binary-tree_minimum_spanning_tree" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="binary-tree_minimum_spanning_tree" CONFIG_NAME="Debug-sv217" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="binary-tree_minimum_spanning_tree">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="binary-tree_paper_fold" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="binary-tree_paper_fold" CONFIG_NAME="Debug-MinGW" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="binary-tree_paper_fold">
+    <configuration name="binary-tree_paper_fold" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="binary-tree_paper_fold" CONFIG_NAME="Debug-sv217" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="binary-tree_paper_fold">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="binary-tree_recursion_method" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="binary-tree_recursion_method" CONFIG_NAME="Debug-MinGW" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="binary-tree_recursion_method">
+    <configuration name="binary-tree_recursion_method" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="binary-tree_recursion_method" CONFIG_NAME="Debug-sv217" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="binary-tree_recursion_method">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="binary-tree_serialize_and_reconstruct" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="binary-tree_serialize_and_reconstruct" CONFIG_NAME="Debug-MinGW" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="binary-tree_serialize_and_reconstruct">
+    <configuration name="binary-tree_serialize_and_reconstruct" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="binary-tree_serialize_and_reconstruct" CONFIG_NAME="Debug-sv217" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="binary-tree_serialize_and_reconstruct">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="binary-tree_successor_node" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="binary-tree_successor_node" CONFIG_NAME="Debug-MinGW" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="binary-tree_successor_node">
+    <configuration name="binary-tree_successor_node" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="binary-tree_successor_node" CONFIG_NAME="Debug-sv217" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="binary-tree_successor_node">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="binary-tree_travel_tree" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="binary-tree_travel_tree" CONFIG_NAME="Debug-MinGW" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="binary-tree_travel_tree">
+    <configuration name="binary-tree_travel_tree" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="binary-tree_travel_tree" CONFIG_NAME="Debug-sv217" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="binary-tree_travel_tree">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="binary-tree_tree_max_width" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="binary-tree_tree_max_width" CONFIG_NAME="Debug-MinGW" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="binary-tree_tree_max_width">
+    <configuration name="binary-tree_tree_max_width" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="binary-tree_tree_max_width" CONFIG_NAME="Debug-sv217" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="binary-tree_tree_max_width">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="binary-tree_union_set" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="binary-tree_union_set" CONFIG_NAME="Debug-MinGW" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="binary-tree_union_set">
+    <configuration name="binary-tree_union_set" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="binary-tree_union_set" CONFIG_NAME="Debug-sv217" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="binary-tree_union_set">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="c_plus_utils" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="c_plus_utils" CONFIG_NAME="Debug-MinGW">
+    <configuration name="c_plus_utils" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="c_plus_utils" CONFIG_NAME="Debug-sv217">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="classic-problem_arithmetic_dict_order" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="classic-problem_arithmetic_dict_order" CONFIG_NAME="Debug-MinGW" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="classic-problem_arithmetic_dict_order">
+    <configuration name="classic-problem_arithmetic_dict_order" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="classic-problem_arithmetic_dict_order" CONFIG_NAME="Debug-sv217" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="classic-problem_arithmetic_dict_order">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="classic-problem_binary_search" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="classic-problem_binary_search" CONFIG_NAME="Debug-MinGW" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="classic-problem_binary_search">
+    <configuration name="classic-problem_binary_search" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="classic-problem_binary_search" CONFIG_NAME="Debug-sv217" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="classic-problem_binary_search">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="classic-problem_calculate_factorial" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="classic-problem_calculate_factorial" CONFIG_NAME="Debug-MinGW" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="classic-problem_calculate_factorial">
+    <configuration name="classic-problem_calculate_factorial" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="classic-problem_calculate_factorial" CONFIG_NAME="Debug-sv217" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="classic-problem_calculate_factorial">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="classic-problem_cards_in_line" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="classic-problem_cards_in_line" CONFIG_NAME="Debug-MinGW" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="classic-problem_cards_in_line">
+    <configuration name="classic-problem_cards_in_line" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="classic-problem_cards_in_line" CONFIG_NAME="Debug-sv217" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="classic-problem_cards_in_line">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="classic-problem_coin_tencent" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="classic-problem_coin_tencent" CONFIG_NAME="Debug-MinGW" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="classic-problem_coin_tencent">
+    <configuration name="classic-problem_coin_tencent" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="classic-problem_coin_tencent" CONFIG_NAME="Debug-sv217" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="classic-problem_coin_tencent">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="classic-problem_coins_way" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="classic-problem_coins_way" CONFIG_NAME="Debug-MinGW" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="classic-problem_coins_way">
+    <configuration name="classic-problem_coins_way" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="classic-problem_coins_way" CONFIG_NAME="Debug-sv217" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="classic-problem_coins_way">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="classic-problem_dice_pinduoduo" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="classic-problem_dice_pinduoduo" CONFIG_NAME="Debug-MinGW" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="classic-problem_dice_pinduoduo">
+    <configuration name="classic-problem_dice_pinduoduo" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="classic-problem_dice_pinduoduo" CONFIG_NAME="Debug-sv217" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="classic-problem_dice_pinduoduo">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="classic-problem_distribute_money" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="classic-problem_distribute_money" CONFIG_NAME="Debug-MinGW" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="classic-problem_distribute_money">
+    <configuration name="classic-problem_distribute_money" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="classic-problem_distribute_money" CONFIG_NAME="Debug-sv217" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="classic-problem_distribute_money">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="classic-problem_element_kind_count" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="classic-problem_element_kind_count" CONFIG_NAME="Debug-MinGW" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="classic-problem_element_kind_count">
+    <configuration name="classic-problem_element_kind_count" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="classic-problem_element_kind_count" CONFIG_NAME="Debug-sv217" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="classic-problem_element_kind_count">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="classic-problem_hanoi_tower" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="classic-problem_hanoi_tower" CONFIG_NAME="Debug-MinGW" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="classic-problem_hanoi_tower">
+    <configuration name="classic-problem_hanoi_tower" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="classic-problem_hanoi_tower" CONFIG_NAME="Debug-sv217" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="classic-problem_hanoi_tower">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="classic-problem_island_count" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="classic-problem_island_count" CONFIG_NAME="Debug-MinGW" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="classic-problem_island_count">
+    <configuration name="classic-problem_island_count" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="classic-problem_island_count" CONFIG_NAME="Debug-sv217" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="classic-problem_island_count">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="classic-problem_knapsack_problem" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="classic-problem_knapsack_problem" CONFIG_NAME="Debug-MinGW" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="classic-problem_knapsack_problem">
+    <configuration name="classic-problem_knapsack_problem" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="classic-problem_knapsack_problem" CONFIG_NAME="Debug-sv217" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="classic-problem_knapsack_problem">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="classic-problem_leetcode_440_find_kth_number" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="classic-problem_leetcode_440_find_kth_number" CONFIG_NAME="Debug-MinGW" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="classic-problem_leetcode_440_find_kth_number">
+    <configuration name="classic-problem_leetcode_440_find_kth_number" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="classic-problem_leetcode_440_find_kth_number" CONFIG_NAME="Debug-sv217" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="classic-problem_leetcode_440_find_kth_number">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="classic-problem_n_queen" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="classic-problem_n_queen" CONFIG_NAME="Debug-MinGW" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="classic-problem_n_queen">
+    <configuration name="classic-problem_n_queen" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="classic-problem_n_queen" CONFIG_NAME="Debug-sv217" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="classic-problem_n_queen">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="classic-problem_ncity_cake" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="classic-problem_ncity_cake" CONFIG_NAME="Debug-MinGW" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="classic-problem_ncity_cake">
+    <configuration name="classic-problem_ncity_cake" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="classic-problem_ncity_cake" CONFIG_NAME="Debug-sv217" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="classic-problem_ncity_cake">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="classic-problem_nxm_matrix_passageway_tencent" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="classic-problem_nxm_matrix_passageway_tencent" CONFIG_NAME="Debug-MinGW" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="classic-problem_nxm_matrix_passageway_tencent">
+    <configuration name="classic-problem_nxm_matrix_passageway_tencent" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="classic-problem_nxm_matrix_passageway_tencent" CONFIG_NAME="Debug-sv217" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="classic-problem_nxm_matrix_passageway_tencent">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="classic-problem_partition_equal_subset_sum" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="classic-problem_partition_equal_subset_sum" CONFIG_NAME="Debug-MinGW" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="classic-problem_partition_equal_subset_sum">
+    <configuration name="classic-problem_partition_equal_subset_sum" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="classic-problem_partition_equal_subset_sum" CONFIG_NAME="Debug-sv217" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="classic-problem_partition_equal_subset_sum">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="classic-problem_rearrange_card_pinduoduo" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="classic-problem_rearrange_card_pinduoduo" CONFIG_NAME="Debug-MinGW" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="classic-problem_rearrange_card_pinduoduo">
+    <configuration name="classic-problem_rearrange_card_pinduoduo" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="classic-problem_rearrange_card_pinduoduo" CONFIG_NAME="Debug-sv217" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="classic-problem_rearrange_card_pinduoduo">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="classic-problem_reverse_linked_list" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="classic-problem_reverse_linked_list" CONFIG_NAME="Debug-MinGW" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="classic-problem_reverse_linked_list">
+    <configuration name="classic-problem_reverse_linked_list" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="classic-problem_reverse_linked_list" CONFIG_NAME="Debug-sv217" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="classic-problem_reverse_linked_list">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="classic-problem_robot_walk" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="classic-problem_robot_walk" CONFIG_NAME="Debug-MinGW" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="classic-problem_robot_walk">
+    <configuration name="classic-problem_robot_walk" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="classic-problem_robot_walk" CONFIG_NAME="Debug-sv217" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="classic-problem_robot_walk">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="classic-problem_some_test" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="classic-problem_some_test" CONFIG_NAME="Debug-MinGW" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="classic-problem_some_test">
+    <configuration name="classic-problem_some_test" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="classic-problem_some_test" CONFIG_NAME="Debug-sv217" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="classic-problem_some_test">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="classic-problem_travel_minimum_time_xiecheng" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="classic-problem_travel_minimum_time_xiecheng" CONFIG_NAME="Debug-MinGW" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="classic-problem_travel_minimum_time_xiecheng">
+    <configuration name="classic-problem_travel_minimum_time_xiecheng" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="classic-problem_travel_minimum_time_xiecheng" CONFIG_NAME="Debug-sv217" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="classic-problem_travel_minimum_time_xiecheng">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="classic-problem_travel_ncity_in_order_yuanfudao" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="classic-problem_travel_ncity_in_order_yuanfudao" CONFIG_NAME="Debug-MinGW" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="classic-problem_travel_ncity_in_order_yuanfudao">
+    <configuration name="classic-problem_travel_ncity_in_order_yuanfudao" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="classic-problem_travel_ncity_in_order_yuanfudao" CONFIG_NAME="Debug-sv217" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="classic-problem_travel_ncity_in_order_yuanfudao">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="classic-problem_water" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="classic-problem_water" CONFIG_NAME="Debug-MinGW" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="classic-problem_water">
+    <configuration name="classic-problem_water" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="classic-problem_water" CONFIG_NAME="Debug-sv217" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="classic-problem_water">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="classic-problem_xor_method" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="classic-problem_xor_method" CONFIG_NAME="Debug-MinGW" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="classic-problem_xor_method">
+    <configuration name="classic-problem_xor_method" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="classic-problem_xor_method" CONFIG_NAME="Debug-sv217" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="classic-problem_xor_method">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="iostream_iostream" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="iostream_iostream" CONFIG_NAME="Debug-MinGW" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="iostream_iostream">
+    <configuration name="iostream_iostream" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="iostream_iostream" CONFIG_NAME="Debug-sv217" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="iostream_iostream">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="iostream_leetcode_71_simplify_path" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="iostream_leetcode_71_simplify_path" CONFIG_NAME="Debug-MinGW" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="iostream_leetcode_71_simplify_path">
+    <configuration name="iostream_leetcode_71_simplify_path" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="iostream_leetcode_71_simplify_path" CONFIG_NAME="Debug-sv217" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="iostream_leetcode_71_simplify_path">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="leetcode_1_two_sum" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="leetcode_1_two_sum" CONFIG_NAME="Debug-MinGW" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="leetcode_1_two_sum">
+    <configuration name="leetcode_1_two_sum" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="leetcode_1_two_sum" CONFIG_NAME="Debug-sv217" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="leetcode_1_two_sum">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="leetcode_305_num_islands2" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="leetcode_305_num_islands2" CONFIG_NAME="Debug-MinGW" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="leetcode_305_num_islands2">
+    <configuration name="leetcode_305_num_islands2" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="leetcode_305_num_islands2" CONFIG_NAME="Debug-sv217" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="leetcode_305_num_islands2">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="leetcode_4_find_median_sorted_arrays" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="leetcode_4_find_median_sorted_arrays" CONFIG_NAME="Debug-MinGW" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="leetcode_4_find_median_sorted_arrays">
+    <configuration name="leetcode_4_find_median_sorted_arrays" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="leetcode_4_find_median_sorted_arrays" CONFIG_NAME="Debug-sv217" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="leetcode_4_find_median_sorted_arrays">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="leetcode_75_sort_colors" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="leetcode_75_sort_colors" CONFIG_NAME="Debug-MinGW" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="leetcode_75_sort_colors">
+    <configuration name="leetcode_75_sort_color" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="leetcode_75_sort_color" CONFIG_NAME="Debug-sv217" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="leetcode_75_sort_color">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="leetcode_93_restore_ip_address" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="leetcode_93_restore_ip_address" CONFIG_NAME="Debug-MinGW" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="leetcode_93_restore_ip_address">
+    <configuration name="leetcode_75_sort_colors" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="leetcode_75_sort_colors" CONFIG_NAME="Debug-sv217" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="leetcode_75_sort_colors">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="leetcode_leetcode_test" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="leetcode_leetcode_test" CONFIG_NAME="Debug-MinGW" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="leetcode_leetcode_test">
+    <configuration name="leetcode_93_restore_ip_address" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="leetcode_93_restore_ip_address" CONFIG_NAME="Debug-sv217" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="leetcode_93_restore_ip_address">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+<<<<<<< HEAD
     <configuration name="multi-thread_multi_thread_bind_cpu" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="multi-thread_multi_thread_bind_cpu" CONFIG_NAME="Debug-MinGW" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="multi-thread_multi_thread_bind_cpu">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -384,61 +453,94 @@
       </method>
     </configuration>
     <configuration name="sort_find_kth_smallest" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="sort_find_kth_smallest" CONFIG_NAME="Debug-MinGW" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="sort_find_kth_smallest">
+=======
+    <configuration name="leetcode_leetcode_test" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="leetcode_leetcode_test" CONFIG_NAME="Debug-sv217" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="leetcode_leetcode_test">
+>>>>>>> 20210527
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="sort_quick_sort" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="sort_quick_sort" CONFIG_NAME="Debug-MinGW" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="sort_quick_sort">
+    <configuration name="multi-thread_multi_thread_bind_cpu" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="multi-thread_multi_thread_bind_cpu" CONFIG_NAME="Debug-sv217" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="multi-thread_multi_thread_bind_cpu">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="sort_select_sort" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="sort_select_sort" CONFIG_NAME="Debug-MinGW" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="sort_select_sort">
+    <configuration name="multi-thread_multi_thread_print_in_order" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="multi-thread_multi_thread_print_in_order" CONFIG_NAME="Debug-sv217" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="multi-thread_multi_thread_print_in_order">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="sort_test_priority_queue" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="sort_test_priority_queue" CONFIG_NAME="Debug-MinGW" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="sort_test_priority_queue">
+    <configuration name="multi-thread_std_async" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="multi-thread_std_async" CONFIG_NAME="Debug-sv217" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="multi-thread_std_async">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="stack_reverse_stack_use_recurse" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="stack_reverse_stack_use_recurse" CONFIG_NAME="Debug-MinGW" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="stack_reverse_stack_use_recurse">
+    <configuration name="multi-thread_test_pthread" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="multi-thread_test_pthread" CONFIG_NAME="Debug-sv217" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="multi-thread_test_pthread">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="stack_sortstack_by_helpstack" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="stack_sortstack_by_helpstack" CONFIG_NAME="Debug-MinGW" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="stack_sortstack_by_helpstack">
+    <configuration name="multi-thread_test_std_thread" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="multi-thread_test_std_thread" CONFIG_NAME="Debug-sv217" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="multi-thread_test_std_thread">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="string_convert_to_letter_string" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="string_convert_to_letter_string" CONFIG_NAME="Debug-MinGW" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="string_convert_to_letter_string">
+    <configuration name="sort_find_kth_smallest" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="sort_find_kth_smallest" CONFIG_NAME="Debug-sv217" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="sort_find_kth_smallest">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="string_kmp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="string_kmp" CONFIG_NAME="Debug-MinGW" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="string_kmp">
+    <configuration name="sort_quick_sort" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="sort_quick_sort" CONFIG_NAME="Debug-sv217" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="sort_quick_sort">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="string_leetcode_3_length_of_longest_substring" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="string_leetcode_3_length_of_longest_substring" CONFIG_NAME="Debug-MinGW" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="string_leetcode_3_length_of_longest_substring">
+    <configuration name="sort_select_sort" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="sort_select_sort" CONFIG_NAME="Debug-sv217" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="sort_select_sort">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="string_leetcode_5_longest_palindrome" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="string_leetcode_5_longest_palindrome" CONFIG_NAME="Debug-MinGW" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="string_leetcode_5_longest_palindrome">
+    <configuration name="sort_test_priority_queue" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="sort_test_priority_queue" CONFIG_NAME="Debug-sv217" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="sort_test_priority_queue">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="string_min_distance_of_two_string" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="string_min_distance_of_two_string" CONFIG_NAME="Debug-MinGW" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="string_min_distance_of_two_string">
+    <configuration name="stack_reverse_stack_use_recurse" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="stack_reverse_stack_use_recurse" CONFIG_NAME="Debug-sv217" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="stack_reverse_stack_use_recurse">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="string_print_all_permutations" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="string_print_all_permutations" CONFIG_NAME="Debug-MinGW" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="string_print_all_permutations">
+    <configuration name="stack_sortstack_by_helpstack" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="stack_sortstack_by_helpstack" CONFIG_NAME="Debug-sv217" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="stack_sortstack_by_helpstack">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="string_convert_to_letter_string" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="string_convert_to_letter_string" CONFIG_NAME="Debug-sv217" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="string_convert_to_letter_string">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="string_kmp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="string_kmp" CONFIG_NAME="Debug-sv217" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="string_kmp">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="string_leetcode_3_length_of_longest_substring" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="string_leetcode_3_length_of_longest_substring" CONFIG_NAME="Debug-sv217" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="string_leetcode_3_length_of_longest_substring">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="string_leetcode_5_longest_palindrome" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="string_leetcode_5_longest_palindrome" CONFIG_NAME="Debug-sv217" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="string_leetcode_5_longest_palindrome">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="string_min_distance_of_two_string" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="string_min_distance_of_two_string" CONFIG_NAME="Debug-sv217" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="string_min_distance_of_two_string">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="string_print_all_permutations" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="string_print_all_permutations" CONFIG_NAME="Debug-sv217" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="string_print_all_permutations">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -454,7 +556,6 @@
       <item itemvalue="CMake Application.binary-tree_travel_tree" />
       <item itemvalue="CMake Application.binary-tree_tree_max_width" />
       <item itemvalue="CMake Application.binary-tree_union_set" />
-      <item itemvalue="CMake Application.c_plus_utils" />
       <item itemvalue="CMake Application.classic-problem_arithmetic_dict_order" />
       <item itemvalue="CMake Application.classic-problem_binary_search" />
       <item itemvalue="CMake Application.classic-problem_calculate_factorial" />
@@ -480,13 +581,13 @@
       <item itemvalue="CMake Application.classic-problem_travel_ncity_in_order_yuanfudao" />
       <item itemvalue="CMake Application.classic-problem_water" />
       <item itemvalue="CMake Application.classic-problem_xor_method" />
-      <item itemvalue="CMake Application.iostream_iostream" />
-      <item itemvalue="CMake Application.iostream_leetcode_71_simplify_path" />
       <item itemvalue="CMake Application.leetcode_1_two_sum" />
       <item itemvalue="CMake Application.leetcode_305_num_islands2" />
       <item itemvalue="CMake Application.leetcode_4_find_median_sorted_arrays" />
+      <item itemvalue="CMake Application.leetcode_75_sort_color" />
       <item itemvalue="CMake Application.leetcode_75_sort_colors" />
       <item itemvalue="CMake Application.leetcode_93_restore_ip_address" />
+<<<<<<< HEAD
       <item itemvalue="CMake Application.leetcode_leetcode_test" />
       <item itemvalue="CMake Application.multi-thread_multi_thread_bind_cpu" />
       <item itemvalue="CMake Application.multi-thread_multi_thread_print_in_order" />
@@ -494,6 +595,8 @@
       <item itemvalue="CMake Application.multi-thread_test_pthread" />
       <item itemvalue="CMake Application.multi-thread_test_std_thread" />
       <item itemvalue="CMake Application.sort_find_kth_smallest" />
+=======
+>>>>>>> 20210527
       <item itemvalue="CMake Application.sort_quick_sort" />
       <item itemvalue="CMake Application.sort_select_sort" />
       <item itemvalue="CMake Application.sort_test_priority_queue" />
@@ -501,10 +604,20 @@
       <item itemvalue="CMake Application.stack_sortstack_by_helpstack" />
       <item itemvalue="CMake Application.string_convert_to_letter_string" />
       <item itemvalue="CMake Application.string_kmp" />
-      <item itemvalue="CMake Application.string_leetcode_3_length_of_longest_substring" />
       <item itemvalue="CMake Application.string_leetcode_5_longest_palindrome" />
       <item itemvalue="CMake Application.string_min_distance_of_two_string" />
       <item itemvalue="CMake Application.string_print_all_permutations" />
+      <item itemvalue="CMake Application.c_plus_utils" />
+      <item itemvalue="CMake Application.leetcode_leetcode_test" />
+      <item itemvalue="CMake Application.string_leetcode_3_length_of_longest_substring" />
+      <item itemvalue="CMake Application.iostream_iostream" />
+      <item itemvalue="CMake Application.iostream_leetcode_71_simplify_path" />
+      <item itemvalue="CMake Application.multi-thread_multi_thread_bind_cpu" />
+      <item itemvalue="CMake Application.multi-thread_multi_thread_print_in_order" />
+      <item itemvalue="CMake Application.multi-thread_std_async" />
+      <item itemvalue="CMake Application.multi-thread_test_pthread" />
+      <item itemvalue="CMake Application.multi-thread_test_std_thread" />
+      <item itemvalue="CMake Application.sort_find_kth_smallest" />
     </list>
   </component>
   <component name="SvnConfiguration">
@@ -512,10 +625,11 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="14550bca-6a67-465d-8ddb-016c31d8d888" name="Default Changelist" comment="" />
-      <created>1610771660308</created>
+      <changelist id="c6e571b6-9215-489b-94cf-a4354ac504cf" name="Default Changelist" comment="" />
+      <created>1621416552994</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
+<<<<<<< HEAD
       <updated>1610771660308</updated>
       <workItem from="1610771661812" duration="5662000" />
       <workItem from="1610796070883" duration="10743000" />
@@ -672,11 +786,20 @@
       <updated>1622042833998</updated>
     </task>
     <option name="localTasksCounter" value="15" />
+=======
+      <updated>1621416552994</updated>
+      <workItem from="1621416557331" duration="310000" />
+      <workItem from="1621477470205" duration="595000" />
+      <workItem from="1621838100990" duration="3214000" />
+      <workItem from="1621913209584" duration="3072000" />
+    </task>
+>>>>>>> 20210527
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+<<<<<<< HEAD
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
@@ -702,10 +825,13 @@
     <MESSAGE value="20210526" />
     <option name="LAST_COMMIT_MESSAGE" value="20210526" />
   </component>
+=======
+>>>>>>> 20210527
   <component name="WindowStateProjectService">
-    <state x="872" y="363" key="#Deployment" timestamp="1616688028541">
-      <screen x="0" y="0" width="2560" height="1410" />
+    <state x="552" y="182" key="#Deployment" timestamp="1621838147110">
+      <screen x="0" y="0" width="1920" height="1048" />
     </state>
+<<<<<<< HEAD
     <state x="872" y="363" key="#Deployment/0.0.2560.1410@0.0.2560.1410" timestamp="1616688028541" />
     <state x="1242" y="697" width="1178" height="596" key="#xdebugger.evaluate" timestamp="1620922913543">
       <screen x="0" y="0" width="2560" height="1410" />
@@ -782,5 +908,56 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+=======
+    <state x="552" y="182" key="#Deployment/0.0.1920.1048@0.0.1920.1048" timestamp="1621838147110" />
+    <state x="552" y="182" key="#Inspections" timestamp="1621838546422">
+      <screen x="0" y="0" width="1920" height="1048" />
+    </state>
+    <state x="552" y="182" key="#Inspections/0.0.1920.1048@0.0.1920.1048" timestamp="1621838546422" />
+    <state x="1157" y="196" key="#xdebugger.evaluate" timestamp="1621915365781">
+      <screen x="0" y="0" width="1920" height="1048" />
+    </state>
+    <state x="1157" y="196" key="#xdebugger.evaluate/0.0.1920.1048@0.0.1920.1048" timestamp="1621915365781" />
+    <state width="1877" height="351" key="GridCell.Tab.0.bottom" timestamp="1621922897037">
+      <screen x="0" y="0" width="1920" height="1048" />
+    </state>
+    <state width="1877" height="351" key="GridCell.Tab.0.bottom/0.0.1920.1048@0.0.1920.1048" timestamp="1621922897037" />
+    <state width="1877" height="351" key="GridCell.Tab.0.center" timestamp="1621922897037">
+      <screen x="0" y="0" width="1920" height="1048" />
+    </state>
+    <state width="1877" height="351" key="GridCell.Tab.0.center/0.0.1920.1048@0.0.1920.1048" timestamp="1621922897037" />
+    <state width="1877" height="351" key="GridCell.Tab.0.left" timestamp="1621922897037">
+      <screen x="0" y="0" width="1920" height="1048" />
+    </state>
+    <state width="1877" height="351" key="GridCell.Tab.0.left/0.0.1920.1048@0.0.1920.1048" timestamp="1621922897037" />
+    <state width="1877" height="351" key="GridCell.Tab.0.right" timestamp="1621922897037">
+      <screen x="0" y="0" width="1920" height="1048" />
+    </state>
+    <state width="1877" height="351" key="GridCell.Tab.0.right/0.0.1920.1048@0.0.1920.1048" timestamp="1621922897037" />
+    <state width="1877" height="351" key="GridCell.Tab.1.bottom" timestamp="1621922897037">
+      <screen x="0" y="0" width="1920" height="1048" />
+    </state>
+    <state width="1877" height="351" key="GridCell.Tab.1.bottom/0.0.1920.1048@0.0.1920.1048" timestamp="1621922897037" />
+    <state width="1877" height="351" key="GridCell.Tab.1.center" timestamp="1621922897037">
+      <screen x="0" y="0" width="1920" height="1048" />
+    </state>
+    <state width="1877" height="351" key="GridCell.Tab.1.center/0.0.1920.1048@0.0.1920.1048" timestamp="1621922897037" />
+    <state width="1877" height="351" key="GridCell.Tab.1.left" timestamp="1621922897037">
+      <screen x="0" y="0" width="1920" height="1048" />
+    </state>
+    <state width="1877" height="351" key="GridCell.Tab.1.left/0.0.1920.1048@0.0.1920.1048" timestamp="1621922897037" />
+    <state width="1877" height="351" key="GridCell.Tab.1.right" timestamp="1621922897037">
+      <screen x="0" y="0" width="1920" height="1048" />
+    </state>
+    <state width="1877" height="351" key="GridCell.Tab.1.right/0.0.1920.1048@0.0.1920.1048" timestamp="1621922897037" />
+    <state x="461" y="166" key="SettingsEditor" timestamp="1621838175588">
+      <screen x="0" y="0" width="1920" height="1048" />
+    </state>
+    <state x="461" y="166" key="SettingsEditor/0.0.1920.1048@0.0.1920.1048" timestamp="1621838175588" />
+    <state x="640" y="348" key="com.intellij.ide.util.TipDialog" timestamp="1621913208964">
+      <screen x="0" y="0" width="1920" height="1048" />
+    </state>
+    <state x="640" y="348" key="com.intellij.ide.util.TipDialog/0.0.1920.1048@0.0.1920.1048" timestamp="1621913208964" />
+>>>>>>> 20210527
   </component>
 </project>

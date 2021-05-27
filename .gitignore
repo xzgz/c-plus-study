@@ -4,3 +4,4 @@ previous-code/*
 *.o
 *.a
 *.so
+.idea/*
