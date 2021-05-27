@@ -301,6 +301,14 @@ void test2() {
 //    const unordered_map<char, string>& map2 = ismap;
     const string& str = map2[k];
     cout << str << endl;
+
+    int a, b;
+    b = -3;
+    a = b >> 1;
+    cout << "a: " << a << endl;
+    b = 3;
+    a = b >> 1;
+    cout << "a: " << a << endl;
 }
 
 int main() {
