@@ -26,7 +26,7 @@
       <paths name="sv217 (3a61c2de-ca27-4985-a5d5-ab3b1089478d)">
         <serverdata>
           <mappings>
-            <mapping deploy="/data/yckj3211/c-plus-study" local="$PROJECT_DIR$" web="/" />
+            <mapping deploy="/data/yckj3211/c-plus-study" local="$PROJECT_DIR$" />
           </mappings>
           <excludedPaths>
             <excludedPath local="true" path="$PROJECT_DIR$/cmake-build-release-sv217" />
@@ -39,25 +39,15 @@
       <paths name="t4sv2 (d9c14ee6-6e81-490a-87ef-b292fbba7ba2)">
         <serverdata>
           <mappings>
-            <mapping deploy="/data/yckj3211/c-plus-study" local="$PROJECT_DIR$" web="/" />
+            <mapping local="$PROJECT_DIR$" web="/" />
           </mappings>
-          <excludedPaths>
-            <excludedPath local="true" path="$PROJECT_DIR$/cmake-build-release-t4sv2" />
-            <excludedPath local="true" path="$PROJECT_DIR$/cmake-build-debug-t4sv2" />
-          </excludedPaths>
         </serverdata>
       </paths>
       <paths name="yckj3211 (3381599c-5938-4326-bb23-b0573beb2cdf)">
         <serverdata>
           <mappings>
-            <mapping deploy="/tmp/tmp.CGBpSbhmx7" local="$PROJECT_DIR$" />
+            <mapping local="$PROJECT_DIR$" web="/" />
           </mappings>
-          <excludedPaths>
-            <excludedPath local="true" path="$PROJECT_DIR$/cmake-build-release-yckj3211" />
-            <excludedPath local="true" path="$PROJECT_DIR$/cmake-build-release-yckj3211" />
-            <excludedPath local="true" path="$PROJECT_DIR$/cmake-build-debug-yckj3211" />
-            <excludedPath local="true" path="$PROJECT_DIR$/cmake-build-debug-yckj3211" />
-          </excludedPaths>
         </serverdata>
       </paths>
     </serverData>
