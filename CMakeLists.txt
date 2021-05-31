@@ -49,7 +49,6 @@ include_directories(${PROJECT_SOURCE_DIR})
 include_directories(${PROJECT_SOURCE_DIR}/include)
 
 add_subdirectory(utils)
-set(C_PLUS_LIBS "")
 list(APPEND PROJECT_LINK_LIBS c_plus_utils)
 
 #message("\n\nboost_static_libs:")
