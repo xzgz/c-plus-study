@@ -35,6 +35,7 @@
       <config projectName="c-plus-study" targetName="classic-problem_travel_ncity_in_order_yuanfudao" />
       <config projectName="c-plus-study" targetName="leetcode_305_num_islands2" />
       <config projectName="c-plus-study" targetName="smart-pointer_uniqueptr1" />
+      <config projectName="c-plus-study" targetName="smart-pointer_uniqueptr2" />
       <config projectName="c-plus-study" targetName="leetcode_4_find_median_sorted_arrays" />
       <config projectName="c-plus-study" targetName="classic-problem_binary_search" />
       <config projectName="c-plus-study" targetName="stack_sortstack_by_helpstack" />
@@ -81,8 +82,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f4119df1-18f4-41e6-92b5-023ab9159bca" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/smart-pointer/uniqueptr2.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smart-pointer/uniqueptr1.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/smart-pointer/uniqueptr1.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +107,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../stl-study-2nd" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/smart-pointer" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -114,7 +116,12 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="CMakeSettings" />
   </component>
-  <component name="RunManager" selected="CMake Application.smart-pointer_uniqueptr1">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\code\c-plus-study\smart-pointer" />
+    </key>
+  </component>
+  <component name="RunManager" selected="CMake Application.smart-pointer_uniqueptr2">
     <configuration name="binary-tree_dijkstra" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="binary-tree_dijkstra" CONFIG_NAME="Debug-sv217" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="binary-tree_dijkstra">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -390,6 +397,11 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration name="smart-pointer_uniqueptr2" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="smart-pointer_uniqueptr2" CONFIG_NAME="Debug-sv217" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="smart-pointer_uniqueptr2">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="smart-pointer_weakptr1" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="smart-pointer_weakptr1" CONFIG_NAME="Debug-sv217" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="smart-pointer_weakptr1">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -530,6 +542,7 @@
       <item itemvalue="CMake Application.string_min_distance_of_two_string" />
       <item itemvalue="CMake Application.string_print_all_permutations" />
       <item itemvalue="CMake Application.c_plus_utils" />
+      <item itemvalue="CMake Application.smart-pointer_uniqueptr2" />
     </list>
   </component>
   <component name="SvnConfiguration">
@@ -545,7 +558,8 @@
       <workItem from="1622173167660" duration="202000" />
       <workItem from="1622173373505" duration="32000" />
       <workItem from="1622173417964" duration="1453000" />
-      <workItem from="1622427493493" duration="10737000" />
+      <workItem from="1622427493493" duration="11548000" />
+      <workItem from="1622512950822" duration="9008000" />
     </task>
     <task id="LOCAL-00001" summary="20210531">
       <created>1622450479967</created>
@@ -554,7 +568,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622450479967</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="20210531">
+      <created>1622455414147</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1622455414147</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -569,41 +590,41 @@
       <screen x="0" y="0" width="1920" height="1048" />
     </state>
     <state x="552" y="182" key="#Deployment/0.0.1920.1048@0.0.1920.1048" timestamp="1622451455993" />
-    <state x="496" y="117" key="CommitChangelistDialog2" timestamp="1622450477915">
+    <state x="496" y="117" key="CommitChangelistDialog2" timestamp="1622455412315">
       <screen x="0" y="0" width="1920" height="1048" />
     </state>
-    <state x="496" y="117" key="CommitChangelistDialog2/0.0.1920.1048@0.0.1920.1048" timestamp="1622450477915" />
+    <state x="496" y="117" key="CommitChangelistDialog2/0.0.1920.1048@0.0.1920.1048" timestamp="1622455412315" />
     <state x="740" y="279" key="FileChooserDialogImpl" timestamp="1622451381691">
       <screen x="0" y="0" width="1920" height="1048" />
     </state>
     <state x="740" y="279" key="FileChooserDialogImpl/0.0.1920.1048@0.0.1920.1048" timestamp="1622451381691" />
-    <state width="1877" height="256" key="GridCell.Tab.0.bottom" timestamp="1622451000140">
+    <state width="1877" height="256" key="GridCell.Tab.0.bottom" timestamp="1622538114503">
       <screen x="0" y="0" width="1920" height="1048" />
     </state>
-    <state width="1877" height="256" key="GridCell.Tab.0.bottom/0.0.1920.1048@0.0.1920.1048" timestamp="1622451000140" />
-    <state width="1877" height="256" key="GridCell.Tab.0.center" timestamp="1622451000140">
+    <state width="1877" height="256" key="GridCell.Tab.0.bottom/0.0.1920.1048@0.0.1920.1048" timestamp="1622538114503" />
+    <state width="1877" height="256" key="GridCell.Tab.0.center" timestamp="1622538114503">
       <screen x="0" y="0" width="1920" height="1048" />
     </state>
-    <state width="1877" height="256" key="GridCell.Tab.0.center/0.0.1920.1048@0.0.1920.1048" timestamp="1622451000140" />
-    <state width="1877" height="256" key="GridCell.Tab.0.left" timestamp="1622451000140">
+    <state width="1877" height="256" key="GridCell.Tab.0.center/0.0.1920.1048@0.0.1920.1048" timestamp="1622538114503" />
+    <state width="1877" height="256" key="GridCell.Tab.0.left" timestamp="1622538114503">
       <screen x="0" y="0" width="1920" height="1048" />
     </state>
-    <state width="1877" height="256" key="GridCell.Tab.0.left/0.0.1920.1048@0.0.1920.1048" timestamp="1622451000140" />
-    <state width="1877" height="256" key="GridCell.Tab.0.right" timestamp="1622451000140">
+    <state width="1877" height="256" key="GridCell.Tab.0.left/0.0.1920.1048@0.0.1920.1048" timestamp="1622538114503" />
+    <state width="1877" height="256" key="GridCell.Tab.0.right" timestamp="1622538114503">
       <screen x="0" y="0" width="1920" height="1048" />
     </state>
-    <state width="1877" height="256" key="GridCell.Tab.0.right/0.0.1920.1048@0.0.1920.1048" timestamp="1622451000140" />
+    <state width="1877" height="256" key="GridCell.Tab.0.right/0.0.1920.1048@0.0.1920.1048" timestamp="1622538114503" />
     <state x="461" y="166" key="SettingsEditor" timestamp="1622173201484">
       <screen x="0" y="0" width="1920" height="1048" />
     </state>
     <state x="461" y="166" key="SettingsEditor/0.0.1920.1048@0.0.1920.1048" timestamp="1622173201484" />
-    <state x="552" y="257" key="Vcs.Push.Dialog.v2" timestamp="1622450516503">
+    <state x="552" y="257" key="Vcs.Push.Dialog.v2" timestamp="1622455477362">
       <screen x="0" y="0" width="1920" height="1048" />
     </state>
-    <state x="552" y="257" key="Vcs.Push.Dialog.v2/0.0.1920.1048@0.0.1920.1048" timestamp="1622450516503" />
-    <state x="640" y="348" key="com.intellij.ide.util.TipDialog" timestamp="1622427495477">
+    <state x="552" y="257" key="Vcs.Push.Dialog.v2/0.0.1920.1048@0.0.1920.1048" timestamp="1622455477362" />
+    <state x="640" y="348" key="com.intellij.ide.util.TipDialog" timestamp="1622512950834">
       <screen x="0" y="0" width="1920" height="1048" />
     </state>
-    <state x="640" y="348" key="com.intellij.ide.util.TipDialog/0.0.1920.1048@0.0.1920.1048" timestamp="1622427495477" />
+    <state x="640" y="348" key="com.intellij.ide.util.TipDialog/0.0.1920.1048@0.0.1920.1048" timestamp="1622512950834" />
   </component>
 </project>
