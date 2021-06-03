@@ -21,8 +21,24 @@ class ClassA {
 public:
     string name;
     explicit ClassA(const string& nm) : name(nm) {}
+    ClassA(const ClassA& x) {
+        cout << "ClassA(const ClassA& x) -- x.name: " << x.name << endl;
+        name = x.name;
+    }
+//    const ClassA& operator=(const ClassA& x) {
+//        cout << "const ClassA& operator=(const ClassA& x) -- x.name: " << x.name << endl;
+//        name = x.name;
+//        return *this;
+//    }
+    const ClassA& operator=(ClassA& x) {
+        cout << "const ClassA& operator=(ClassA& x) -- x.name: " << x.name << endl;
+        name = x.name;
+        x.name += "_pass_assignment";
+        return x;
+    }
     ~ClassA() {
         cout << "delete " << name << endl;
+        name += "_over";
     }
 };
 

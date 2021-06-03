@@ -83,7 +83,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f4119df1-18f4-41e6-92b5-023ab9159bca" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classic-problem/some_test.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/classic-problem/some_test.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smart-pointer/uniqueptr2.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/smart-pointer/uniqueptr2.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,7 +120,7 @@
       <recent name="D:\code\c-plus-study\smart-pointer" />
     </key>
   </component>
-  <component name="RunManager" selected="CMake Application.classic-problem_some_test">
+  <component name="RunManager" selected="CMake Application.smart-pointer_uniqueptr2">
     <configuration name="binary-tree_dijkstra" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-study" TARGET_NAME="binary-tree_dijkstra" CONFIG_NAME="Debug-sv217" RUN_TARGET_PROJECT_NAME="c-plus-study" RUN_TARGET_NAME="binary-tree_dijkstra">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -559,7 +559,7 @@
       <workItem from="1622173417964" duration="1453000" />
       <workItem from="1622427493493" duration="11548000" />
       <workItem from="1622512950822" duration="9169000" />
-      <workItem from="1622685917635" duration="2899000" />
+      <workItem from="1622685917635" duration="5042000" />
     </task>
     <task id="LOCAL-00001" summary="20210531">
       <created>1622450479967</created>
@@ -582,7 +582,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622538176309</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="20210603">
+      <created>1622688863445</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1622688863445</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -591,45 +598,46 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="20210531" />
     <MESSAGE value="20210601" />
-    <option name="LAST_COMMIT_MESSAGE" value="20210601" />
+    <MESSAGE value="20210603" />
+    <option name="LAST_COMMIT_MESSAGE" value="20210603" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="182" key="#Deployment" timestamp="1622451455993">
       <screen x="0" y="0" width="1920" height="1048" />
     </state>
     <state x="552" y="182" key="#Deployment/0.0.1920.1048@0.0.1920.1048" timestamp="1622451455993" />
-    <state x="496" y="117" key="CommitChangelistDialog2" timestamp="1622538174098">
+    <state x="496" y="117" key="CommitChangelistDialog2" timestamp="1622688861203">
       <screen x="0" y="0" width="1920" height="1048" />
     </state>
-    <state x="496" y="117" key="CommitChangelistDialog2/0.0.1920.1048@0.0.1920.1048" timestamp="1622538174098" />
+    <state x="496" y="117" key="CommitChangelistDialog2/0.0.1920.1048@0.0.1920.1048" timestamp="1622688861203" />
     <state x="740" y="279" key="FileChooserDialogImpl" timestamp="1622451381691">
       <screen x="0" y="0" width="1920" height="1048" />
     </state>
     <state x="740" y="279" key="FileChooserDialogImpl/0.0.1920.1048@0.0.1920.1048" timestamp="1622451381691" />
-    <state width="1877" height="256" key="GridCell.Tab.0.bottom" timestamp="1622688515243">
+    <state width="1877" height="283" key="GridCell.Tab.0.bottom" timestamp="1622691025091">
       <screen x="0" y="0" width="1920" height="1048" />
     </state>
-    <state width="1877" height="256" key="GridCell.Tab.0.bottom/0.0.1920.1048@0.0.1920.1048" timestamp="1622688515243" />
-    <state width="1877" height="256" key="GridCell.Tab.0.center" timestamp="1622688515242">
+    <state width="1877" height="283" key="GridCell.Tab.0.bottom/0.0.1920.1048@0.0.1920.1048" timestamp="1622691025091" />
+    <state width="1877" height="283" key="GridCell.Tab.0.center" timestamp="1622691025091">
       <screen x="0" y="0" width="1920" height="1048" />
     </state>
-    <state width="1877" height="256" key="GridCell.Tab.0.center/0.0.1920.1048@0.0.1920.1048" timestamp="1622688515242" />
-    <state width="1877" height="256" key="GridCell.Tab.0.left" timestamp="1622688515242">
+    <state width="1877" height="283" key="GridCell.Tab.0.center/0.0.1920.1048@0.0.1920.1048" timestamp="1622691025091" />
+    <state width="1877" height="283" key="GridCell.Tab.0.left" timestamp="1622691025091">
       <screen x="0" y="0" width="1920" height="1048" />
     </state>
-    <state width="1877" height="256" key="GridCell.Tab.0.left/0.0.1920.1048@0.0.1920.1048" timestamp="1622688515242" />
-    <state width="1877" height="256" key="GridCell.Tab.0.right" timestamp="1622688515243">
+    <state width="1877" height="283" key="GridCell.Tab.0.left/0.0.1920.1048@0.0.1920.1048" timestamp="1622691025091" />
+    <state width="1877" height="283" key="GridCell.Tab.0.right" timestamp="1622691025091">
       <screen x="0" y="0" width="1920" height="1048" />
     </state>
-    <state width="1877" height="256" key="GridCell.Tab.0.right/0.0.1920.1048@0.0.1920.1048" timestamp="1622688515243" />
+    <state width="1877" height="283" key="GridCell.Tab.0.right/0.0.1920.1048@0.0.1920.1048" timestamp="1622691025091" />
     <state x="461" y="166" key="SettingsEditor" timestamp="1622173201484">
       <screen x="0" y="0" width="1920" height="1048" />
     </state>
     <state x="461" y="166" key="SettingsEditor/0.0.1920.1048@0.0.1920.1048" timestamp="1622173201484" />
-    <state x="552" y="257" key="Vcs.Push.Dialog.v2" timestamp="1622538202099">
+    <state x="552" y="257" key="Vcs.Push.Dialog.v2" timestamp="1622688869564">
       <screen x="0" y="0" width="1920" height="1048" />
     </state>
-    <state x="552" y="257" key="Vcs.Push.Dialog.v2/0.0.1920.1048@0.0.1920.1048" timestamp="1622538202099" />
+    <state x="552" y="257" key="Vcs.Push.Dialog.v2/0.0.1920.1048@0.0.1920.1048" timestamp="1622688869564" />
     <state x="640" y="348" key="com.intellij.ide.util.TipDialog" timestamp="1622512950834">
       <screen x="0" y="0" width="1920" height="1048" />
     </state>
