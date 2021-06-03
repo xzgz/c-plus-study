@@ -4,6 +4,8 @@
 #include <iostream>
 #include <vector>
 #include <iomanip>
+#include <climits>
+#include <exception>
 
 using namespace std;
 
@@ -114,12 +116,39 @@ void TestSetprecision() {
     cout << 333333337 * 3 % 1000000007 << endl;
 }
 
+int addInt1(int a, int b) {
+    int res = a + b;
+    if(a > 0 && b > 0 && res < 0) throw overflow_error("addInt1 -- too big");
+    if(a < 0 && b < 0 && res > 0) throw overflow_error("addInt1 -- too small");
+    return res;
+}
+int addInt2(int a, int b) {
+    if(a > 0 && b > 0 && a > numeric_limits<int>::max() - b) throw overflow_error("addInt2 -- too big");
+    if(a < 0 && b < 0 && a < numeric_limits<int>::min() - b) throw overflow_error("addInt2 -- too small");
+    return a + b;
+}
+int addInt3(int a, int b) {
+    int x = a + b;
+    if ((x ^ a) < 0 && (x ^ b) < 0) throw overflow_error("addInt3 -- too big or too small");
+    return x;
+}
+void TestIntAddOverFlow() {
+    int a = -numeric_limits<int>::max();
+    int b = -2;
+    int c;
+//    c = addInt1(a, b);
+//    c = addInt2(a, b);
+    c = addInt3(a, b);
+    cout << "c = " << c << endl;
+}
+
 int main() {
     TimerClock tc(true);
 //    TestFunPtr();
 //    TestInputStringToArray();
 //    TestGenerateRandomNumber();
-    TestSetprecision();
+//    TestSetprecision();
+    TestIntAddOverFlow();
 
     return 0;
 }
