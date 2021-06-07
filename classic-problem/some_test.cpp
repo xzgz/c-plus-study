@@ -34,13 +34,14 @@ int maxProfit(vector<int>& prices) {
 
 typedef void (*Ptf)();
 
-void print() {
-    cout << "print\n";
+void MyFunction() {
+    cout << "MyFunction\n";
 }
 
 void TestFunPtr() {
-    Ptf fun1 = &print;
-    Ptf fun2 = print;
+    cout << "TestFunPtr:" << endl;
+    Ptf fun1 = &MyFunction;
+    Ptf fun2 = MyFunction;
     fun1();
     fun2();
 }
@@ -133,6 +134,7 @@ int addInt3(int a, int b) {
     return x;
 }
 void TestIntAddOverFlow() {
+    cout << "TestIntAddOverFlow:" << endl;
     int a = -numeric_limits<int>::max();
     int b = -2;
     int c;
@@ -142,13 +144,23 @@ void TestIntAddOverFlow() {
     cout << "c = " << c << endl;
 }
 
+void TestFloatBigSubBig() {
+    cout << "TestFloatBigSubBig:" << endl;
+    float f1 = 2.34E+10f;
+    float f2 = f1 + 10.0f;
+    cout << "f1 = " << f1 << endl;
+    cout << "f2 = " << f2 << endl;
+    cout << "f2 - f1 = " << f2 - f1 << endl;
+}
+
 int main() {
     TimerClock tc(true);
-//    TestFunPtr();
+    TestFunPtr();
 //    TestInputStringToArray();
 //    TestGenerateRandomNumber();
 //    TestSetprecision();
-    TestIntAddOverFlow();
+//    TestIntAddOverFlow();
+    TestFloatBigSubBig();
 
     return 0;
 }
