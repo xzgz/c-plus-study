@@ -234,6 +234,30 @@ public:
     }
 };
 
+class IsPalindromeSolution {
+public:
+    bool isPalindrome(string s) {
+        int n = s.size();
+        int left = 0, right = n - 1;
+        while (left < right) {
+            while (left < right && !isalnum(s[left])) {
+                ++left;
+            }
+            while (left < right && !isalnum(s[right])) {
+                --right;
+            }
+            if (left < right) {
+                if (tolower(s[left]) != tolower(s[right])) {
+                    return false;
+                }
+                ++left;
+                --right;
+            }
+        }
+        return true;
+    }
+};
+
 void test1() {
     string s = "()())()";
     Solution so;
@@ -311,9 +335,18 @@ void test2() {
     cout << "a: " << a << endl;
 }
 
+void TestIsPalindromeSolution() {
+    IsPalindromeSolution ipso;
+    string s = "A man, a plan, a canal: Panama";
+    bool is_palindrome;
+    is_palindrome = ipso.isPalindrome(s);
+    cout << boolalpha << "is_palindrome = " << is_palindrome << endl;
+}
+
 int main() {
 //    test1();
     test2();
+    TestIsPalindromeSolution();
 
     return 0;
 }
