@@ -5,6 +5,7 @@
 #include <unordered_map>
 #include <algorithm>
 #include <queue>
+#include <map>
 
 using namespace std;
 
@@ -258,6 +259,58 @@ public:
     }
 };
 
+class MaxPointsSolution {
+public:
+    //求最大公约数
+    int gcd(int a, int b) {
+        int g;
+        while(b != 0) {
+            g = a%b;
+            a = b;
+            b = g;
+        }
+        return a;
+    }
+    int maxPoints(vector<vector<int>>& points) {
+        int n = points.size(), max_count = 2;
+        if (n <= 2) return n;
+
+        map<pair<int, int>, int> m;     //最简斜率，<dx, dy>计数
+        int i, j, dx, dy, g;
+        for (i = 0; i < n - max_count; ++i) {
+            m.clear();
+            int count = 0;
+            int horisontal_lines = 0;
+            int duplicates = 0;
+            int sign;
+            for (j = i + 1; j < n; ++j) {
+                dx = points[i][0] - points[j][0];
+                dy = points[i][1] - points[j][1];
+                if (dx == 0 && dy == 0) {
+                    ++duplicates;
+                } else if (dy == 0) {
+                    ++horisontal_lines;
+                } else {
+                    sign = dx == 0 ? 0 : dx / abs(dx) * dy / abs(dy);
+                    dx = abs(dx);
+                    dy = abs(dy);
+                    g = gcd(dx, dy);                        //求最大公约数，参数取正数
+                    m[{sign * dx / g, dy / g}]++;    //经过i点，斜率一样的点，计数+1
+                }
+            }
+            //遍历经过i点的所有直线
+            for (auto p : m) {
+                //经过i点的所有直线中某个斜率的最多
+                count = std::max(count, p.second);
+            }
+            count = std::max(count, horisontal_lines);
+            count = count + duplicates + 1;
+            max_count = std::max(max_count, count);
+        }
+        return max_count;
+    }
+};
+
 void test1() {
     string s = "()())()";
     Solution so;
@@ -343,10 +396,18 @@ void TestIsPalindromeSolution() {
     cout << boolalpha << "is_palindrome = " << is_palindrome << endl;
 }
 
+void TestMaxPointsSolution() {
+    vector<vector<int> > points = { { 0, 0 }, { 2, 2 }, { -1, -1 } };
+    MaxPointsSolution mpso;
+    int max_num_point_on_one_line = mpso.maxPoints(points);
+    cout << "max_num_point_on_one_line = " << max_num_point_on_one_line << endl;
+}
+
 int main() {
 //    test1();
-    test2();
-    TestIsPalindromeSolution();
+//    test2();
+//    TestIsPalindromeSolution();
+    TestMaxPointsSolution();
 
     return 0;
 }
