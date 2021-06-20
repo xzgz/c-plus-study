@@ -1,49 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="sv217 (3a61c2de-ca27-4985-a5d5-ab3b1089478d)">
+  <component name="PublishConfigData" serverName="yckj3211 (f332f299-0be4-4785-8003-e27bf0bf4cdc)">
     <serverData>
-      <paths name="atlas20 (28ce978f-64ef-4699-b5b0-548a9f951422)">
-        <serverdata>
-          <mappings>
-            <mapping local="$PROJECT_DIR$" web="/" />
-          </mappings>
-        </serverdata>
-      </paths>
-      <paths name="atlas300 (ce9e5410-cef9-4619-94e7-314c7bef5a19)">
-        <serverdata>
-          <mappings>
-            <mapping deploy="/tmp/c-plus-study" local="$PROJECT_DIR$" />
-          </mappings>
-        </serverdata>
-      </paths>
-      <paths name="atlas300-gcc (9ab46c3f-1575-43ab-bac9-81ceb8caf58b)">
-        <serverdata>
-          <mappings>
-            <mapping local="$PROJECT_DIR$" web="/" />
-          </mappings>
-        </serverdata>
-      </paths>
-      <paths name="sv217 (3a61c2de-ca27-4985-a5d5-ab3b1089478d)">
-        <serverdata>
-          <mappings>
-            <mapping deploy="/data/yckj3211/c-plus-study" local="$PROJECT_DIR$" />
-          </mappings>
-          <excludedPaths>
-            <excludedPath local="true" path="$PROJECT_DIR$/cmake-build-release-sv217" />
-            <excludedPath local="true" path="$PROJECT_DIR$/cmake-build-debug-sv217" />
-            <excludedPath local="true" path="$PROJECT_DIR$/cmake-build-debug-sv217" />
-            <excludedPath local="true" path="$PROJECT_DIR$/cmake-build-release-sv217" />
-          </excludedPaths>
-        </serverdata>
-      </paths>
-      <paths name="t4sv2 (d9c14ee6-6e81-490a-87ef-b292fbba7ba2)">
-        <serverdata>
-          <mappings>
-            <mapping local="$PROJECT_DIR$" web="/" />
-          </mappings>
-        </serverdata>
-      </paths>
-      <paths name="yckj3211 (3381599c-5938-4326-bb23-b0573beb2cdf)">
+      <paths name="yckj3211 (7116d862-6a97-4233-922c-d9ea5f2bec8e)">
         <serverdata>
           <mappings>
             <mapping local="$PROJECT_DIR$" web="/" />

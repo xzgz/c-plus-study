@@ -43,7 +43,7 @@ foreach(val ${CMAKE_THREAD_LIBS_INIT})
 endforeach()
 message("\n")
 list(APPEND PROJECT_LINK_LIBS ${CMAKE_THREAD_LIBS_INIT})
-list(APPEND PROJECT_LINK_LIBS -lrt)
+#list(APPEND PROJECT_LINK_LIBS -lrt)
 
 include_directories(${PROJECT_SOURCE_DIR})
 include_directories(${PROJECT_SOURCE_DIR}/include)

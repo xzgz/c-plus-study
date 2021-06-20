@@ -311,6 +311,74 @@ public:
     }
 };
 
+struct TrieNode {
+    vector<TrieNode*> children;
+    string* word;
+    TrieNode() : word(nullptr), children(26) {};
+    ~TrieNode() {
+        for (const auto& child : children)
+            delete child;
+    }
+};
+
+class FindWordsSolution {
+public:
+    int m, n;
+    vector<vector<int> > dir = { { 1, 0 }, { -1, 0 }, { 0, 1 }, { 0, -1 } };
+    vector<string> ans;
+
+    void walk(vector<vector<char> >& board, int x, int y, TrieNode *parent) {
+        const char c = board[x][y];
+        TrieNode *curr = parent->children[c - 97];
+        if (!curr) return;
+        if (curr->word) {
+            ans.emplace_back(*curr->word);
+            curr->word = nullptr;
+        }
+        //   if (curr->children.empty()) {
+        //       delete curr;
+        //       curr = nullptr;
+        //       parent->children[c - 97] = nullptr;
+        //       return;
+        //   }
+
+        board[x][y] = '#';
+        for (auto d : dir) {
+            int i = x + d[0], j = y + d[1];
+            if (i >= 0 && i < m && j >= 0 && j < n && board[i][j] != '#') {
+                if (curr->children[board[i][j] - 97]) {
+                    walk(board, i, j, curr);
+                }
+            }
+        }
+        board[x][y] = c;
+    }
+
+    vector<string> findWords(vector<vector<char> >& board, vector<string>& words) {
+        TrieNode root;
+        for (auto& word : words) {
+            TrieNode* p = &root;
+            for (const auto& c : word) {
+                if (!p->children[c - 97])
+                    p->children[c - 97] = new TrieNode();
+                p = p->children[c - 97];
+            }
+            p->word = &word;
+        }
+
+        m = board.size(), n = board[0].size();
+        for (int x = 0; x < m; ++x) {
+            for (int y = 0; y < n; ++y) {
+                if (root.children[board[x][y] - 97]) {
+                    walk(board, x, y, &root);
+                }
+            }
+        }
+
+        return ans;
+    }
+};
+
 void test1() {
     string s = "()())()";
     Solution so;
@@ -403,11 +471,37 @@ void TestMaxPointsSolution() {
     cout << "max_num_point_on_one_line = " << max_num_point_on_one_line << endl;
 }
 
+void TestFindWordsSolution() {
+//    vector<vector<char> > board = { { 'a', 'a' } };
+//    vector<string> words = { "aa" };
+    vector<vector<char> > board = {
+            { 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a' },
+            { 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a' },
+            { 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a' },
+            { 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a' },
+            { 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a' },
+            { 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a' },
+            { 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a' },
+            { 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a' },
+            { 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a' },
+            { 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a' },
+            { 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a' },
+            { 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a' },
+    };
+    vector<string> words = { "a", "aa", "aaa", "aaaa", "aaaaa", "aaaaaa", "aaaaaaa", "aaaaaaaa", "aaaaaaaaa", "aaaaaaaaaa" };
+    FindWordsSolution fwso;
+    vector<string> res = fwso.findWords(board, words);
+    for (string str : res) {
+        cout << str << endl;
+    }
+}
+
 int main() {
 //    test1();
 //    test2();
 //    TestIsPalindromeSolution();
-    TestMaxPointsSolution();
+//    TestMaxPointsSolution();
+    TestFindWordsSolution();
 
     return 0;
 }
