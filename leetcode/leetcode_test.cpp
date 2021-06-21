@@ -379,6 +379,67 @@ public:
     }
 };
 
+class CountSmallerSolution {
+private:
+    vector<int> c;
+    vector<int> a;
+
+    void Init(int length) {
+        c.resize(length, 0);
+    }
+
+    int LowBit(int x) {
+        return x & (-x);
+    }
+
+    void Update(int pos) {
+        while (pos < c.size()) {
+            c[pos] += 1;
+            pos += LowBit(pos);
+        }
+    }
+
+    int Query(int pos) {
+        int ret = 0;
+
+        while (pos > 0) {
+            ret += c[pos];
+            pos -= LowBit(pos);
+        }
+
+        return ret;
+    }
+
+    void Discretization(vector<int>& nums) {
+        a.assign(nums.begin(), nums.end());
+        sort(a.begin(), a.end());
+        a.erase(unique(a.begin(), a.end()), a.end());
+    }
+
+    int getId(int x) {
+        return lower_bound(a.begin(), a.end(), x) - a.begin() + 1;
+    }
+
+public:
+    vector<int> countSmaller(vector<int>& nums) {
+        vector<int> resultList;
+
+        Discretization(nums);
+
+        Init(nums.size());
+
+        for (int i = (int)nums.size() - 1; i >= 0; --i) {
+            int id = getId(nums[i]);
+            Update(id);
+            resultList.push_back(Query(id - 1));
+        }
+
+        reverse(resultList.begin(), resultList.end());
+
+        return resultList;
+    }
+};
+
 void test1() {
     string s = "()())()";
     Solution so;
@@ -471,6 +532,14 @@ void TestMaxPointsSolution() {
     cout << "max_num_point_on_one_line = " << max_num_point_on_one_line << endl;
 }
 
+void TestCountSmallerSolution() {
+    vector<int> nums = { 3, 9, 5, 2, 6, 1, 3 };
+    CountSmallerSolution csso;
+    vector<int> res = csso.countSmaller(nums);
+    for (int val : res) cout << val << " ";
+    cout << endl;
+}
+
 void TestFindWordsSolution() {
 //    vector<vector<char> > board = { { 'a', 'a' } };
 //    vector<string> words = { "aa" };
@@ -501,7 +570,8 @@ int main() {
 //    test2();
 //    TestIsPalindromeSolution();
 //    TestMaxPointsSolution();
-    TestFindWordsSolution();
+//    TestFindWordsSolution();
+    TestCountSmallerSolution();
 
     return 0;
 }

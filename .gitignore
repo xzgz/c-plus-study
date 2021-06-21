@@ -5,3 +5,4 @@ previous-code/*
 *.a
 *.so
 .idea/*
+.idea/
