@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="sv217 (3a61c2de-ca27-4985-a5d5-ab3b1089478d)">
+  <component name="PublishConfigData" serverName="sv217 (640859b5-84b7-4ef0-8bd0-43bc470c5189)">
     <serverData>
       <paths name="atlas20 (28ce978f-64ef-4699-b5b0-548a9f951422)">
         <serverdata>
@@ -16,14 +16,7 @@
           </mappings>
         </serverdata>
       </paths>
-      <paths name="atlas300-gcc (9ab46c3f-1575-43ab-bac9-81ceb8caf58b)">
-        <serverdata>
-          <mappings>
-            <mapping local="$PROJECT_DIR$" web="/" />
-          </mappings>
-        </serverdata>
-      </paths>
-      <paths name="sv217 (3a61c2de-ca27-4985-a5d5-ab3b1089478d)">
+      <paths name="sv217 (640859b5-84b7-4ef0-8bd0-43bc470c5189)">
         <serverdata>
           <mappings>
             <mapping deploy="/data/yckj3211/c-plus-study" local="$PROJECT_DIR$" />
@@ -31,23 +24,7 @@
           <excludedPaths>
             <excludedPath local="true" path="$PROJECT_DIR$/cmake-build-release-sv217" />
             <excludedPath local="true" path="$PROJECT_DIR$/cmake-build-debug-sv217" />
-            <excludedPath local="true" path="$PROJECT_DIR$/cmake-build-debug-sv217" />
-            <excludedPath local="true" path="$PROJECT_DIR$/cmake-build-release-sv217" />
           </excludedPaths>
-        </serverdata>
-      </paths>
-      <paths name="t4sv2 (d9c14ee6-6e81-490a-87ef-b292fbba7ba2)">
-        <serverdata>
-          <mappings>
-            <mapping local="$PROJECT_DIR$" web="/" />
-          </mappings>
-        </serverdata>
-      </paths>
-      <paths name="yckj3211 (3381599c-5938-4326-bb23-b0573beb2cdf)">
-        <serverdata>
-          <mappings>
-            <mapping local="$PROJECT_DIR$" web="/" />
-          </mappings>
         </serverdata>
       </paths>
     </serverData>

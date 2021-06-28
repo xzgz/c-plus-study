@@ -146,11 +146,32 @@ void TestIntAddOverFlow() {
 
 void TestFloatBigSubBig() {
     cout << "TestFloatBigSubBig:" << endl;
+
     float f1 = 2.34E+10f;
     float f2 = f1 + 10.0f;
     cout << "f1 = " << f1 << endl;
     cout << "f2 = " << f2 << endl;
     cout << "f2 - f1 = " << f2 - f1 << endl;
+}
+
+void TestConstPtr() {
+    cout << "TestConstPtr:" << endl;
+
+    float f3 = 0.1;
+    const float *pf = &f3;
+    printf("%f\n", *pf);
+    f3 = 0.2;
+    printf("%f\n", *pf);
+//    *pf = 0.3;  // error: assignment of read-only location *pf
+    f3 = 0.3;
+    printf("%f\n", *pf);
+
+    float f4 = 1.2;
+    pf = &f4;
+    printf("%f\n", *pf);
+
+    const float f5 = 1.3;
+//    float *pf2 = &f5;  // invalid conversion from const float* to float* [-fpermissive]
 }
 
 int main() {
@@ -160,7 +181,8 @@ int main() {
 //    TestGenerateRandomNumber();
 //    TestSetprecision();
 //    TestIntAddOverFlow();
-    TestFloatBigSubBig();
+//    TestFloatBigSubBig();
+    TestConstPtr();
 
     return 0;
 }
