@@ -1,15 +1,17 @@
 #include "common_function.h"
 #include <iostream>
 #include <vector>
+#include <set>
 #include <unordered_set>
+#include <map>
 #include <unordered_map>
 #include <algorithm>
 #include <queue>
-#include <map>
+#include <cctype>
 
 using namespace std;
 
-class Solution {
+class RemoveInvalidParenthesesSolution {
 private:
     int len_;
     string s_new_;
@@ -465,25 +467,75 @@ public:
     }
 };
 
-void test1() {
-    string s = "()())()";
-    Solution so;
-    vector<string> res1 = so.removeInvalidParentheses(s);
-    for (string v : res1) cout << v << endl;
+class GetSkylineSolution {
+public:
+    vector<vector<int>> getSkyline(vector<vector<int>>& buildings) {
+        vector<pair<int,int>> h;
+        multiset<int> m;
+        vector<vector<int>> res;
 
+        //1、将每一个建筑分成“两个部分”，例如:[2,9,10]可以转换成[2，-10][9,10]，我们用负值来表示左边界
+        for(const auto& b:buildings)
+        {
+            h.push_back({b[0], -b[2]});
+            h.push_back({b[1], b[2]});
+        }
+
+        //2、根据x值对分段进行排序
+        sort(h.begin(),h.end());
+        int prev = 0, cur = 0;
+//        cur = *m.rbegin();  // Signal: SIGSEGV (Segmentation fault)
+        m.insert(0);
+
+//        int *arr = new int;
+//        cout << *arr << endl;
+//        delete arr;
+//        arr = nullptr;
+//        cout << *arr << endl;  // Signal: SIGSEGV (Segmentation fault)
+
+        //3、遍历
+        for (auto i:h)
+        {
+            if (i.second < 0) m.insert(-i.second);  //左端点，高度入堆
+            else m.erase(m.find(i.second));         //右端点，高度出堆
+
+            cout << "*m.begin() = " << *m.begin() << endl;
+
+            cur = *m.rbegin();                      //当前最大高度高度
+            if (cur != prev) {                      //当前最大高度不等于最大高度perv表示这是一个转折点
+                res.push_back({i.first, cur});      //添加坐标
+                prev = cur;                         //更新最大高度
+            }
+        }
+        return res;
+    }
+};
+
+void TestRemoveInvalidParenthesesSolution() {
+    string s = "()())()";
+    RemoveInvalidParenthesesSolution ripso;
+    vector<string> res1 = ripso.removeInvalidParentheses(s);
+    for (string v : res1) cout << v << endl;
+}
+
+void TestFirstMissingPositive() {
     vector<int> nums = { 3, 4, -1, 1 };
     Print1DVector(nums);
     int fmp = FirstMissingPositive(nums);
     Print1DVector(nums);
     cout << "fmp: " << fmp << endl;
+}
 
+void TestCalcEquationSolution() {
     vector<vector<string> > equations = { { "a", "b" }, { "b", "c" } };
     vector<double> values = { 2.0, 3.0 };
     vector<vector<string> > queries = { { "a", "c" }, { "b", "a" }, { "a", "e" }, { "a", "a" }, { "x", "x" } };
     CalcEquationSolution cso;
     vector<double> res2 = cso.calcEquation(equations, values, queries);
     Print1DVector(res2);
+}
 
+void TestUnorderedMap() {
     unordered_map<string, int> um;
     um["a"] = 1;
     um["b"] = 2;
@@ -503,26 +555,6 @@ void test1() {
     }
     um["a1"] = 8;
     cout << "um[\"a1\"] = " << um["a1"] << endl;
-}
-
-void test2() {
-    vector<vector<int> > intervals = { { 0, 30 }, { 5, 10 }, { 15, 20 } };
-    MinMeetingRoomsSolution1 mso1;
-    MinMeetingRoomsSolution2 mso2;
-    int used_rooms;
-    used_rooms = mso1.minMeetingRooms(intervals);
-    cout << "used_rooms: " << used_rooms << endl;
-    used_rooms = mso2.minMeetingRooms(intervals);
-    cout << "used_rooms: " << used_rooms << endl;
-
-    WordBreakSolution wbso;
-    string s = "bb";
-//    string s = "leetcode";
-    vector<string> word_dict = { "a", "b", "bbb", "bbbb" };
-//    vector<string> word_dict = { "leet", "code" };
-    bool s_can_break;
-    s_can_break = wbso.wordBreak(s, word_dict);
-    cout << "s_can_break: " << s_can_break << endl;
 
     unordered_map<char, string> ismap;
     ismap['1'] = "asd";
@@ -532,7 +564,31 @@ void test2() {
 //    const unordered_map<char, string>& map2 = ismap;
     const string& str = map2[k];
     cout << str << endl;
+}
 
+void TestMinMeetingRoomsSolution() {
+    vector<vector<int> > intervals = { { 0, 30 }, { 5, 10 }, { 15, 20 } };
+    MinMeetingRoomsSolution1 mso1;
+    MinMeetingRoomsSolution2 mso2;
+    int used_rooms;
+    used_rooms = mso1.minMeetingRooms(intervals);
+    cout << "used_rooms: " << used_rooms << endl;
+    used_rooms = mso2.minMeetingRooms(intervals);
+    cout << "used_rooms: " << used_rooms << endl;
+}
+
+void TestWordBreakSolution() {
+    WordBreakSolution wbso;
+    string s = "bb";
+//    string s = "leetcode";
+    vector<string> word_dict = { "a", "b", "bbb", "bbbb" };
+//    vector<string> word_dict = { "leet", "code" };
+    bool s_can_break;
+    s_can_break = wbso.wordBreak(s, word_dict);
+    cout << "s_can_break: " << s_can_break << endl;
+}
+
+void TestBitShift() {
     int a, b;
     b = -3;
     a = b >> 1;
@@ -595,13 +651,28 @@ void TestFindWordsSolution() {
     }
 }
 
+void TestGetSkylineSolution() {
+    GetSkylineSolution gsso;
+    vector<vector<int> > buildings = { {2, 9, 10 }, { 3, 7, 15 }, { 5, 12, 12 }, { 15, 20, 10 }, { 19, 24, 8 } };
+    vector<vector<int> > res = gsso.getSkyline(buildings);
+    for (vector<int> xh : res) {
+        cout << "x = " << xh[0] << ", h = " << xh[1] << endl;
+    }
+}
+
 int main() {
-//    test1();
-//    test2();
 //    TestIsPalindromeSolution();
 //    TestMaxPointsSolution();
-    TestFindWordsSolution();
+//    TestFindWordsSolution();
 //    TestCountSmallerSolution();
+    TestGetSkylineSolution();
+//    TestBitShift();
+//    TestWordBreakSolution();
+//    TestMinMeetingRoomsSolution();
+//    TestUnorderedMap();
+//    TestCalcEquationSolution();
+//    TestFirstMissingPositive();
+//    TestRemoveInvalidParenthesesSolution();
 
     return 0;
 }

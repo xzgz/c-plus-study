@@ -147,6 +147,45 @@ void TestCustomPrioritizeQueue4() {
     }
 }
 
+class mycomparison
+{
+    bool reverse;
+public:
+    mycomparison(const bool& revparam=false)
+    {reverse=revparam;}
+    bool operator() (const int& lhs, const int&rhs) const
+    {
+        if (reverse) return (lhs>rhs);
+        else return (lhs<rhs);
+    }
+};
+void TestCustomPrioritizeQueue5() {
+    cout << "TestCustomPrioritizeQueue5():" << endl;
+
+    int myints[] = { 10, 60, 50, 20 };
+    std::priority_queue<int> first;
+    std::priority_queue<int> second(myints,myints + 4);
+    std::priority_queue<int, std::vector<int>, std::greater<int> > third(myints,myints + 4);
+    // using mycomparison:
+    typedef std::priority_queue<int, std::vector<int>, mycomparison> mypq_type;
+
+    mypq_type fourth(myints, myints + 4);                                     // less-than comparison
+    mypq_type fifth(myints, myints + 4, mycomparison(true));    // greater-than comparison
+
+#define PRINT_PRIORITY_QUEUE(queue_name) \
+    cout << #queue_name << endl; \
+    while (!queue_name.empty()) { \
+        cout << queue_name.top() << endl; \
+        queue_name.pop(); \
+    }
+
+    PRINT_PRIORITY_QUEUE(first);
+    PRINT_PRIORITY_QUEUE(second);
+    PRINT_PRIORITY_QUEUE(third);
+    PRINT_PRIORITY_QUEUE(fourth);
+    PRINT_PRIORITY_QUEUE(fifth);
+}
+
 int main() {
     TestPriorityQueue();
     TestSmallPrioritizeQueue();
@@ -155,6 +194,7 @@ int main() {
     TestCustomPrioritizeQueue2();
     TestCustomPrioritizeQueue3();
     TestCustomPrioritizeQueue4();
+    TestCustomPrioritizeQueue5();
 
     return 0;
 }
